@@ -290,12 +290,12 @@ function hasCookie(req: Request, name: string, value: string): boolean {
 function challengePage(token: string): Response {
   const html = `<!doctype html>
 <html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="noindex"><title>Güvenlik kontrolü · Demir Elektrik</title>
+<meta name="robots" content="noindex"><title>Güvenlik kontrolü · Servis Arıza Kayıt</title>
 <style>body{font-family:system-ui,sans-serif;background:#0b1220;color:#e5e7eb;display:grid;place-items:center;min-height:100vh;margin:0;text-align:center;padding:1rem}
 .box{max-width:420px}.spin{width:40px;height:40px;border:4px solid #334155;border-top-color:#ffc107;border-radius:50%;margin:0 auto 1rem;animation:s 1s linear infinite}@keyframes s{to{transform:rotate(360deg)}}
 noscript p{color:#fca5a5}</style></head>
 <body><div class="box"><div class="spin"></div><h1 style="font-size:1.2rem">Güvenlik kontrolü yapılıyor</h1>
-<p>Demir Elektrik web sitesi birkaç saniye içinde açılacak.</p>
+<p>Servis Arıza Kayıt birkaç saniye içinde açılacak.</p>
 <noscript><p>Bu kontrol için tarayıcınızda JavaScript açık olmalıdır.</p></noscript></div>
 <script>(function(){var d=new Date();d.setTime(d.getTime()+12*60*60*1000);
 document.cookie="de_chk=${token}; expires="+d.toUTCString()+"; path=/; SameSite=Lax; Secure";

@@ -1,0 +1,54 @@
+---
+import Icon from './Icon.astro';
+import { site } from '@data/site';
+---
+
+<div class="mbar" role="region" aria-label="Hızlı iletişim">
+  <a href="/ariza-kayit" class="mbar__rec"><Icon name="clipboard-list" size={20} /> Arıza Kaydı</a>
+  <a href={site.phone.href} class="mbar__call" aria-label="Ara"><Icon name="phone" size={20} /></a>
+  <a href={site.whatsapp.href} target="_blank" rel="noopener" class="mbar__wa" aria-label="WhatsApp"><Icon name="whatsapp" size={22} /></a>
+</div>
+
+<style>
+  .mbar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 60;
+    display: grid;
+    grid-template-columns: 1fr 56px 56px;
+    gap: 0.5rem;
+    padding: 0.5rem var(--gutter) calc(0.5rem + env(safe-area-inset-bottom));
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    border-top: 1px solid var(--line);
+  }
+  .mbar a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 48px;
+    border-radius: var(--r);
+    font-family: var(--display);
+    font-weight: 600;
+  }
+  .mbar__rec {
+    background: var(--accent);
+    color: #fff;
+  }
+  .mbar__call {
+    background: var(--brand);
+    color: #fff;
+  }
+  .mbar__wa {
+    background: var(--wa);
+    color: #fff;
+  }
+  @media (min-width: 900px) {
+    .mbar {
+      display: none;
+    }
+  }
+</style>

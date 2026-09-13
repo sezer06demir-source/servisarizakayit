@@ -1,0 +1,190 @@
+---
+/** Arıza kayıt formu — girilen bilgiler WhatsApp mesajına dönüşür; sunucu yok. */
+import Icon from './Icon.astro';
+import { site, devices } from '@data/site';
+interface Props {
+  title?: string;
+  compact?: boolean;
+  presetDevice?: string;
+}
+const { title = 'Arıza kaydı oluşturun', presetDevice } = Astro.props;
+---
+
+<form class="rf" id="ariza-form" novalidate data-wa={site.whatsapp.number}>
+  <div class="rf__head">
+    <h2 class="rf__title">{title}</h2>
+    <p class="rf__lead">Bilgileri girin, WhatsApp'tan bize ulaşsın. Sizi en kısa sürede arayıp randevu verelim. Acilse <a href={site.phone.href}>{site.phone.display}</a></p>
+  </div>
+
+  <div class="rf__grid">
+    <label class="field">
+      <span>Cihaz</span>
+      <select name="device" required>
+        <option value="">Seçin</option>
+        {devices.map((d) => <option value={d.name} selected={d.slug === presetDevice}>{d.name}</option>)}
+        <option value="Diğer">Diğer</option>
+      </select>
+    </label>
+    <label class="field">
+      <span>Marka <em>(biliyorsanız)</em></span>
+      <input type="text" name="brand" maxlength="40" autocomplete="off" placeholder="Örn. bilmiyorum" />
+    </label>
+  </div>
+
+  <label class="field">
+    <span>Arıza / şikâyet</span>
+    <textarea name="fault" required maxlength="500" placeholder="Örn. Çamaşır makinesi su alıyor ama sıkma yapmıyor, hafif ses geliyor."></textarea>
+  </label>
+
+  <div class="rf__grid">
+    <label class="field">
+      <span>İl / ilçe</span>
+      <input type="text" name="city" required maxlength="60" autocomplete="address-level2" placeholder="Örn. İstanbul / Kadıköy" />
+    </label>
+    <label class="field">
+      <span>Telefon</span>
+      <input type="tel" name="phone" required inputmode="tel" autocomplete="tel" pattern="^[0-9+()\s-]{10,20}$" placeholder="05xx xxx xx xx" />
+    </label>
+  </div>
+
+  <label class="field">
+    <span>Ad Soyad</span>
+    <input type="text" name="name" required minlength="3" maxlength="80" autocomplete="name" placeholder="Adınız Soyadınız" />
+  </label>
+
+  <label class="rf__consent">
+    <input type="checkbox" name="consent" required />
+    <span>Bilgilerimin arıza talebimi yanıtlamak için kullanılmasını kabul ediyorum. <a href="/kvkk-aydinlatma-metni">Aydınlatma metni</a></span>
+  </label>
+
+  <button type="submit" class="btn btn--wa rf__send"><Icon name="whatsapp" size={20} /> WhatsApp ile gönder</button>
+  <p class="rf__alt">WhatsApp kullanmıyorsanız <a href={site.phone.href}>arayın</a>, kaydı telefonda alalım.</p>
+  <p class="rf__status" data-status role="status" aria-live="polite"></p>
+</form>
+
+<style>
+  .rf {
+    border: 1.5px solid var(--line);
+    border-radius: var(--r-xl);
+    padding: clamp(1.25rem, 3vw, 1.85rem);
+    background: var(--paper);
+    box-shadow: var(--shadow);
+  }
+  .rf__head {
+    margin-bottom: 1.25rem;
+  }
+  .rf__title {
+    font-size: var(--fs-lg);
+  }
+  .rf__lead {
+    margin: 0.4rem 0 0;
+    font-size: var(--fs-sm);
+    color: var(--steel);
+  }
+  .rf__lead a {
+    font-weight: 700;
+    color: var(--brand-deep);
+  }
+  .rf__grid {
+    display: grid;
+    gap: 0 1rem;
+  }
+  @media (min-width: 560px) {
+    .rf__grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .field em {
+    font-style: normal;
+    font-weight: 400;
+    color: var(--mist);
+  }
+  .rf__consent {
+    display: flex;
+    gap: 0.6rem;
+    align-items: flex-start;
+    font-size: var(--fs-sm);
+    color: var(--steel);
+    margin: 0.3rem 0 1.1rem;
+  }
+  .rf__consent input {
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+    accent-color: var(--brand);
+    flex: none;
+  }
+  .rf__consent a {
+    color: var(--brand-deep);
+    font-weight: 600;
+  }
+  .rf__send {
+    width: 100%;
+  }
+  .rf__alt {
+    margin: 0.85rem 0 0;
+    text-align: center;
+    font-size: var(--fs-sm);
+    color: var(--steel);
+  }
+  .rf__alt a {
+    color: var(--brand-deep);
+    font-weight: 600;
+  }
+  .rf__status {
+    margin: 0.6rem 0 0;
+    text-align: center;
+    font-size: var(--fs-sm);
+    color: var(--accent-deep);
+    min-height: 1.2em;
+  }
+  .rf__status.ok {
+    color: var(--wa-deep);
+  }
+</style>
+
+<script>
+  const form = document.getElementById('ariza-form') as HTMLFormElement | null;
+  if (form) {
+    const status = form.querySelector<HTMLElement>('[data-status]');
+    const say = (m: string, ok = false) => {
+      if (status) {
+        status.textContent = m;
+        status.classList.toggle('ok', ok);
+      }
+    };
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      say('');
+      form.querySelectorAll('.is-invalid').forEach((el) => el.classList.remove('is-invalid'));
+      const f = (n: string) => form.querySelector<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>(`[name="${n}"]`)!;
+      const v = (n: string) => f(n).value.trim();
+      const bad = (n: string, msg: string) => {
+        f(n).classList.add('is-invalid');
+        f(n).focus();
+        say(msg);
+      };
+      if (!v('device')) return bad('device', 'Cihaz türünü seçin.');
+      if (v('fault').length < 5) return bad('fault', 'Arızayı birkaç kelimeyle yazın.');
+      if (!v('city')) return bad('city', 'İl / ilçe bilgisini girin.');
+      if (!/^[0-9+()\s-]{10,20}$/.test(v('phone'))) return bad('phone', 'Geçerli bir telefon numarası girin.');
+      if (v('name').length < 3) return bad('name', 'Adınızı yazın.');
+      if (!(f('consent') as HTMLInputElement).checked) return say('Devam etmek için onay kutusunu işaretleyin.');
+      const lines = [
+        'Merhaba, arıza kaydı oluşturmak istiyorum.',
+        '',
+        `Cihaz: ${v('device')}`,
+        v('brand') ? `Marka: ${v('brand')}` : '',
+        `Arıza: ${v('fault')}`,
+        `İl/İlçe: ${v('city')}`,
+        '',
+        `Ad Soyad: ${v('name')}`,
+        `Telefon: ${v('phone')}`,
+      ].filter((l) => l !== '');
+      const url = `https://wa.me/${form.dataset.wa}?text=${encodeURIComponent(lines.join('\n'))}`;
+      window.open(url, '_blank', 'noopener');
+      say('Kaydınız hazırlandı. Açılan WhatsApp penceresinde Gönder’e basın.', true);
+      form.reset();
+    });
+  }
+</script>

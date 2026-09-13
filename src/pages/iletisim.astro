@@ -1,0 +1,99 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Icon from '@components/Icon.astro';
+import StatusScript from '@components/StatusScript.astro';
+import RequestForm from '@components/RequestForm.astro';
+import { site } from '@data/site';
+import { breadcrumbSchema } from '@utils/seo';
+const crumbs = [
+  { name: 'Ana sayfa', href: '/' },
+  { name: 'İletişim', href: '/iletisim' },
+];
+---
+
+<BaseLayout
+  title="İletişim | Servis Arıza Kayıt 0542 403 36 22"
+  rawTitle
+  description="Servis Arıza Kayıt iletişim: 0542 403 36 22, WhatsApp destek hattı, Türkiye geneli servis ağı, her gün 08:00–22:00. Arıza kaydınızı oluşturun, sizi arayalım."
+  keywords={['servis iletişim', 'beyaz eşya servisi telefon', 'teknik servis numarası']}
+  schema={[breadcrumbSchema(crumbs)]}
+>
+  <StatusScript />
+  <section class="section">
+    <div class="container ledger">
+      <div>
+        <ol class="crumbs">{crumbs.map((c, i) => <li>{i === crumbs.length - 1 ? <span>{c.name}</span> : <a href={c.href}>{c.name}</a>}</li>)}</ol>
+        <p class="eyebrow"><Icon name="headset" size={16} /> {site.area}</p>
+        <h1>Bize ulaşın</h1>
+        <p class="lead">Arıza kaydınızı telefonla, WhatsApp'tan ya da yandaki formla oluşturabilirsiniz. Telefonu doğrudan teknik ekip açar.</p>
+        <ul class="ways">
+          <li><Icon name="phone" size={20} /><div><strong>Telefon</strong><a href={site.phone.href} class="metric">{site.phone.display}</a></div></li>
+          <li><Icon name="whatsapp" size={20} /><div><strong>WhatsApp</strong><a href={site.whatsapp.href} target="_blank" rel="noopener">Fotoğraf ve kısa video gönderebilirsiniz</a></div></li>
+          <li><Icon name="clock" size={20} /><div><strong>Çalışma saatleri</strong><span data-status-text>{site.hours.daysText} {site.hours.display}</span></div></li>
+          <li><Icon name="truck" size={20} /><div><strong>Hizmet bölgesi</strong><span>{site.area} — bulunduğunuz ili kayıtta belirtin</span></div></li>
+        </ul>
+        <p class="disc"><Icon name="alert-triangle" size={16} /> {site.disclaimer}</p>
+      </div>
+      <div class="ledger__rail"><RequestForm /></div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  h1 {
+    margin-bottom: 0.75rem;
+  }
+  .ways {
+    display: grid;
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+  .ways li {
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    gap: 0.85rem;
+    align-items: start;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .ways svg {
+    color: var(--brand-deep);
+    margin-top: 3px;
+  }
+  .ways div {
+    display: grid;
+    gap: 0.15rem;
+  }
+  .ways strong {
+    font-size: var(--fs-sm);
+    color: var(--steel);
+    font-weight: 600;
+  }
+  .ways a,
+  .ways span {
+    font-weight: 600;
+  }
+  .ways a {
+    color: var(--brand-deep);
+  }
+  .ways .metric {
+    font-size: 1.3rem;
+  }
+  .disc {
+    display: flex;
+    gap: 0.6rem;
+    align-items: flex-start;
+    margin: 0.5rem 0 0;
+    padding: 0.9rem 1.05rem;
+    border-radius: var(--r);
+    background: var(--fog);
+    color: var(--steel);
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+  .disc svg {
+    flex: none;
+    margin-top: 2px;
+    color: var(--accent);
+  }
+</style>

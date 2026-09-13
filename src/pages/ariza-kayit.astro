@@ -1,0 +1,130 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Icon from '@components/Icon.astro';
+import StatusScript from '@components/StatusScript.astro';
+import RequestForm from '@components/RequestForm.astro';
+import { site, steps } from '@data/site';
+import { breadcrumbSchema } from '@utils/seo';
+const crumbs = [
+  { name: 'Ana sayfa', href: '/' },
+  { name: 'Arıza Kaydı', href: '/ariza-kayit' },
+];
+---
+
+<BaseLayout
+  title="Arıza Kaydı Oluştur | Beyaz Eşya Servisi | Servis Arıza Kayıt"
+  rawTitle
+  description="Beyaz eşya ya da iklimlendirme cihazınızda arıza mı var? Cihaz, marka ve şikâyeti girin, WhatsApp üzerinden kaydınızı alalım, en yakın teknisyen sizi arasın. 0542 403 36 22."
+  keywords={['arıza kaydı', 'beyaz eşya servisi çağır', 'teknik servis talebi', 'buzdolabı arıza', 'çamaşır makinesi arıza']}
+  schema={[breadcrumbSchema(crumbs)]}
+>
+  <StatusScript />
+  <section class="section">
+    <div class="container ledger">
+      <div>
+        <ol class="crumbs">{crumbs.map((c, i) => <li>{i === crumbs.length - 1 ? <span>{c.name}</span> : <a href={c.href}>{c.name}</a>}</li>)}</ol>
+        <p class="eyebrow"><Icon name="clipboard-list" size={16} /> Ücretsiz kayıt</p>
+        <h1>Arızanızı kaydedin, biz sizi arayalım</h1>
+        <p class="lead">Formu doldurmak bir dakikanızı almaz. Bilgiler WhatsApp'a düşer; en yakın bölge teknisyenimiz kısa sürede sizi arayıp uygun randevu saatini verir.</p>
+
+        <ol class="mini">
+          {steps.map((s, i) => <li><span class="mini__n metric">{i + 1}</span> <span><strong>{s.title}.</strong> {s.text}</span></li>)}
+        </ol>
+
+        <div class="ways">
+          <a href={site.phone.href} class="ways__item"><Icon name="phone" size={20} /><span><small>Telefonla</small><strong class="metric">{site.phone.display}</strong></span></a>
+          <a href={site.whatsapp.href} target="_blank" rel="noopener" class="ways__item"><Icon name="whatsapp" size={20} /><span><small>WhatsApp</small><strong>Hemen yazın</strong></span></a>
+        </div>
+        <p class="disc"><Icon name="alert-triangle" size={16} /> {site.disclaimer}</p>
+      </div>
+      <div class="ledger__rail"><RequestForm title="Servis / arıza kaydı" /></div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  h1 {
+    margin-bottom: 0.75rem;
+  }
+  .mini {
+    display: grid;
+    gap: 0.85rem;
+    margin: 1.75rem 0;
+  }
+  .mini li {
+    display: flex;
+    gap: 0.85rem;
+    align-items: flex-start;
+    color: var(--ink-2);
+  }
+  .mini__n {
+    display: grid;
+    place-items: center;
+    flex: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--brand-tint);
+    color: var(--brand-deep);
+    font-size: 0.95rem;
+  }
+  .mini strong {
+    color: var(--ink);
+  }
+  .ways {
+    display: grid;
+    gap: 0.85rem;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 1.5rem;
+  }
+  @media (max-width: 480px) {
+    .ways {
+      grid-template-columns: 1fr;
+    }
+  }
+  .ways__item {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.9rem 1.1rem;
+    border: 1.5px solid var(--line);
+    border-radius: var(--r);
+    background: var(--paper);
+    transition: border-color var(--dur);
+  }
+  .ways__item:hover {
+    border-color: var(--brand);
+  }
+  .ways__item svg {
+    color: var(--brand-deep);
+    flex: none;
+  }
+  .ways__item span {
+    display: grid;
+    line-height: 1.15;
+  }
+  .ways__item small {
+    font-size: 0.8rem;
+    color: var(--steel);
+  }
+  .ways__item strong {
+    font-size: 1.05rem;
+  }
+  .disc {
+    display: flex;
+    gap: 0.6rem;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0.9rem 1.05rem;
+    border-radius: var(--r);
+    background: var(--fog);
+    color: var(--steel);
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+  .disc svg {
+    flex: none;
+    margin-top: 2px;
+    color: var(--accent);
+  }
+</style>

@@ -1,0 +1,122 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Icon from '@components/Icon.astro';
+import { posts } from '@data/blog';
+import { devices } from '@data/site';
+import { breadcrumbSchema } from '@utils/seo';
+const crumbs = [
+  { name: 'Ana sayfa', href: '/' },
+  { name: 'Bilgi Merkezi', href: '/blog' },
+];
+const iconFor = (slug: string) => devices.find((d) => d.slug === slug)?.icon ?? 'file-text';
+const sorted = [...posts].sort((a, b) => b.date.localeCompare(a.date));
+---
+
+<BaseLayout
+  title="Bilgi Merkezi | Beyaz Eşya Arıza Rehberi | Servis Arıza Kayıt"
+  rawTitle
+  description="Çamaşır makinesi su almıyor, buzdolabı soğutmuyor, kombi basıncı düşüyor mu? Beyaz eşya ve iklimlendirme arızalarında ne yapmanız gerektiğini anlatan pratik rehberler."
+  keywords={['beyaz eşya arıza rehberi', 'çamaşır makinesi arıza', 'buzdolabı soğutmuyor', 'klima bakımı', 'kombi basınç']}
+  schema={[breadcrumbSchema(crumbs)]}
+>
+  <section class="dark bhead">
+    <div class="container">
+      <ol class="crumbs">{crumbs.map((c, i) => <li>{i === crumbs.length - 1 ? <span>{c.name}</span> : <a href={c.href}>{c.name}</a>}</li>)}</ol>
+      <p class="eyebrow"><Icon name="file-text" size={16} /> Bilgi merkezi</p>
+      <h1>Arızayı anlayın, doğru adımı atın</h1>
+      <p class="lead">Servisi çağırmadan önce evde güvenle kontrol edebileceğiniz noktalar ve arızaların olası nedenleri. Sade, doğru bilgi.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <ul class="posts">
+        {
+          sorted.map((p) => (
+            <li>
+              <a href={`/blog/${p.slug}`} class="pcard">
+                <span class="pcard__ic"><Icon name={iconFor(p.device)} size={24} strokeWidth={1.5} /></span>
+                <span class="pcard__body">
+                  <h2 class="pcard__title">{p.title}</h2>
+                  <p class="pcard__ex">{p.excerpt}</p>
+                  <span class="pcard__meta"><Icon name="clock" size={14} /> {p.readMinutes} dk okuma</span>
+                </span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .bhead {
+    padding-block: clamp(2rem, 4vw, 3.25rem);
+  }
+  .bhead .crumbs {
+    color: var(--on-dark-dim);
+    margin-bottom: 1.25rem;
+  }
+  .bhead .crumbs a:hover {
+    color: #fff;
+  }
+  .bhead h1 {
+    max-width: 20ch;
+    margin-bottom: 0.75rem;
+  }
+  .posts {
+    display: grid;
+    gap: 1rem;
+  }
+  @media (min-width: 720px) {
+    .posts {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .pcard {
+    display: flex;
+    gap: 1rem;
+    height: 100%;
+    padding: 1.35rem;
+    border: 1.5px solid var(--line);
+    border-radius: var(--r-lg);
+    background: var(--paper);
+    transition: transform var(--dur) var(--ease), border-color var(--dur), box-shadow var(--dur);
+  }
+  .pcard:hover {
+    transform: translateY(-3px);
+    border-color: var(--brand);
+    box-shadow: var(--shadow);
+  }
+  .pcard__ic {
+    flex: none;
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 13px;
+    background: var(--brand-tint);
+    color: var(--brand-deep);
+  }
+  .pcard__title {
+    font-size: var(--fs-md);
+    margin-bottom: 0.3rem;
+  }
+  .pcard:hover .pcard__title {
+    color: var(--brand-deep);
+  }
+  .pcard__ex {
+    margin: 0 0 0.6rem;
+    color: var(--steel);
+    font-size: var(--fs-sm);
+    line-height: 1.5;
+  }
+  .pcard__meta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.85rem;
+    color: var(--mist);
+  }
+</style>

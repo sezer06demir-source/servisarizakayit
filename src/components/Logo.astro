@@ -1,0 +1,56 @@
+---
+/** Marka logosu: teal yuvarlak rozet içinde onay/tik + dalga, yanında iki satır ad. */
+interface Props {
+  dark?: boolean;
+}
+const { dark = false } = Astro.props;
+---
+
+<span class:list={['logo', { 'logo--dark': dark }]}>
+  <span class="logo__mark" aria-hidden="true">
+    <svg width="34" height="34" viewBox="0 0 40 40" fill="none">
+      <rect width="40" height="40" rx="11" fill="currentColor" />
+      <path d="M12 21.5l4.2 4.2L28 14" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </span>
+  <span class="logo__txt">
+    <strong>Servis Arıza Kayıt</strong>
+    <small>Beyaz Eşya & İklimlendirme</small>
+  </span>
+</span>
+
+<style>
+  .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  .logo__mark {
+    color: var(--brand);
+    display: grid;
+    place-items: center;
+    flex: none;
+  }
+  .logo__txt {
+    display: grid;
+    line-height: 1.05;
+  }
+  .logo__txt strong {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: 1.02rem;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+  }
+  .logo__txt small {
+    font-size: 0.78rem;
+    color: var(--steel);
+    letter-spacing: 0.01em;
+  }
+  .logo--dark .logo__txt strong {
+    color: #fff;
+  }
+  .logo--dark .logo__txt small {
+    color: var(--on-dark-dim);
+  }
+</style>

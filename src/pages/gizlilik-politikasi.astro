@@ -1,0 +1,36 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import { site } from '@data/site';
+import { breadcrumbSchema } from '@utils/seo';
+const crumbs = [
+  { name: 'Ana sayfa', href: '/' },
+  { name: 'Gizlilik Politikası', href: '/gizlilik-politikasi' },
+];
+---
+
+<BaseLayout title="Gizlilik Politikası" description="Servis Arıza Kayıt web sitesinde hangi bilgilerin toplandığı, nasıl kullanıldığı ve korunduğu." schema={[breadcrumbSchema(crumbs)]}>
+  <section class="section">
+    <div class="container prose legal">
+      <ol class="crumbs">{crumbs.map((c, i) => <li>{i === crumbs.length - 1 ? <span>{c.name}</span> : <a href={c.href}>{c.name}</a>}</li>)}</ol>
+      <h1>Gizlilik Politikası</h1>
+      <p>{site.name} olarak topladığımız bilgiyi en azda tutarız. Sitede üyelik, hesap ya da ödeme yoktur.</p>
+      <h2>Toplanan bilgiler</h2>
+      <p>Arıza kayıt formunu doldurduğunuzda ya da bize ulaştığınızda paylaştığınız ad, telefon, il/ilçe, cihaz ve arıza açıklaması yalnızca talebinizi karşılamak, sizi aramak ve servisi planlamak için kullanılır. Form verileri sunucumuza kaydedilmez; tarayıcınızda bir WhatsApp mesajına dönüştürülür ve ancak siz gönderdiğinizde bize ulaşır.</p>
+      <h2>Teknik veriler</h2>
+      <p>Siteyi ziyaret ettiğinizde güvenlik altyapımız (barındırma ve içerik dağıtım sağlayıcıları) IP adresi, tarayıcı türü ve erişim zamanı gibi teknik verileri sunucu günlüklerinde kısa süreli tutabilir. Bu veriler yalnızca kötüye kullanımı ve bot trafiğini önlemek için işlenir.</p>
+      <h2>Çerezler</h2>
+      <p>Site reklam ya da takip çerezi kullanmaz. Yalnızca güvenlik doğrulaması ve sitenin çalışması için gerekli teknik çerezler kullanılabilir.</p>
+      <h2>Üçüncü taraflar</h2>
+      <p>Telefon ve WhatsApp bağlantıları sizi ilgili uygulamaya yönlendirir; bu uygulamaların kendi gizlilik koşulları geçerlidir.</p>
+      <h2>İletişim</h2>
+      <p>Sorularınız için {site.phone.display} numarasını arayabilirsiniz. Bu politika gerektiğinde güncellenir.</p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .legal h2 {
+    font-size: var(--fs-lg);
+    margin: 1.75rem 0 0.5rem;
+  }
+</style>

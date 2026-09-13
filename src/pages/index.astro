@@ -1,0 +1,420 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Icon from '@components/Icon.astro';
+import StatusScript from '@components/StatusScript.astro';
+import Reviews from '@components/Reviews.astro';
+import RequestForm from '@components/RequestForm.astro';
+import { site, devices, steps, stats, faq, reviews } from '@data/site';
+import { faqSchema, reviewSchema, serviceSchema } from '@utils/seo';
+---
+
+<BaseLayout
+  title="Beyaz Eşya Servisi | Türkiye Geneli Arıza Kayıt | Servis Arıza Kayıt"
+  rawTitle
+  description={site.description}
+  keywords={['beyaz eşya servisi', 'buzdolabı tamiri', 'çamaşır makinesi servisi', 'klima servisi', 'kombi servisi', 'arıza kayıt', 'Türkiye geneli teknik servis']}
+  schema={[serviceSchema({ name: 'Beyaz Eşya ve İklimlendirme Teknik Servisi', description: site.description, path: '/' }), reviewSchema([...reviews]), faqSchema([...faq])]}
+>
+  <StatusScript />
+
+  <!-- HERO -->
+  <section class="hero dark">
+    <div class="container hero__in">
+      <div class="hero__main">
+        <p class="hero__badge reveal"><span class="dot" data-status-dot></span><span data-status-text>{site.hours.daysText}</span></p>
+        <h1 class="hero__title reveal" style="animation-delay:.05s">
+          Beyaz eşyanız bozuldu mu?<br /><span class="hero__hl">Arızayı kaydedin, biz sizi arayalım.</span>
+        </h1>
+        <p class="hero__lead reveal" style="animation-delay:.12s">
+          Buzdolabı, çamaşır ve bulaşık makinesi, klima, kombi, televizyon ve ankastre cihazlarda Türkiye geneli servis ağı. Marka
+          bağımsız çalışıyor, ücreti işlem öncesi söylüyor, yaptığımız işe garanti veriyoruz.
+        </p>
+        <div class="hero__cta reveal" style="animation-delay:.18s">
+          <a href="/ariza-kayit" class="btn btn--accent"><Icon name="clipboard-list" size={20} /> Arıza Kaydı Oluştur</a>
+          <a href={site.whatsapp.href} target="_blank" rel="noopener" class="btn btn--ghost-light"><Icon name="whatsapp" size={20} /> WhatsApp'tan yaz</a>
+        </div>
+        <ul class="hero__stats reveal" style="animation-delay:.24s" data-counters>
+          {stats.map((s) => <li><strong class="metric" data-count={s.value}>{s.value}</strong><span>{s.label}</span></li>)}
+        </ul>
+      </div>
+      <div class="hero__card reveal" style="animation-delay:.14s">
+        <div class="minicard">
+          <span class="minicard__row"><Icon name="headset" size={18} /> Telefonu teknisyen açar</span>
+          <span class="minicard__row"><Icon name="truck" size={18} /> En yakın ekip yönlendirilir</span>
+          <span class="minicard__row"><Icon name="banknote" size={18} /> Fiyat işlem öncesi bellidir</span>
+          <span class="minicard__row"><Icon name="shield-check" size={18} /> Parça ve işçilik garantili</span>
+          <a href={site.phone.href} class="minicard__phone metric">{site.phone.display}</a>
+          <span class="minicard__note">Hafta içi, hafta sonu · {site.hours.display}</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CİHAZLAR -->
+  <section class="section" id="cihazlar" aria-labelledby="dev-title">
+    <div class="container">
+      <div class="head">
+        <p class="eyebrow"><Icon name="wrench" size={16} /> Servis verdiğimiz cihazlar</p>
+        <h2 id="dev-title">9 cihaz türü, tek numara</h2>
+        <p class="lead">Cihazınıza tıklayın, en sık gelen arızaları ve servis sürecini görün. Listede olmayan bir cihaz için de arayın.</p>
+      </div>
+      <ul class="devgrid">
+        {
+          devices.map((d) => (
+            <li>
+              <a href={`/servis/${d.slug}`} class="devcard">
+                <span class="devcard__ic"><Icon name={d.icon} size={26} strokeWidth={1.6} /></span>
+                <span class="devcard__name">{d.name}</span>
+                <span class="devcard__blurb">{d.blurb}</span>
+                <span class="devcard__go">Servis detayı <Icon name="arrow-right" size={16} /></span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <!-- SÜREÇ -->
+  <section class="section section--fog" id="surec" aria-labelledby="proc-title">
+    <div class="container">
+      <div class="head">
+        <p class="eyebrow"><Icon name="clipboard-list" size={16} /> Servis süreci</p>
+        <h2 id="proc-title">Kayıttan garantiye dört adım</h2>
+        <p class="lead">Karmaşık değil. Arızayı bildirin, gerisini biz takip edelim.</p>
+      </div>
+      <ol class="steps">
+        {
+          steps.map((s, i) => (
+            <li class="stepcard">
+              <span class="stepcard__n metric">{String(i + 1).padStart(2, '0')}</span>
+              <h3>{s.title}</h3>
+              <p>{s.text}</p>
+            </li>
+          ))
+        }
+      </ol>
+      <p class="steps__cta"><a href="/ariza-kayit" class="btn btn--brand"><Icon name="send" size={18} /> Şimdi arıza kaydı oluştur</a></p>
+    </div>
+  </section>
+
+  <!-- YORUMLAR -->
+  <Reviews />
+
+  <!-- FORM + SSS -->
+  <section class="section section--fog" aria-labelledby="form-title">
+    <div class="container ledger">
+      <div>
+        <div class="head">
+          <p class="eyebrow"><Icon name="message-circle" size={16} /> Sık sorulanlar</p>
+          <h2 id="form-title">Merak edilenler</h2>
+        </div>
+        <div class="faq">
+          {
+            faq.map((f) => (
+              <details>
+                <summary>{f.q}</summary>
+                <p>{f.a}</p>
+              </details>
+            ))
+          }
+        </div>
+        <p class="disc"><Icon name="alert-triangle" size={16} /> {site.disclaimer}</p>
+      </div>
+      <div class="ledger__rail">
+        <RequestForm />
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  // Sayaç animasyonu — sayı içeren istatistikler görünür olunca artar.
+  const box = document.querySelector('[data-counters]');
+  if (box && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (!e.isIntersecting) return;
+        io.disconnect();
+        box.querySelectorAll<HTMLElement>('[data-count]').forEach((el) => {
+          const raw = el.dataset.count || '';
+          const num = parseInt(raw, 10);
+          if (Number.isNaN(num) || raw.includes('–')) return;
+          const dur = 1100;
+          const t0 = performance.now();
+          const tick = (t: number) => {
+            const p = Math.min(1, (t - t0) / dur);
+            el.textContent = String(Math.round(num * (1 - Math.pow(1 - p, 3))));
+            if (p < 1) requestAnimationFrame(tick);
+            else el.textContent = raw;
+          };
+          requestAnimationFrame(tick);
+        });
+      });
+    }, { threshold: 0.4 });
+    io.observe(box);
+  }
+</script>
+
+<style>
+  /* HERO */
+  .hero {
+    position: relative;
+    overflow: hidden;
+    padding-block: clamp(2.5rem, 6vw, 4.5rem);
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background:
+      radial-gradient(60% 55% at 82% 8%, rgba(14, 165, 160, 0.28), transparent 62%),
+      radial-gradient(45% 45% at 12% 100%, rgba(255, 122, 26, 0.16), transparent 60%);
+    pointer-events: none;
+  }
+  .hero__in {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    gap: clamp(2rem, 4vw, 3.5rem);
+    align-items: center;
+  }
+  @media (min-width: 940px) {
+    .hero__in {
+      grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+    }
+  }
+  .hero__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.15rem;
+    margin: 0 0 1.1rem;
+    padding: 0.4rem 0.9rem 0.4rem 0.75rem;
+    border: 1px solid var(--dark-line);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.05);
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    color: var(--on-dark);
+  }
+  .hero__title {
+    font-size: var(--fs-hero);
+    color: #fff;
+    margin-bottom: 1.15rem;
+  }
+  .hero__hl {
+    color: var(--brand);
+  }
+  .hero__lead {
+    color: var(--on-dark);
+    max-width: 54ch;
+    margin-bottom: 1.75rem;
+  }
+  .hero__cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+  }
+  .hero__stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--dark-line);
+  }
+  .hero__stats li {
+    display: grid;
+    gap: 0.1rem;
+  }
+  .hero__stats strong {
+    font-size: 2rem;
+    color: #fff;
+  }
+  .hero__stats span {
+    font-size: var(--fs-sm);
+    color: var(--on-dark-dim);
+  }
+  .minicard {
+    display: grid;
+    gap: 0.7rem;
+    padding: 1.5rem;
+    border: 1px solid var(--dark-line);
+    border-radius: var(--r-xl);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.02));
+    backdrop-filter: blur(6px);
+  }
+  .minicard__row {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-weight: 500;
+    color: var(--on-dark);
+    font-size: 0.95rem;
+  }
+  .minicard__row svg {
+    color: var(--brand);
+    flex: none;
+  }
+  .minicard__phone {
+    margin-top: 0.4rem;
+    font-size: 1.7rem;
+    color: #fff;
+    padding-top: 0.85rem;
+    border-top: 1px solid var(--dark-line);
+  }
+  .minicard__phone:hover {
+    color: var(--brand);
+  }
+  .minicard__note {
+    font-size: var(--fs-sm);
+    color: var(--on-dark-dim);
+  }
+
+  /* CİHAZLAR */
+  .devgrid {
+    display: grid;
+    gap: 0.85rem;
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 560px) {
+    .devgrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (min-width: 900px) {
+    .devgrid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  .devcard {
+    display: grid;
+    gap: 0.35rem;
+    height: 100%;
+    padding: 1.35rem;
+    border: 1.5px solid var(--line);
+    border-radius: var(--r-lg);
+    background: var(--paper);
+    transition: transform var(--dur) var(--ease), border-color var(--dur), box-shadow var(--dur);
+  }
+  .devcard:hover {
+    transform: translateY(-4px);
+    border-color: var(--brand);
+    box-shadow: var(--shadow);
+  }
+  .devcard__ic {
+    display: grid;
+    place-items: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background: var(--brand-tint);
+    color: var(--brand-deep);
+    margin-bottom: 0.35rem;
+    transition: transform var(--dur) var(--ease);
+  }
+  .devcard:hover .devcard__ic {
+    transform: scale(1.06) rotate(-3deg);
+  }
+  .devcard__name {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: var(--fs-md);
+  }
+  .devcard__blurb {
+    color: var(--steel);
+    font-size: var(--fs-sm);
+    line-height: 1.5;
+  }
+  .devcard__go {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin-top: 0.4rem;
+    font-weight: 600;
+    font-size: var(--fs-sm);
+    color: var(--brand-deep);
+  }
+  .devcard__go svg {
+    transition: transform var(--dur) var(--ease);
+  }
+  .devcard:hover .devcard__go svg {
+    transform: translateX(3px);
+  }
+
+  /* SÜREÇ */
+  .steps {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    counter-reset: none;
+  }
+  @media (min-width: 640px) {
+    .steps {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (min-width: 980px) {
+    .steps {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  .stepcard {
+    position: relative;
+    padding: 1.5rem 1.35rem;
+    background: var(--paper);
+    border: 1.5px solid var(--line);
+    border-radius: var(--r-lg);
+    overflow: hidden;
+  }
+  .stepcard::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--brand), var(--accent));
+  }
+  .stepcard__n {
+    display: block;
+    font-size: 1.6rem;
+    color: var(--brand);
+    margin-bottom: 0.5rem;
+  }
+  .stepcard h3 {
+    font-size: var(--fs-base);
+    margin-bottom: 0.35rem;
+  }
+  .stepcard p {
+    margin: 0;
+    color: var(--steel);
+    font-size: var(--fs-sm);
+    line-height: 1.55;
+  }
+  .steps__cta {
+    margin: 1.75rem 0 0;
+    text-align: center;
+  }
+
+  /* DISCLAIMER + FAQ kolon */
+  .disc {
+    display: flex;
+    gap: 0.6rem;
+    align-items: flex-start;
+    margin: 1.75rem 0 0;
+    padding: 0.9rem 1.05rem;
+    border-radius: var(--r);
+    background: var(--paper);
+    border: 1px solid var(--line);
+    color: var(--steel);
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+  .disc svg {
+    flex: none;
+    margin-top: 2px;
+    color: var(--accent);
+  }
+</style>

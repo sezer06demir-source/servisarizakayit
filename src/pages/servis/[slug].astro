@@ -1,0 +1,240 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Icon from '@components/Icon.astro';
+import StatusScript from '@components/StatusScript.astro';
+import RequestForm from '@components/RequestForm.astro';
+import { site, devices } from '@data/site';
+import { deviceDetails } from '@data/device-details';
+import { breadcrumbSchema, faqSchema, serviceSchema } from '@utils/seo';
+
+export function getStaticPaths() {
+  return devices.map((d) => ({ params: { slug: d.slug }, props: { device: d } }));
+}
+const { device } = Astro.props;
+const detail = deviceDetails.find((x) => x.slug === device.slug);
+const path = `/servis/${device.slug}`;
+const crumbs = [
+  { name: 'Ana sayfa', href: '/' },
+  { name: 'Cihazlar', href: '/#cihazlar' },
+  { name: device.name, href: path },
+];
+const others = devices.filter((d) => d.slug !== device.slug);
+const desc = detail?.seoDescription ?? device.blurb;
+---
+
+<BaseLayout
+  title={detail?.seoTitle ?? `${device.name} Servisi`}
+  rawTitle={Boolean(detail?.seoTitle)}
+  description={desc}
+  keywords={detail?.keywords}
+  schema={[breadcrumbSchema(crumbs), serviceSchema({ name: `${device.name} Servisi`, description: desc, path }), ...(detail ? [faqSchema(detail.faq)] : [])]}
+>
+  <StatusScript />
+
+  <section class="dhead dark">
+    <div class="container">
+      <ol class="crumbs">{crumbs.map((c, i) => <li>{i === crumbs.length - 1 ? <span>{c.name}</span> : <a href={c.href}>{c.name}</a>}</li>)}</ol>
+      <div class="dhead__in">
+        <div>
+          <p class="eyebrow"><Icon name="wrench" size={16} /> Türkiye geneli teknik servis</p>
+          <h1>{device.name} Servisi</h1>
+          <p class="lead">{device.blurb}</p>
+          <div class="dhead__cta">
+            <a href="/ariza-kayit" class="btn btn--accent"><Icon name="clipboard-list" size={18} /> Arıza Kaydı</a>
+            <a href={site.phone.href} class="btn btn--ghost-light"><Icon name="phone" size={18} /> {site.phone.display}</a>
+          </div>
+        </div>
+        <span class="dhead__ic" aria-hidden="true"><Icon name={device.icon} size={72} strokeWidth={1.3} /></span>
+      </div>
+    </div>
+  </section>
+
+  <article class="section">
+    <div class="container ledger">
+      <div class="body">
+        {detail && <div class="prose">{detail.intro.map((p) => <p>{p}</p>)}</div>}
+
+        <section aria-labelledby="belirti">
+          <h2 id="belirti" class="h">Sık gelen {device.name.toLocaleLowerCase('tr')} arızaları</h2>
+          <ul class="symp">
+            {(detail?.causes ?? device.symptoms.map((s) => ({ symptom: s, cause: '' }))).map((c) => (
+              <li>
+                <span class="symp__s"><Icon name="alert-triangle" size={16} /> {c.symptom}</span>
+                {c.cause && <span class="symp__c">{c.cause}</span>}
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        {
+          detail?.tips?.length && (
+            <section aria-labelledby="ipucu" class="tips">
+              <h2 id="ipucu" class="h">Servisi çağırmadan önce</h2>
+              <ol class="tips__list">{detail.tips.map((t) => <li>{t}</li>)}</ol>
+              <p class="tips__warn"><Icon name="shield-check" size={16} /> Cihazın içini açmayın, elektrik ve gaz bağlantılarına müdahale etmeyin. Güvenli tespiti bize bırakın.</p>
+            </section>
+          )
+        }
+
+        <section aria-labelledby="surec">
+          <h2 id="surec" class="h">{device.name} için servis süreci</h2>
+          <p class="proc">{detail?.process ?? 'Arıza kaydınızı alırız, en yakın teknisyen sizi arar, yerinde tespit sonrası ücreti söyler ve onayınızla onarımı yapıp garanti belgesi bırakırız.'}</p>
+        </section>
+
+        {
+          detail?.faq?.length && (
+            <section aria-labelledby="sss">
+              <h2 id="sss" class="h">{device.name} servisi hakkında sorular</h2>
+              <div class="faq">{detail.faq.map((f) => <details><summary>{f.q}</summary><p>{f.a}</p></details>)}</div>
+            </section>
+          )
+        }
+
+        <section aria-labelledby="diger" class="other">
+          <h2 id="diger" class="h">Diğer cihazlar</h2>
+          <ul class="tags">{others.map((o) => <li><a class="tag" href={`/servis/${o.slug}`}><Icon name={o.icon} size={15} /> {o.name}</a></li>)}</ul>
+        </section>
+
+        <p class="disc"><Icon name="alert-triangle" size={16} /> {site.disclaimer}</p>
+      </div>
+      <div class="ledger__rail">
+        <RequestForm title={`${device.name} arıza kaydı`} presetDevice={device.slug} />
+      </div>
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .dhead {
+    padding-block: clamp(1.75rem, 4vw, 3rem);
+  }
+  .dhead .crumbs {
+    color: var(--on-dark-dim);
+    margin-bottom: 1.25rem;
+  }
+  .dhead .crumbs a:hover {
+    color: #fff;
+  }
+  .dhead__in {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+  .dhead h1 {
+    max-width: 18ch;
+    margin-bottom: 0.75rem;
+  }
+  .dhead__cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    margin-top: 1.5rem;
+  }
+  .dhead__ic {
+    flex: none;
+    display: grid;
+    place-items: center;
+    width: 128px;
+    height: 128px;
+    border-radius: var(--r-xl);
+    background: rgba(14, 165, 160, 0.14);
+    border: 1px solid var(--dark-line);
+    color: var(--brand);
+  }
+  @media (max-width: 719px) {
+    .dhead__ic {
+      display: none;
+    }
+  }
+  .h {
+    font-size: var(--fs-lg);
+    margin: 2.25rem 0 0.85rem;
+  }
+  .body > .prose:first-child {
+    font-size: var(--fs-md);
+  }
+  .symp {
+    display: grid;
+    gap: 0.75rem;
+  }
+  @media (min-width: 620px) {
+    .symp {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .symp li {
+    padding: 0.9rem 1.05rem;
+    border: 1.5px solid var(--line);
+    border-radius: var(--r);
+    background: var(--paper);
+  }
+  .symp__s {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+  }
+  .symp__s svg {
+    color: var(--accent);
+    flex: none;
+  }
+  .symp__c {
+    display: block;
+    margin-top: 0.3rem;
+    color: var(--steel);
+    font-size: var(--fs-sm);
+    line-height: 1.5;
+  }
+  .tips {
+    margin-top: 0.5rem;
+  }
+  .tips__list {
+    display: grid;
+    gap: 0.55rem;
+    list-style: decimal;
+    padding-left: 1.3rem;
+    color: var(--ink-2);
+  }
+  .tips__warn {
+    display: flex;
+    gap: 0.55rem;
+    align-items: flex-start;
+    margin: 1rem 0 0;
+    padding: 0.85rem 1rem;
+    border-left: 4px solid var(--brand);
+    border-radius: 0 var(--r) var(--r) 0;
+    background: var(--brand-tint);
+    color: var(--brand-deep);
+    font-size: var(--fs-sm);
+  }
+  .tips__warn svg {
+    flex: none;
+    margin-top: 2px;
+  }
+  .proc {
+    color: var(--ink-2);
+    max-width: 70ch;
+    margin: 0;
+  }
+  .other {
+    margin-top: 0.5rem;
+  }
+  .disc {
+    display: flex;
+    gap: 0.6rem;
+    align-items: flex-start;
+    margin: 2.25rem 0 0;
+    padding: 0.9rem 1.05rem;
+    border-radius: var(--r);
+    background: var(--fog);
+    color: var(--steel);
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+  .disc svg {
+    flex: none;
+    margin-top: 2px;
+    color: var(--accent);
+  }
+</style>

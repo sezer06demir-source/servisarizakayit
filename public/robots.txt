@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# SEO analiz / scraper araçları
+User-agent: AhrefsBot
+User-agent: SemrushBot
+User-agent: MJ12bot
+User-agent: DotBot
+User-agent: BLEXBot
+User-agent: DataForSeoBot
+User-agent: PetalBot
+Disallow: /
+
+# Yapay zeka veri toplayıcıları
+User-agent: GPTBot
+User-agent: CCBot
+User-agent: ClaudeBot
+User-agent: Bytespider
+Disallow: /
+
+Sitemap: https://www.servisarizakayit.online/sitemap-index.xml

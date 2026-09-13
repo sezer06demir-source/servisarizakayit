@@ -1,0 +1,23 @@
+---
+import { site } from '@data/site';
+const open = Number(site.hours.opens.split(':')[0]);
+const close = Number(site.hours.closes.split(':')[0]);
+---
+
+<script is:inline define:vars={{ open, close, display: site.hours.display, days: site.hours.daysText }}>
+  (function () {
+    function paint() {
+      var h = new Date().getHours() + new Date().getMinutes() / 60;
+      var isOpen = h >= open && h < close;
+      document.querySelectorAll('[data-status-dot]').forEach(function (el) {
+        el.classList.toggle('is-open', isOpen);
+        el.classList.toggle('is-closed', !isOpen);
+      });
+      document.querySelectorAll('[data-status-text]').forEach(function (el) {
+        el.textContent = isOpen ? 'Şu an açığız · ' + display : 'Şu an kapalıyız · yarın ' + String(open).padStart(2, '0') + ':00';
+      });
+    }
+    paint();
+    setInterval(paint, 60000);
+  })();
+</script>

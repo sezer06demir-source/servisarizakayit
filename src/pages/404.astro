@@ -1,0 +1,60 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Icon from '@components/Icon.astro';
+import { site, devices } from '@data/site';
+---
+
+<BaseLayout title="Sayfa bulunamadı" description="Aradığınız sayfa yok. Arıza kaydı oluşturun ya da ana sayfaya dönün." noindex>
+  <section class="section nf">
+    <div class="container">
+      <p class="nf__code metric">404</p>
+      <h1>Bu sayfa bulunamadı</h1>
+      <p class="lead">Bağlantı eski ya da hatalı olabilir. Cihazınızda arıza varsa doğrudan kayıt oluşturun.</p>
+      <div class="nf__cta">
+        <a href="/ariza-kayit" class="btn btn--accent"><Icon name="clipboard-list" size={18} /> Arıza Kaydı</a>
+        <a href="/" class="btn btn--line">Ana sayfa</a>
+        <a href={site.phone.href} class="btn btn--line"><Icon name="phone" size={18} /> {site.phone.display}</a>
+      </div>
+      <ul class="nf__dev">
+        {devices.slice(0, 6).map((d) => <li><a href={`/servis/${d.slug}`}><Icon name={d.icon} size={16} /> {d.name}</a></li>)}
+      </ul>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .nf__code {
+    font-size: 4.5rem;
+    color: var(--brand);
+    line-height: 1;
+    margin: 0 0 0.5rem;
+  }
+  .nf h1 {
+    margin-bottom: 0.6rem;
+  }
+  .nf__cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    margin: 1.5rem 0 2rem;
+  }
+  .nf__dev {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .nf__dev a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.4rem 0.85rem;
+    border: 1.5px solid var(--line);
+    border-radius: 999px;
+    font-size: var(--fs-sm);
+    font-weight: 500;
+  }
+  .nf__dev a:hover {
+    border-color: var(--brand);
+    color: var(--brand-deep);
+  }
+</style>

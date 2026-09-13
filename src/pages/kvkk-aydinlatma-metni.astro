@@ -1,0 +1,44 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import { site } from '@data/site';
+import { breadcrumbSchema } from '@utils/seo';
+const crumbs = [
+  { name: 'Ana sayfa', href: '/' },
+  { name: 'KVKK Aydınlatma Metni', href: '/kvkk-aydinlatma-metni' },
+];
+---
+
+<BaseLayout title="KVKK Aydınlatma Metni" description="Servis Arıza Kayıt kişisel verilerin korunması aydınlatma metni: hangi veriler, hangi amaçla ve ne kadar süre işlenir." schema={[breadcrumbSchema(crumbs)]}>
+  <section class="section">
+    <div class="container prose legal">
+      <ol class="crumbs">{crumbs.map((c, i) => <li>{i === crumbs.length - 1 ? <span>{c.name}</span> : <a href={c.href}>{c.name}</a>}</li>)}</ol>
+      <h1>Kişisel Verilerin Korunması Aydınlatma Metni</h1>
+      <p>Bu metin, 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) uyarınca veri sorumlusu sıfatıyla {site.legalName} tarafından hazırlanmıştır ve {site.url} adresli web sitesini kapsar.</p>
+      <h2>İşlenen veriler ve amaçlar</h2>
+      <ul>
+        <li><strong>Talep bilgileri:</strong> Arıza kaydında paylaştığınız ad, telefon, il/ilçe, cihaz ve arıza açıklaması; yalnızca talebinizi değerlendirmek, size dönmek ve servisi planlamak için işlenir.</li>
+        <li><strong>Teknik veriler:</strong> IP adresi, tarayıcı türü ve erişim zamanı; sitenin güvenliğini sağlamak amacıyla barındırma ve güvenlik altyapımızca sunucu günlüklerinde tutulur.</li>
+      </ul>
+      <h2>Hukuki sebep</h2>
+      <p>Talep bilgileri, sözleşmenin kurulması ve ifası için gerekli olması (KVKK m. 5/2-c) ve açık rızanız; teknik veriler ise veri sorumlusunun meşru menfaati (KVKK m. 5/2-f) hukuki sebeplerine dayanılarak işlenir.</p>
+      <h2>Aktarım ve saklama</h2>
+      <p>Verileriniz yalnızca yasal zorunluluk hâlinde yetkili kurumlarla paylaşılır. Talep bilgileri işin tamamlanmasının ardından yasal süreler boyunca, teknik günlükler ise güvenlik amacının gerektirdiği sınırlı süreyle saklanır.</p>
+      <h2>Haklarınız</h2>
+      <p>KVKK'nın 11. maddesi kapsamında verilerinizin işlenip işlenmediğini öğrenme, bilgi talep etme, düzeltilmesini veya silinmesini isteme haklarına sahipsiniz. Başvurularınızı {site.phone.display} numaralı telefondan iletebilirsiniz.</p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .legal h2 {
+    font-size: var(--fs-lg);
+    margin: 1.75rem 0 0.5rem;
+  }
+  .legal ul {
+    display: grid;
+    gap: 0.6rem;
+    list-style: disc;
+    padding-left: 1.3rem;
+    margin-bottom: 1rem;
+  }
+</style>

@@ -1,0 +1,417 @@
+import type { BlogPost } from './blog-types';
+
+export const posts: BlogPost[] = [
+  {
+    slug: 'camasir-makinesi-su-almiyor',
+    title: 'Çamaşır Makinesi Su Almıyor: Nedenleri ve Yapılması Gerekenler',
+    excerpt:
+      'Çamaşır makinesi su almıyorsa önce basit ve güvenli birkaç noktayı kontrol edin, sorun devam ederse arıza kaydı oluşturun.',
+    device: 'camasir-makinesi',
+    readMinutes: 5,
+    date: '2026-09-14',
+    body: [
+      {
+        type: 'p',
+        text: 'Çamaşır makinesi su almıyor şikayeti, servis çağrılarımız arasında en sık karşılaştığımız konulardan biri. Program başlatıldığında makine çalışır gibi görünse de tambur içine su dolmuyor, ekranda hata kodu yanıp sönüyor ya da makine sessizce bekliyor olabilir. Bu durumun arkasında çoğu zaman basit bir tıkanıklık ya da bağlantı sorunu yatar; bazen de değişim gerektiren bir parça söz konusudur.',
+      },
+      {
+        type: 'h2',
+        text: 'Su almamanın en sık görülen nedenleri',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Su musluğunun tam açık olmaması ya da kapalı unutulması',
+          'Giriş hortumundaki filtrenin kireç ve pislikle tıkanması',
+          'Su giriş hortumunun kıvrılmış veya sıkışmış olması',
+          'Su seviyesi sensöründe (basınç şalteri) arıza',
+          'Su giriş valfinin (selenoid valf) bozulması',
+          'Kapı kilidinin tam kapanmaması nedeniyle makinenin programı başlatmaması',
+        ],
+      },
+      {
+        type: 'h2',
+        text: 'Evde güvenle kontrol edebileceğiniz noktalar',
+      },
+      {
+        type: 'ol',
+        items: [
+          'Musluğun tam açık olduğundan emin olun ve suyun akış basıncını kontrol edin',
+          'Makineyi kapatıp su musluğunu kapatın, giriş hortumunu sökmeden önce etraftaki suyu bir bezle alın',
+          'Hortumun makineye bağlandığı noktadaki ince filtreyi nazikçe temizleyin',
+          'Hortumda kıvrılma veya ezilme olup olmadığına bakın, gerekirse hortumu düzeltin',
+          'Kapağın tam kapandığından ve kilit mekanizmasının düzgün çalıştığından emin olun',
+        ],
+      },
+      {
+        type: 'note',
+        text: 'Su giriş valfi, elektronik kart veya basınç şalteri gibi parçalarla ilgili müdahale elektrik ve su ile temas gerektirir; bu tür işlemleri kendiniz yapmayın, deneyimli bir teknisyene bırakın.',
+      },
+      {
+        type: 'h2',
+        text: 'Ne zaman servis çağırmalısınız?',
+      },
+      {
+        type: 'p',
+        text: 'Musluk açık, hortum ve filtre temiz olduğu halde makine hâlâ su almıyorsa ya da ekranda su ile ilgili bir hata kodu tekrar ediyorsa, sorun büyük ihtimalle valf, basınç şalteri veya elektronik kart kaynaklıdır. Bu noktada makineyi zorlamadan bağımsız servis desteği almanız hem zaman kazandırır hem de olası ek arızaların önüne geçer.',
+      },
+      {
+        type: 'p',
+        text: 'Basit kontrolleri denediniz ve sonuç alamadınız mı? Türkiye genelinde bağımsız teknik servis ekibimiz çamaşır makinenizi yerinde inceleyip kalıcı çözüm sunar. Arıza kaydınızı oluşturmak veya sorularınız için 0542 403 36 22 numaralı hattımızdan her gün 08:00–22:00 arası bize ulaşabilirsiniz.',
+      },
+    ],
+    seoTitle: 'Çamaşır Makinesi Su Almıyor: Nedenleri ve Çözümü | Servis Arıza Kayıt',
+    seoDescription:
+      'Çamaşır makinesi su almıyor mu? Olası nedenleri, evde yapılabilecek kontrolleri ve servis çağırma zamanını öğrenin. Arıza kaydı için 0542 403 36 22',
+    keywords: [
+      'çamaşır makinesi su almıyor',
+      'çamaşır makinesi su almama sorunu',
+      'çamaşır makinesi arıza',
+      'çamaşır makinesi valf arızası',
+      'çamaşır makinesi servisi',
+    ],
+  },
+  {
+    slug: 'buzdolabi-sogutmuyor',
+    title: 'Buzdolabı Soğutmuyor mu? Olası Nedenler ve Kontrol Listesi',
+    excerpt:
+      'Buzdolabı soğutmuyorsa önce basit ayar ve temizlik kontrollerini yapın, gıda güvenliği için sorunu uzatmadan servis desteği alın.',
+    device: 'buzdolabi',
+    readMinutes: 5,
+    date: '2026-09-14',
+    body: [
+      {
+        type: 'p',
+        text: 'Buzdolabı soğutmuyor durumu fark edildiğinde çoğu zaman ilk tepki panik olur, çünkü içindeki gıdaların bozulma riski akla gelir. Oysa bu şikayetin arkasında sık sık basit ve kendi başınıza kontrol edebileceğiniz nedenler bulunur. Yine de bazı durumlarda kompresör veya gaz kaçağı gibi teknik müdahale gerektiren arızalar söz konusu olabilir.',
+      },
+      {
+        type: 'h2',
+        text: 'Buzdolabının soğutmamasının yaygın nedenleri',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Termostat ayarının yanlışlıkla düşük dereceye getirilmiş olması',
+          'Kapı contasının eskimesi veya tam kapanmaması nedeniyle sıcak havanın içeri girmesi',
+          'Arka taraftaki kondanser bölümünün toz ve kir birikmesiyle tıkanması',
+          'Dolap içine gereğinden fazla ürün yerleştirilmesi ve hava sirkülasyonunun engellenmesi',
+          'Defrost (buz çözme) sisteminde arıza nedeniyle evaporatörün buzla kaplanması',
+          'Kompresörde veya gaz devresinde teknik bir arıza bulunması',
+        ],
+      },
+      {
+        type: 'h2',
+        text: 'Evde yapabileceğiniz güvenli kontroller',
+      },
+      {
+        type: 'ol',
+        items: [
+          'Termostat ayarının orta seviyede olduğundan emin olun',
+          'Kapı contasını gözle kontrol edin, aralarında yiyecek artığı olup olmadığına bakın',
+          'Dolap ile duvar arasında hava akışı için yeterli boşluk bırakılıp bırakılmadığını kontrol edin',
+          'Buzdolabının fişini çekmeden önce arkasındaki ve alt kısmındaki toz birikintisini fiş prizden çıkarılmış haldeyken yumuşak bir fırçayla temizleyin',
+          'İçindeki yiyeceklerin hava deliklerini kapatacak şekilde sıkışık yerleştirilmediğinden emin olun',
+        ],
+      },
+      {
+        type: 'note',
+        text: 'Kompresör, gaz devresi ve elektronik kart gibi bölümler özel ekipman ve teknik bilgi gerektirir; buzdolabınızı kendi başınıza sökmeye çalışmayın, bu hem sizin güvenliğiniz hem de cihazın ömrü için risklidir.',
+      },
+      {
+        type: 'h2',
+        text: 'Ne zaman servis çağırmalısınız?',
+      },
+      {
+        type: 'p',
+        text: 'Termostatı, contayı ve kondanseri kontrol ettiğiniz halde buzdolabı hâlâ yeterince soğutmuyorsa, kompresörden gelen ses değiştiyse ya da alt kısımda su birikintisi görüyorsanız, gıda güvenliği açısından beklemeden bağımsız bir teknik servisten destek almanızı öneririz.',
+      },
+      {
+        type: 'p',
+        text: 'Buzdolabınızdaki soğutma sorunu devam ediyorsa vakit kaybetmeden arıza kaydı oluşturabilirsiniz. Türkiye genelinde bağımsız servis ekibimize 0542 403 36 22 numaralı hattan her gün 08:00–22:00 saatleri arasında ulaşabilirsiniz.',
+      },
+    ],
+    seoTitle: 'Buzdolabı Soğutmuyor mu? Nedenleri ve Kontrol Listesi | Servis Arıza Kayıt',
+    seoDescription:
+      'Buzdolabı soğutmuyor mu? Olası nedenleri, evde yapılabilecek kontrolleri ve ne zaman servis gerektiğini öğrenin. Arıza kaydı için 0542 403 36 22',
+    keywords: [
+      'buzdolabı soğutmuyor',
+      'buzdolabı soğutma sorunu',
+      'buzdolabı arıza',
+      'buzdolabı kompresör arızası',
+      'buzdolabı gaz kaçağı',
+      'buzdolabı servisi',
+    ],
+  },
+  {
+    slug: 'bulasik-makinesi-yikamiyor',
+    title: 'Bulaşık Makinesi İyi Yıkamıyor: 7 Yaygın Neden',
+    excerpt:
+      'Bulaşık makinesi iyi yıkamıyorsa filtre, deterjan ve püskürtme kollarından başlayan basit kontrollerle sorunu tespit edebilirsiniz.',
+    device: 'bulasik-makinesi',
+    readMinutes: 5,
+    date: '2026-09-14',
+    body: [
+      {
+        type: 'p',
+        text: 'Bulaşık makinesi iyi yıkamıyor şikayeti, tabaklarda yağ kalıntısı, bardaklarda buğulanma ya da tam kurumamış bulaşıklar şeklinde kendini gösterir. Bu durum genellikle makinenin bozulduğu anlamına gelmez; çoğu zaman filtre, deterjan miktarı veya yerleştirme şekliyle ilgili basit bir sebepten kaynaklanır.',
+      },
+      {
+        type: 'h2',
+        text: 'İyi yıkamamanın 7 yaygın nedeni',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Alt filtrenin yemek artıklarıyla tıkanmış olması',
+          'Püskürtme kollarındaki deliklerin kireç veya artıkla kapanması',
+          'Kullanılan deterjan miktarının yetersiz veya suyun çok sert olması',
+          'Bulaşıkların birbirine çok yakın ya da üst üste yerleştirilmesi',
+          'Parlatıcı ve tuz haznelerinin boş kalması',
+          'Su sıcaklığının programa göre yeterince yükselmemesi (rezistans sorunu)',
+          'Yıkama programının kirlilik derecesine göre yanlış seçilmesi',
+        ],
+      },
+      {
+        type: 'h2',
+        text: 'Evde deneyebileceğiniz basit çözümler',
+      },
+      {
+        type: 'ol',
+        items: [
+          'Alt filtreyi çıkarıp akan su altında yemek artıklarından temizleyin',
+          'Püskürtme kollarını çıkarabiliyorsanız delikleri bir kürdanla kontrol edip temizleyin',
+          'Deterjan, parlatıcı ve tuz miktarlarını cihazın kullanım kılavuzuna göre ayarlayın',
+          'Bulaşıkları yerleştirirken kapların birbirini kapatmamasına, su geçişine engel olmamasına dikkat edin',
+          'Yoğun kirli bulaşıklar için daha yüksek sıcaklıklı bir program seçin',
+        ],
+      },
+      {
+        type: 'note',
+        text: 'Rezistans, su ısıtma devresi ve elektronik kart gibi kısımlar elektrikle doğrudan temas eder; bu parçalara kendiniz müdahale etmeyin, teknik bilgisi olmayan bir müdahale hem tehlikeli hem de garantiyi etkileyebilir.',
+      },
+      {
+        type: 'h2',
+        text: 'Ne zaman servis çağırmalısınız?',
+      },
+      {
+        type: 'p',
+        text: 'Filtreyi temizlediniz, deterjan miktarını ayarladınız ve doğru programı seçtiğiniz halde bulaşıklar hâlâ yağlı ya da ıslak çıkıyorsa, sorun büyük olasılıkla su ısıtma sistemi, pompa veya sensörlerle ilgilidir. Bu noktada bağımsız bir teknisyenin cihazı yerinde incelemesi en sağlıklı yoldur.',
+      },
+      {
+        type: 'p',
+        text: 'Bulaşık makinenizdeki yıkama sorunu devam ediyorsa arıza kaydınızı kolayca oluşturabilirsiniz. Türkiye genelinde bağımsız servis ekibimize 0542 403 36 22 numaralı hattan her gün 08:00–22:00 arası ulaşabilirsiniz.',
+      },
+    ],
+    seoTitle: 'Bulaşık Makinesi İyi Yıkamıyor: 7 Yaygın Neden | Servis Arıza Kayıt',
+    seoDescription:
+      'Bulaşık makinesi iyi yıkamıyor mu? Filtre, deterjan ve püskürtme kollarını kontrol edin, kalıcı çözüm için doğru zamanda servis çağırın. 0542 403 36 22',
+    keywords: [
+      'bulaşık makinesi iyi yıkamıyor',
+      'bulaşık makinesi yıkama sorunu',
+      'bulaşık makinesi filtre tıkanması',
+      'bulaşık makinesi arıza',
+      'bulaşık makinesi servisi',
+    ],
+  },
+  {
+    slug: 'klima-sogutmuyor-bakim',
+    title: 'Klima Soğutmuyor: Gaz mı Bitti, Bakım mı Gerekiyor?',
+    excerpt:
+      'Klima soğutmuyorsa filtre temizliği ve ayar kontrolünden sonra sorun devam ediyorsa gaz kaçağı ya da bakım ihtiyacı olabilir.',
+    device: 'klima',
+    readMinutes: 6,
+    date: '2026-09-14',
+    body: [
+      {
+        type: 'p',
+        text: 'Klima soğutmuyor şikayeti özellikle sıcak günlerde çok can sıkıcı olabiliyor. Cihaz çalışıyor, fan sesi geliyor ama ortam bir türlü serinlemiyor. Bu durumun arkasında basit bir filtre kirliliği olabileceği gibi, gaz kaçağı veya kompresör arızası gibi teknik bir sorun da yatabilir.',
+      },
+      {
+        type: 'h2',
+        text: 'Klimanın soğutmamasının olası nedenleri',
+      },
+      {
+        type: 'ul',
+        items: [
+          'İç ünite filtrelerinin toz ve kirle tıkanmış olması',
+          'Dış ünitenin etrafının kapalı olması veya yeterince hava alamaması',
+          'Uzun süredir periyodik bakım yapılmamış olması',
+          'Soğutucu gazın (freon) zamanla azalması veya kaçak olması',
+          'Kompresör ya da elektronik kart kaynaklı arıza',
+          'Uzaktan kumanda ayarlarının yanlış moda alınmış olması (soğutma yerine fan veya nem alma modu)',
+        ],
+      },
+      {
+        type: 'h2',
+        text: 'Evde yapabileceğiniz güvenli kontroller',
+      },
+      {
+        type: 'ol',
+        items: [
+          'Kumandada soğutma modunun seçili olduğundan ve sıcaklık ayarının ortam sıcaklığının altında olduğundan emin olun',
+          'İç ünitenin ön kapağını açıp filtreleri çıkararak su ile yıkayın ve tam kurumadan takmayın',
+          'Dış ünitenin önünde eşya, bitki veya birikinti olup olmadığını kontrol edin',
+          'İç ve dış ünite arasındaki bağlantı borularının hasarsız görünüp görünmediğine bakın',
+        ],
+      },
+      {
+        type: 'note',
+        text: 'Gaz doldurma, kompresör ve elektronik kart müdahaleleri basınçlı gaz ve elektrikle çalışma gerektirir; bu işlemleri kesinlikle kendiniz yapmaya çalışmayın, uzman bir teknisyene bırakın.',
+      },
+      {
+        type: 'h2',
+        text: 'Ne zaman bakım, ne zaman servis gerekir?',
+      },
+      {
+        type: 'p',
+        text: 'Filtre temizliği ve ayar kontrolü sonrasında klima hâlâ istenen seviyede soğutmuyorsa, düzenli bakımın üzerinden uzun süre geçtiyse ya da dış üniteden anormal ses geliyorsa, teknik bir kontrol gerekir. Gaz seviyesinin ölçülmesi ve kaçak kontrolü özel ekipmanla yapılan bir işlemdir, bu yüzden bu noktada bağımsız servis desteği almanız en doğru adımdır.',
+      },
+      {
+        type: 'p',
+        text: 'Klimanızda soğutma sorunu yaşıyorsanız ya da periyodik bakım zamanı geldiyse arıza kaydınızı hemen oluşturabilirsiniz. Türkiye genelinde bağımsız servis ekibimize 0542 403 36 22 numaralı hattan her gün 08:00–22:00 arası ulaşabilirsiniz.',
+      },
+    ],
+    seoTitle: 'Klima Soğutmuyor: Gaz mı Bitti, Bakım mı Gerekiyor? | Servis Arıza Kayıt',
+    seoDescription:
+      'Klima soğutmuyor mu? Filtre, dış ünite ve gaz kaçağı ihtimalini kontrol edin, doğru zamanda bakım veya servis çağırın. Arıza kaydı: 0542 403 36 22',
+    keywords: [
+      'klima soğutmuyor',
+      'klima gaz kaçağı',
+      'klima bakımı',
+      'klima arızası',
+      'klima filtre temizliği',
+      'klima servisi',
+    ],
+  },
+  {
+    slug: 'kombi-basinc-dusuyor',
+    title: 'Kombi Basıncı Düşüyor: Nedeni ve Ne Zaman Servis Gerekir',
+    excerpt:
+      'Kombi basıncı sürekli düşüyorsa su kaçağı veya genleşme tankı sorunu olabilir, göstergeyi düzenli takip edip zamanında servis çağırmak önemlidir.',
+    device: 'kombi',
+    readMinutes: 5,
+    date: '2026-09-14',
+    body: [
+      {
+        type: 'p',
+        text: 'Kombi basıncı düşüyor şikayeti kış aylarında sıkça karşılaştığımız bir durum. Kombinin önündeki manometre (basınç göstergesi) normalde 1-1,5 bar civarında sabit kalması gerekirken, zamanla düşmeye başlıyor ve cihaz belirli bir noktanın altında hata verip devreye girmiyor. Bu, çoğu zaman sistemde küçük bir su kaybı olduğunun işaretidir.',
+      },
+      {
+        type: 'h2',
+        text: 'Basınç düşüşünün olası nedenleri',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Petek, boru veya vana bağlantılarındaki küçük su sızıntıları',
+          'Genleşme tankındaki hava yastığının zamanla azalması',
+          'Tesisatta hava boşluğu birikmesi',
+          'Kombi içindeki su dolum musluğunun tam kapanmaması',
+          'Eskiyen contaların sızdırmaya başlaması',
+          'Petek peteklerinin periyodik olarak havasının alınmamış olması',
+        ],
+      },
+      {
+        type: 'h2',
+        text: 'Evde yapabileceğiniz basit kontroller',
+      },
+      {
+        type: 'ol',
+        items: [
+          'Manometredeki basınç değerini düzenli olarak takip edin ve ne sıklıkla düştüğünü not alın',
+          'Peteklerin altında, kombi çevresinde ve tesisat borularının geçtiği yerlerde nem veya su izi olup olmadığına bakın',
+          'Peteklerinizde havalanma sesi varsa hava purjörüyle havasını almayı deneyin',
+          'Kombinin su dolum vanasının tam kapalı konumda olduğunu kontrol edin',
+        ],
+      },
+      {
+        type: 'note',
+        text: 'Kombi doğal gaz ve elektrikle çalışan bir cihazdır; basınç doldurma, genleşme tankı değişimi ve conta değişimi gibi işlemleri kendiniz yapmaya çalışmayın, bu işlemler yetkin bir teknisyen tarafından yapılmalıdır.',
+      },
+      {
+        type: 'h2',
+        text: 'Ne zaman servis çağırmalısınız?',
+      },
+      {
+        type: 'p',
+        text: 'Basıncı su ekleyerek normal seviyeye getirdiğiniz halde birkaç gün içinde tekrar düşüyorsa, bu durum sistemde bir sızıntı olduğuna işaret eder ve gözle görülmeyen bir kaçak tesisatta ilerleyen zararlara yol açabilir. Bu durumda beklemeden bağımsız bir teknik servisten destek almanızı öneririz.',
+      },
+      {
+        type: 'p',
+        text: 'Kombinizde basınç düşüşü yaşıyorsanız arıza kaydınızı hemen oluşturabilirsiniz. Türkiye genelinde bağımsız servis ekibimize 0542 403 36 22 numaralı hattan her gün 08:00–22:00 arası ulaşabilirsiniz.',
+      },
+    ],
+    seoTitle: 'Kombi Basıncı Düşüyor: Nedeni ve Servis Zamanı | Servis Arıza Kayıt',
+    seoDescription:
+      'Kombi basıncı sürekli düşüyor mu? Su kaçağı ve genleşme tankı ihtimalini kontrol edin, ne zaman servis gerektiğini öğrenin. Arıza kaydı: 0542 403 36 22',
+    keywords: [
+      'kombi basıncı düşüyor',
+      'kombi basınç sorunu',
+      'kombi su kaçağı',
+      'kombi genleşme tankı arızası',
+      'kombi arızası',
+      'kombi servisi',
+    ],
+  },
+  {
+    slug: 'beyaz-esya-omru-uzatma',
+    title: 'Beyaz Eşyanızın Ömrünü Uzatan 10 Basit Alışkanlık',
+    excerpt:
+      'Doğru kullanım ve düzenli bakım alışkanlıklarıyla beyaz eşyalarınızın ömrünü uzatabilir, ani arızaların önüne geçebilirsiniz.',
+    device: 'camasir-makinesi',
+    readMinutes: 5,
+    date: '2026-09-14',
+    body: [
+      {
+        type: 'p',
+        text: 'Beyaz eşyaların ömrü büyük ölçüde nasıl kullanıldığına ve ne kadar düzenli bakım gördüğüne bağlıdır. Çamaşır makinesinden buzdolabına, bulaşık makinesinden kombiye kadar birçok cihazda küçük ve düzenli alışkanlıklar, yıllar içinde büyük fark yaratır. Aşağıdaki basit önerileri uygulayarak hem beklenmedik arızaların önüne geçebilir hem de cihazlarınızdan daha uzun süre verim alabilirsiniz.',
+      },
+      {
+        type: 'h2',
+        text: 'Cihazların ömrünü uzatan alışkanlıklar',
+      },
+      {
+        type: 'ol',
+        items: [
+          'Çamaşır makinesinde kapağı yıkama sonrası bir süre açık bırakarak nem ve koku oluşumunu engelleyin',
+          'Deterjan ve yumuşatıcıyı kutuların üzerinde belirtilen ölçüde kullanın, fazlası birikinti oluşturur',
+          'Bulaşık ve çamaşır makinelerinin filtrelerini ayda bir kez kontrol edip temizleyin',
+          'Buzdolabının arkasındaki kondanser bölümünü periyodik olarak tozdan arındırın',
+          'Buzdolabı kapısını gereğinden uzun süre açık tutmamaya özen gösterin',
+          'Kombi ve klimanın yılda bir kez periyodik bakımını ihmal etmeyin',
+          'Beyaz eşyaları düz ve dengeli bir zemine yerleştirin, titreşim iç mekanizmaya zarar verebilir',
+          'Aşırı yüklemeden kaçının, kapasitenin üzerinde çamaşır veya bulaşık yıkamayın',
+          'Elektrik kesintilerinden sonra cihazları hemen değil, birkaç dakika bekleyerek çalıştırın',
+          'Cihazlardan gelen alışılmadık ses, koku veya titreşimi fark ettiğinizde erken davranıp kontrol ettirin',
+        ],
+      },
+      {
+        type: 'h2',
+        text: 'Küçük ihmallerin büyük arızalara dönüşmesi',
+      },
+      {
+        type: 'p',
+        text: 'Birçok büyük arıza aslında küçük bir ihmalin zamanla büyümesiyle ortaya çıkar. Örneğin temizlenmeyen bir filtre pompayı yorabilir, tozlu bir kondanser kompresörün daha fazla çalışmasına ve yıpranmasına neden olabilir. Bu yüzden düzenli bakım, sadece cihazın ömrünü uzatmakla kalmaz, aynı zamanda uzun vadede daha maliyetli onarımların önüne geçer.',
+      },
+      {
+        type: 'note',
+        text: 'Cihazların iç aksamına, elektrik bağlantılarına veya gaz devrelerine kendiniz müdahale etmeyin; bakım sırasında teknik bir sorunla karşılaşırsanız bunu uzman bir teknisyene bırakmak en güvenli yoldur.',
+      },
+      {
+        type: 'p',
+        text: 'Beyaz eşyalarınızda alışılmadık bir durum fark ettiyseniz ya da periyodik bakım zamanı geldiyse, sorunu büyümeden çözmek için bizimle iletişime geçebilirsiniz. Türkiye genelinde bağımsız servis ekibimize 0542 403 36 22 numaralı hattan her gün 08:00–22:00 arası ulaşarak arıza kaydınızı oluşturabilirsiniz.',
+      },
+    ],
+    seoTitle: 'Beyaz Eşyanızın Ömrünü Uzatan 10 Alışkanlık | Servis Arıza Kayıt',
+    seoDescription:
+      'Çamaşır makinesi, buzdolabı, bulaşık makinesi ve kombide ömrü uzatan basit bakım alışkanlıklarını öğrenin. Destek için 0542 403 36 22',
+    keywords: [
+      'beyaz eşya bakımı',
+      'beyaz eşya ömrü uzatma',
+      'çamaşır makinesi bakımı',
+      'buzdolabı bakımı',
+      'kombi bakımı',
+      'beyaz eşya servisi',
+    ],
+  },
+];

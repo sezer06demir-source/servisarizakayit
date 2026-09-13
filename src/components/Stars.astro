@@ -1,0 +1,29 @@
+---
+import Icon from './Icon.astro';
+interface Props {
+  value: number;
+  size?: number;
+}
+const { value, size = 16 } = Astro.props;
+const full = Math.round(value);
+---
+
+<span class="stars" role="img" aria-label={`5 üzerinden ${value}`}>
+  {Array.from({ length: 5 }).map((_, i) => <Icon name="star" size={size} class={i < full ? '' : 'star-off'} />)}
+</span>
+
+<style>
+  .stars {
+    display: inline-flex;
+    gap: 1px;
+    color: var(--gold);
+    line-height: 0;
+  }
+  .stars :global(svg) {
+    fill: currentColor;
+    stroke: none;
+  }
+  .stars :global(.star-off) {
+    color: var(--line);
+  }
+</style>

@@ -41,6 +41,11 @@ const cols = devices.slice(0, 6);
     <div class="ftr__bottom">
       <p>© {year} {site.legalName}. Tüm hakları saklıdır.</p>
       <a href={site.whatsapp.href} target="_blank" rel="noopener" class="ftr__wa"><Icon name="whatsapp" size={16} /> WhatsApp destek hattı</a>
+      <div class="ftr__credit">
+        <span class="ftr__credit-ic"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg></span>
+        <span class="ftr__credit-label">Tasarım · SEO · Güvenlik</span>
+        <span class="ftr__credit-name">Sezer Demir</span>
+      </div>
     </div>
   </div>
 </footer>
@@ -135,5 +140,34 @@ const cols = devices.slice(0, 6);
   }
   .ftr__wa svg {
     color: var(--wa);
+  }
+  .ftr__credit {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.35rem 0.9rem 0.35rem 0.4rem;
+    border-radius: 999px;
+    background: linear-gradient(120deg, color-mix(in srgb, var(--brand) 22%, transparent), rgba(255, 255, 255, 0.03));
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    box-shadow: 0 10px 28px -16px rgba(0, 0, 0, 0.7);
+  }
+  .ftr__credit-ic {
+    display: grid;
+    place-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--brand);
+    color: #04211f;
+    flex: none;
+    box-shadow: 0 0 12px color-mix(in srgb, var(--brand) 50%, transparent);
+  }
+  .ftr__credit-label {
+    color: var(--on-dark-dim);
+  }
+  .ftr__credit-name {
+    font-weight: 800;
+    color: var(--brand);
+    letter-spacing: -0.01em;
   }
 </style>

@@ -414,4 +414,146 @@ export const posts: BlogPost[] = [
       'beyaz eşya servisi',
     ],
   },
+  {
+    slug: 'ankara-beyaz-esya-servisi-secimi',
+    title: 'Ankara’da Beyaz Eşya Servisi Seçerken Nelere Dikkat Etmeli?',
+    excerpt:
+      'Ankara’da servis çağırmadan önce sorulacak sorular, ücretin nasıl oluştuğu ve garanti hakkınız. Yanlış servis seçiminin maliyeti çoğu zaman arızanın kendisinden yüksek oluyor.',
+    device: 'kombi',
+    readMinutes: 7,
+    date: '2026-09-19',
+    body: [
+      {
+        type: 'p',
+        text: 'Ankara’da bir beyaz eşya arızasında en çok vakit kaybedilen aşama, arızanın kendisi değil; doğru servisi bulmak oluyor. Arama sonuçlarında onlarca numara çıkıyor, hepsi benzer şeyler söylüyor, aralarındaki farkı telefonda anlamak zor. Oysa birkaç doğru soru, hem ücretin baştan netleşmesini hem de işin arkasında duran bir servisle çalışmanızı sağlıyor.',
+      },
+      {
+        type: 'h2',
+        text: 'Ankara’da karşınıza çıkan üç farklı servis yapısı',
+      },
+      {
+        type: 'p',
+        text: 'Aradığınız numaraların arkasında birbirinden oldukça farklı yapılar olabilir. Hangisiyle konuştuğunuzu bilmek, beklentinizi de baştan doğru kurmanızı sağlar.',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Markanın yetkili servisi: yalnızca o markaya bakar, orijinal parça kullanır, garanti süresi içindeki cihazlarda tek adres burasıdır. Yoğun dönemlerde randevu birkaç güne sarkabilir.',
+          'Bağımsız özel servis: birden fazla markaya bakar, garantisi bitmiş cihazlarda genelde daha hızlı randevu verir. Biz bu gruptayız; hiçbir markanın yetkili servisi değiliz.',
+          'Tek kişilik usta: özellikle küçük onarımlarda hızlı olabilir, ancak fatura, garanti belgesi ve sonrasında ulaşılabilirlik konusunda belirsizlik yaşanabilir.',
+        ],
+      },
+      {
+        type: 'p',
+        text: 'Cihazınız hâlâ üretici garantisi altındaysa tereddüt etmeyin: doğrudan yetkili servise gidin. Garanti kapsamındaki bir cihaza dışarıdan müdahale ettirmek, garantiyi geçersiz kılabilir. Garantisi bitmiş bir cihazda ise seçim tamamen sizin; burada belirleyici olan hız, şeffaflık ve işin arkasında durulması.',
+      },
+      {
+        type: 'h2',
+        text: 'Aramadan önce hazırlayın: üç bilgi yeter',
+      },
+      {
+        type: 'ol',
+        items: [
+          'Cihazın markası ve model numarası. Çoğu cihazda kapak kenarında, arka yüzde ya da çekmecenin altında bir etiket bulunur; fotoğrafını çekmek en pratiği.',
+          'Ekranda bir hata kodu varsa tam olarak nasıl yazdığı. “E” ile başlayan kodlar teknisyen için ciddi bir kısa yol.',
+          'Arızanın ne zaman ve nasıl başladığı: birden mi oldu, yavaş yavaş mı kötüleşti, su kaçağı ya da koku eşlik ediyor mu.',
+        ],
+      },
+      {
+        type: 'p',
+        text: 'Bu üç bilgi, teknisyenin doğru parçayla yola çıkmasını sağlar. Aksi hâlde ilk ziyaret sadece tespitle geçer, parça için ikinci randevu gerekir ve iş bir güne daha yayılır.',
+      },
+      {
+        type: 'h2',
+        text: 'Telefonda mutlaka sorun',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Ulaşım ya da keşif ücreti var mı, varsa onarım yapılırsa bu ücret düşülüyor mu?',
+          'Fiyat, işlem başlamadan önce mi söyleniyor? Onay vermeden işe başlanmayacağını netleştirin.',
+          'Değişen parça orijinal mi, muadil mi? İkisi arasında fiyat farkı olması normaldir; önemli olan size önceden söylenmesi.',
+          'Değişen parçaya ve işçiliğe garanti belgesi veriliyor mu, süresi ne kadar?',
+          'Fatura kesiliyor mu? Faturasız iş, sonradan bir sorun çıktığında elinizde hiçbir belge bırakmaz.',
+        ],
+      },
+      {
+        type: 'p',
+        text: 'Bu soruların hepsine net cevap veremeyen bir servisten uzak durmak, telefonda kaybedilecek iki dakikadan çok daha değerli. Tersi de geçerli: cevapları rahatça veren bir servis, genelde işini de aynı düzende yapar.',
+      },
+      {
+        type: 'h2',
+        text: 'Ücret neye göre oluşuyor?',
+      },
+      {
+        type: 'p',
+        text: 'Beyaz eşya servisinde ücret üç kalemden oluşur: yerinde tespit (ulaşım), işçilik ve değişen parça. İnternette gördüğünüz sabit fiyat listelerine temkinli yaklaşın; aynı belirti, cihazın yaşına ve arızanın yerine göre çok farklı işlemler gerektirebilir. Örneğin “çamaşır makinesi su almıyor” şikâyeti bazen tıkanmış bir filtrenin temizlenmesiyle, bazen su giriş valfinin değişimiyle çözülür; ikisinin maliyeti aynı olmaz.',
+      },
+      {
+        type: 'p',
+        text: 'Doğru yaklaşım, telefonda kesin rakam istemek yerine “tespit sonrası, işleme başlamadan önce fiyat söylenecek mi?” diye sormaktır. Ciddi bir servis bunu taahhüt eder.',
+      },
+      {
+        type: 'note',
+        text: 'Yapılan işin faturası ve değişen parçanın garanti belgesi sizin hakkınızdır. Tüketici olarak ayıplı hizmet ya da parçayla karşılaşırsanız bu belgeler olmadan hak arayamazsınız; teslim sırasında mutlaka isteyin.',
+      },
+      {
+        type: 'h2',
+        text: 'Ankara’da mevsime göre değişen yoğunluk',
+      },
+      {
+        type: 'p',
+        text: 'Ankara’da servis talebi yıl içinde belirgin şekilde dalgalanır. Ekim sonundan aralığa kadar kombi çağrıları ikiye katlanır; ilk soğuklarla birlikte yazdan beri çalışmayan cihazlar aynı hafta içinde devreye alınır ve ateşleme, basınç, sirkülasyon sorunları hep birlikte ortaya çıkar. Haziran–ağustos arasında ise klima bakımı ve gaz dolumu talebi zirve yapar.',
+      },
+      {
+        type: 'p',
+        text: 'Bunun pratik karşılığı şu: kombinizi ekimde değil, eylülde çalıştırıp deneyin. Klimayı da ilk sıcakta değil, mayısta. Arızayı sezon başlamadan yakalarsanız hem randevu bulmanız kolaylaşır hem de soğukta ya da sıcakta günlerce beklemek zorunda kalmazsınız.',
+      },
+      {
+        type: 'h2',
+        text: 'İlçe farkı: her adrese aynı sürede ulaşılmaz',
+      },
+      {
+        type: 'p',
+        text: 'Çankaya, Keçiören, Yenimahalle, Mamak, Etimesgut, Altındağ ve Sincan gibi merkez ilçelerde teknisyen yoğunluğu yüksektir; bu bölgelerde aynı gün ya da ertesi gün randevu genelde mümkün olur. Polatlı, Beypazarı, Şereflikoçhisar, Kızılcahamam gibi merkeze uzak ilçelerde ise makul olan, aynı gün sözü değil, net bir randevu saatidir. Size “bir saat içinde oradayız” diyen bir servise, bulunduğunuz ilçeyi tekrar söyleyip teyit etmenizde fayda var.',
+      },
+      {
+        type: 'h2',
+        text: 'Servisi çağırmadan önce evde güvenle bakabilecekleriniz',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Cihazın fişi ve prizi: aynı prize başka bir cihaz takıp prizin çalıştığını doğrulayın.',
+          'Sigorta kutusu: o hattın sigortası düşmüş olabilir. Bir kez kaldırın; tekrar atıyorsa zorlamayın.',
+          'Su girişi olan cihazlarda musluk tam açık mı, hortum kıvrılmış mı?',
+          'Çamaşır ve bulaşık makinesinde tahliye filtresi: kapağı açıp temizlemek çoğu “su boşaltmıyor” şikâyetini çözer.',
+          'Kombide basınç göstergesi: 1–1,5 bar aralığının dışındaysa not alın, teknisyene söyleyin.',
+        ],
+      },
+      {
+        type: 'note',
+        text: 'Cihazın iç aksamına, elektrik kartına, gaz devresine ya da kombinin kapağı içine kendiniz müdahale etmeyin. Yanık kokusu, gaz kokusu veya su kaçağı varsa cihazı kapatın, fişini çekin ve teknisyen gelene kadar çalıştırmayın.',
+      },
+      {
+        type: 'h2',
+        text: 'Arıza kaydı oluşturmak',
+      },
+      {
+        type: 'p',
+        text: 'Servis Arıza Kayıt olarak Ankara dahil Türkiye genelinde bağımsız teknik servis ekipleriyle çalışıyoruz. Arıza kaydınızı siteden oluşturabilir ya da doğrudan 0542 403 36 22 numaralı hattan her gün 08:00–22:00 arasında ulaşabilirsiniz. Cihaz, marka ve şikâyeti alır, bölgenizdeki teknisyenle randevunuzu planlarız; ücret tespit sonrası, işleme başlamadan önce söylenir.',
+      },
+    ],
+    seoTitle: 'Ankara Beyaz Eşya Servisi: Doğru Servisi Seçme Rehberi | Servis Arıza Kayıt',
+    seoDescription:
+      'Ankara’da beyaz eşya servisi çağırmadan önce sorulması gerekenler, ücretin nasıl oluştuğu, garanti ve fatura hakkınız. Arıza kaydı: 0542 403 36 22',
+    keywords: [
+      'ankara beyaz eşya servisi',
+      'ankara kombi servisi',
+      'ankara klima servisi',
+      'ankara buzdolabı servisi',
+      'ankara çamaşır makinesi servisi',
+      'beyaz eşya servisi seçimi',
+    ],
+  },
 ];

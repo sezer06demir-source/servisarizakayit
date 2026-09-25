@@ -556,4 +556,134 @@ export const posts: BlogPost[] = [
       'beyaz eşya servisi seçimi',
     ],
   },
+  {
+    slug: 'ankara-kombi-ariza-kodlari',
+    title: 'Ankara’da Kombi Arıza Kodları: Ekranda Ne Görürseniz Ne Yapmalı?',
+    excerpt:
+      'Kombi ekranındaki hata kodu göründüğünde hangi durumlarda kendiniz resetleyebilirsiniz, hangi durumlarda Ankara kombi servisi çağırmanız gerekir; saha örnekleriyle anlatıyoruz.',
+    device: 'kombi',
+    readMinutes: 7,
+    date: '2026-09-25',
+    body: [
+      {
+        type: 'p',
+        text: 'Ekim ayına girdiğimizde Ankara’da telefon trafiği bir anda değişiyor. Yazın sessiz duran kombiler ilk soğuk gecede devreye alınıyor, çoğu da beklendiği gibi çalışmıyor. Ekranda bir harf ve rakam kombinasyonu yanıp sönüyor, ev sahibi kombinin kılavuzunu bulmaya çalışıyor ya da doğrudan bizi arıyor. Bu yazıda markadan bağımsız, genel geçer kombi arıza kodu mantığını anlatıyorum: kod gördüğünüzde ilk ne yapmanız gerektiğini, hangi durumda kendi başınıza müdahale edebileceğinizi, hangi durumda Ankara kombi servisi çağırmanın şart olduğunu.',
+      },
+      {
+        type: 'h2',
+        text: 'Kombi neden kışa girerken arıza veriyor?',
+      },
+      {
+        type: 'p',
+        text: 'Aslında arıza yazın da oradaydı, sadece kombi çalışmadığı için ortaya çıkmamıştı. Yaz boyunca sadece sıcak su için ara sıra devreye giren bir kombide sirkülasyon pompası aylarca dönmemiş olabilir, tesisatta yavaş yavaş küçük bir sızıntı basıncı düşürmüş olabilir ya da ateşleme elektrotunun üzerinde ince bir kurum tabakası oluşmuş olabilir. Isıtma devresi devreye girdiğinde bu küçük sorunlar birden görünür hale gelir. Ankara’da özellikle Kasım ayının ilk soğuk dalgasında çağrılarımız iki katına çıkıyor; sebep çoğunlukla kombinin bozulması değil, yaz boyunca fark edilmeyen bir eksikliğin ısıtma yüküyle birlikte ortaya çıkması.',
+      },
+      {
+        type: 'h2',
+        text: 'Arıza kodları aslında ne anlatır?',
+      },
+      {
+        type: 'p',
+        text: 'Her marka kendi kod tablosunu kullanır ama mantık hemen hemen aynıdır: kombinin elektronik kartı, güvenlik için izlediği değerlerden biri normal aralığın dışına çıktığında ısıtmayı ya da ateşlemeyi durdurur ve ekranda bunu bir kodla bildirir. Kabaca üç grupta toplayabiliriz.',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Su basıncı ile ilgili kodlar: sistemdeki su basıncı belirlenen alt sınırın (genelde 0,8 bar civarı) altına düştüğünde ortaya çıkar.',
+          'Ateşleme ve alev kodları: brülör ateşlemiyor, ateşleme birkaç denemede başarısız oluyor ya da alev sensörü alevi algılamıyor demektir.',
+          'Sıcaklık ve sensör kodları: kalorifer suyu ya da kullanım suyu sıcaklığını ölçen sensörlerden biri beklenmedik bir değer okuyor, ya da su aşırı ısınıyor demektir.',
+        ],
+      },
+      {
+        type: 'p',
+        text: 'Bu üç grubun dışında baca çekişiyle, gaz basıncıyla ya da elektronik kartın kendi iç kontrolüyle ilgili kodlar da var, ama saha çağrılarının büyük çoğunluğu bu üç başlıkta toplanıyor.',
+      },
+      {
+        type: 'h2',
+        text: 'Ekranda kod gördüğünüzde ilk yapmanız gerekenler',
+      },
+      {
+        type: 'ol',
+        items: [
+          'Kodu ve varsa yanında yanan simgeyi bir kağıda ya da telefona not edin; telefonda anlattığınızda teknisyen için ciddi bir zaman kazandırır',
+          'Kombinin önündeki basınç göstergesine bakın, ibre 1–1,5 bar aralığının belirgin şekilde altındaysa büyük ihtimalle basınç kaynaklı bir kod görüyorsunuzdur',
+          'Kombinin resetleme (reset) tuşu varsa kullanım kılavuzundaki yere göre bir kez basıp bekleyin; art arda birkaç kez basmayın',
+          'Reset sonrası aynı kod birkaç dakika içinde tekrar geliyorsa, tekrar denemeyin; bu tekrarlama kendi başına önemli bir bilgidir',
+        ],
+      },
+      {
+        type: 'note',
+        text: 'Reset tuşuna art arda basmak, güvenlik kilitlemesi olan bazı kartlarda ateşleme denemesini artırıp elektrot ve ateşleme trafosunu yorabilir. Bir kez deneyin, sonuç değişmiyorsa bırakın.',
+      },
+      {
+        type: 'h2',
+        text: 'Kendi başınıza güvenle çözebileceğiniz durum: düşük basınç',
+      },
+      {
+        type: 'p',
+        text: 'Sahada en sık karşılaştığımız kod, basınç düşüklüğüyle ilgili olanı. Bunun nedeni genelde ortada büyük bir sızıntı değil; tesisatta zamanla biriken küçük hava kabarcıklarının petek havalandırma vanalarından tahliye edilmesi ya da yılda bir iki kez normal su kaybı. Kombinizin altında ya da yanında bir su dolum musluğu varsa, cihaz soğukken bu musluğu yavaşça açıp basınç 1–1,5 bar’a gelince kapatmak, çoğu zaman kodu tek başına giderir. Bu işlemi cihaz sıcakken yapmayın, hem yanma riski hem de ölçümün yanıltıcı olması söz konusu. Eğer basıncı bu şekilde bir kez düzelttiniz ve birkaç hafta stabil kaldıysa, mesele kapanmış demektir.',
+      },
+      {
+        type: 'h2',
+        text: 'Ankara kombi servisi çağırmanız gereken durumlar',
+      },
+      {
+        type: 'p',
+        text: 'Bazı durumlarda müdahale etmemeniz, hem sizin güvenliğiniz hem de cihazın ömrü için daha doğrudur. Aşağıdaki tabloyu bir kontrol listesi gibi düşünebilirsiniz.',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Basıncı tamamladığınız halde kod birkaç gün içinde tekrar ediyorsa: tesisatta gözle görülmeyen bir sızıntı var demektir, kaynağının bulunması gerekir',
+          'Ateşleme ya da alev koduysa: kombiyi tekrar tekrar resetlemeyin, gaz kokusu yoksa dahi bu durum elektrot, ateşleme trafosu veya gaz valfi ile ilgili teknik bir kontrol gerektirir',
+          'Gaz kokusu hissediyorsanız: kombiye hiç dokunmadan, resetlemeden gaz vanasını kapatın, ortamı havalandırın ve bizi arayın',
+          'Sıcaklık sensörü koduysa ya da su anormal derecede sıcak çıkıyorsa: sensör veya kartla ilgili bir arıza olabilir, elektronik kart müdahalesi uzmanlık gerektirir',
+          'Kod hiç kaybolmuyor, ekranda sabit yanıyorsa ya da aynı anda birkaç farklı kod dönüşümlü çıkıyorsa: kart seviyesinde bir sorun olma ihtimali yüksektir',
+        ],
+      },
+      {
+        type: 'note',
+        text: 'Kombi doğal gaz ve elektrikle birlikte çalışan bir cihazdır. Gaz valfi, ateşleme trafosu, elektronik kart ve genleşme tankı değişimi gibi işlemleri kendiniz yapmaya çalışmayın; bu işlemler görev alanı gaz olan bir teknisyene bırakılmalıdır.',
+      },
+      {
+        type: 'h2',
+        text: 'Ankara’da saha örneklerinden ikisi',
+      },
+      {
+        type: 'p',
+        text: 'Geçen kış Yenimahalle’de bir müşterimizin kombisi her gece aynı saatte ısıtmayı kesiyordu. Basınç normaldi, kod ateşleme ile ilgiliydi. Yerinde baktığımızda ateşleme elektrotunun ucunda ince bir kurum tabakası birikmiş, alev sensörü alevi düzensiz algılıyordu; elektrotu temizleyip ayarını düzelttikten sonra sorun tekrarlamadı. Bir başka örnek Çankaya’da: müşteri basıncı defalarca tamamlamasına rağmen kod bir hafta içinde tekrar geliyordu. Tesisatı kontrol ettiğimizde petek vanalarından birinin altında, halının gizlediği küçük bir sızıntı vardı. İkisi de farklı kod, farklı çözüm; ama ikisinde de doğru olan, aynı kodu görüp defalarca resetlemek yerine erken bir aşamada teknik kontrol istemekti.',
+      },
+      {
+        type: 'h2',
+        text: 'Sıkça Sorulan Sorular',
+      },
+      {
+        type: 'p',
+        text: 'Kombi arıza kodlarıyla ilgili müşterilerimizin en sık sorduğu birkaç soruyu burada topladım.',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Kombim resetlemeye rağmen aynı kodu veriyor, tekrar tekrar denesem çalışır mı? Genelde çalışmaz; kart art arda denemelerde bir sonraki resetlemeyi daha uzun süre bekletir ya da tamamen kilitlenir. İki denemeden sonra sonuç değişmiyorsa servis çağırmak daha doğrudur.',
+          'Kombim yeni değiştirildi, garantisi devam ediyor, kod verirse ne yapmalıyım? Garanti süresindeki cihazlarda doğrudan markanın yetkili servisine yönlendiriyoruz; garanti kapsamındaki bir cihaza bağımsız servis müdahale ederse garanti etkilenebilir.',
+          'Kod yok ama kombi hiç çalışmıyor, ekran da yanmıyor mu? Öncelikle sigorta kutusunu ve prizi kontrol edin; elektrik geliyorsa ve ekran hâlâ karanlıksa kart beslemesiyle ilgili bir sorun olabilir, bu durumda telefonla teşhis mümkün değildir.',
+          'Her kış aynı kodu görüyorum, kalıcı çözüm var mı? Aynı arızanın mevsimsel olarak tekrarlaması genelde kalıcı olarak değişmesi gereken bir parçaya işaret eder; geçici çözümle idare etmek yerine kaynağı bulup değiştirmek uzun vadede daha ekonomik olur.',
+        ],
+      },
+      {
+        type: 'p',
+        text: 'Ankara’da kombiniz arıza kodu veriyorsa, basınç kontrolünü kendiniz yapabilir ama sonuç değişmiyorsa vakit kaybetmeden bize ulaşabilirsiniz. Bağımsız teknik servis ekibimize 0542 403 36 22 numaralı hattan her gün 08:00–22:00 arası ulaşıp arıza kaydınızı oluşturabilirsiniz; teknisyenimiz kodu ve durumu dinledikten sonra size en yakın randevuyu planlar.',
+      },
+    ],
+    seoTitle: 'Ankara Kombi Servisi: Arıza Kodları Ne Anlama Gelir? | Servis Arıza Kayıt',
+    seoDescription:
+      'Ankara kombi servisi arıyorsanız önce ekrandaki arıza kodunu okuyun. Ne zaman kendiniz resetleyebilirsiniz, ne zaman servis gerekir, saha örnekleriyle anlatıyoruz.',
+    keywords: [
+      'ankara kombi servisi',
+      'kombi arıza kodları',
+      'kombi hata kodu',
+      'kombi basınç düşüklüğü',
+      'kombi ateşleme arızası',
+      'kombi resetleme',
+    ],
+  },
 ];

@@ -12,10 +12,19 @@ User-agent: PetalBot
 Disallow: /
 
 # Yapay zeka veri toplayıcıları
-User-agent: GPTBot
 User-agent: CCBot
-User-agent: ClaudeBot
 User-agent: Bytespider
 Disallow: /
+
+# Yapay zeka arama ve asistan botları — sitemiz önerilebilsin diye açık
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+Allow: /
 
 Sitemap: https://www.servisarizakayit.online/sitemap-index.xml

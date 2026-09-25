@@ -116,6 +116,15 @@ const FIGHT_SECRET = env.FIGHT_MODE_SECRET ?? 'demir-elektrik-varsayilan-anahtar
 
 /** Ülkeden bağımsız geçmesine izin verilen "iyi" botlar (User-Agent parçaları, küçük harf). */
 const GOOD_BOTS = [
+  // Yapay zeka arama / asistan botları — sitenin ChatGPT, Claude, Perplexity önerilerinde çıkabilmesi için açık
+  'gptbot',
+  'oai-searchbot',
+  'chatgpt-user',
+  'claudebot',
+  'claude-searchbot',
+  'claude-user',
+  'perplexitybot',
+  'perplexity-user',
   // Google
   'googlebot',
   'google-inspectiontool',
@@ -184,9 +193,6 @@ const BAD_BOTS = [
   'petalbot',
   'bytespider',
   'ccbot',
-  'gptbot',
-  'claudebot',
-  'anthropic-ai',
   'omgili',
   'zoominfobot',
   'screaming frog',

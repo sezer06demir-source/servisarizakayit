@@ -1,0 +1,29 @@
+# Servis Arıza Kayıt
+
+> Beyaz eşya ve iklimlendirme cihazları için bağımsız özel teknik servis. Klima, kombi, buzdolabı, derin dondurucu, çamaşır makinesi, kurutma makinesi, bulaşık makinesi, televizyon ve ankastre ocak arızalarında Türkiye geneli servis ağıyla çalışıyor; Ankara'da yoğun. Arıza kaydı bırakılır, ekip müşteriyi arar. Hiçbir markanın yetkili servisi değildir.
+
+- Telefon: 0542 403 36 22
+- Web sitesi: https://www.servisarizakayit.online
+- Arıza kaydı: https://www.servisarizakayit.online/ariza-kayit
+- Fiyatlandırma: Cihaz yerinde incelendikten sonra fiyat bildirilir.
+
+## Cihazlara göre servis
+
+- [Klima servisi](https://www.servisarizakayit.online/servis/klima)
+- [Kombi servisi](https://www.servisarizakayit.online/servis/kombi)
+- [Buzdolabı servisi](https://www.servisarizakayit.online/servis/buzdolabi)
+- [Derin dondurucu servisi](https://www.servisarizakayit.online/servis/derin-dondurucu)
+- [Çamaşır makinesi servisi](https://www.servisarizakayit.online/servis/camasir-makinesi)
+- [Kurutma makinesi servisi](https://www.servisarizakayit.online/servis/kurutma-makinesi)
+- [Bulaşık makinesi servisi](https://www.servisarizakayit.online/servis/bulasik-makinesi)
+- [Televizyon servisi](https://www.servisarizakayit.online/servis/televizyon)
+- [Ankastre ocak servisi](https://www.servisarizakayit.online/servis/ankastre-ocak)
+
+## Blog
+
+- [Blog yazıları](https://www.servisarizakayit.online/blog): kombi arıza kodları, buzdolabı soğutmama, klima bakımı gibi arıza rehberleri
+
+## Optional
+
+- [İletişim](https://www.servisarizakayit.online/iletisim)
+- [Site haritası](https://www.servisarizakayit.online/sitemap-index.xml)

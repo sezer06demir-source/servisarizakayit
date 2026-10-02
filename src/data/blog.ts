@@ -686,4 +686,74 @@ export const posts: BlogPost[] = [
       'kombi resetleme',
     ],
   },
+  {
+    slug: 'ankara-kurutma-makinesi-isitmiyor',
+    title: 'Ankara’da Kurutma Makinesi Isıtmıyor: Nedenleri ve Çözümü',
+    excerpt:
+      'Kurutma makinesi döndüğü halde ısıtmıyorsa önce filtre ve tahliyeyi kontrol edin; sonuç değişmiyorsa Ankara kurutma makinesi servisi gerekir. Sebepleri anlatıyoruz.',
+    device: 'kurutma-makinesi',
+    readMinutes: 6,
+    date: '2026-10-02',
+    body: [
+      {
+        type: 'p',
+        text: 'Kurutma makinesi şikayetlerinin büyük kısmı aslında tek bir cümleye indiriliyor: “tambur dönüyor, program bitiyor ama çamaşırlar ıslak çıkıyor.” Ankara’da servis kayıtlarımızda bu şikayet, yaz sonu ve kış başında arttığı için sanki havayla ilgili sanılıyor; oysa sebep genelde cihazın kendisinde. Isıtma elemanı çalışmıyorsa makine döner ama kurutma işini yapmaz, bu da enerjiyi boşuna harcayıp sizi yanıltır.',
+      },
+      {
+        type: 'h2',
+        text: 'Isıtmamanın en sık görülen nedenleri',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Tüy filtresinin ve hava kanalının tıkanması nedeniyle hava akışının kesilmesi',
+          'Yoğuşmalı modellerde su haznesinin dolu olması ya da tahliyenin tıkanması',
+          'Isıtıcı rezistansın (yoğuşmalı ya da elektrikli modellerde) yanmış olması',
+          'Termostat veya termik sigortanın atmış olması, genelde tıkanıklık sonrası aşırı ısınmadan kaynaklanır',
+          'Isı pompalı modellerde kompresör veya sensör arızası',
+          'Kondenser ünitesinin tozlanıp ısı transferini düşürmesi',
+        ],
+      },
+      {
+        type: 'h2',
+        text: 'Evde güvenle kontrol edebileceğiniz noktalar',
+      },
+      {
+        type: 'ol',
+        items: [
+          'Tüy filtresini çıkarıp elinizle ya da fırçayla temizleyin, her kullanımdan önce yapılması gereken bir bakımdır',
+          'Su haznesini boşaltın ve yerine düzgün oturduğundan emin olun',
+          'Yoğuşmalı modellerde kondenser ünitesini kılavuza göre çıkarıp su ile yıkayın, tam kurumadan takmayın',
+          'Tahliye hortumu varsa kıvrılma ya da tıkanma olup olmadığına bakın',
+          'Makinenin arkasındaki havalandırma boşluğunun kapalı bir dolaba sıkışmadığından emin olun',
+        ],
+      },
+      {
+        type: 'note',
+        text: 'Isıtıcı rezistans, termik sigorta ve elektronik kart üzerindeki işlemler elektrikle doğrudan temas gerektirir; filtre ve hazneyi temizledikten sonra makine hâlâ ısıtmıyorsa cihazı kendiniz açmayın, teknisyene bırakın.',
+      },
+      {
+        type: 'h2',
+        text: 'Ankara’da bu arızada ne sıklıkla ne görüyoruz?',
+      },
+      {
+        type: 'p',
+        text: 'Sahada en çok rastladığımız tablo, filtre ve kondenser bir arada tıkanmış halde çalıştırılmış bir makine. Hava akışı aylarca kısıtlı kaldığında ısıtıcı önce normalden fazla çalışıp aşırı ısınıyor, sonra termik sigorta devreye girip ısıtmayı tamamen kesiyor. Bu noktada tek başına temizlik yetmez; atmış termik sigortayı değiştirmek gerekir. Isı pompalı modellerde ise hikaye biraz farklı: kompresör veya sensör arızasında makine hiç zorlanmadan da ısıtmayı bırakabilir, bu durumda ölçüm yapmadan sebebini söylemek doğru olmaz.',
+      },
+      {
+        type: 'p',
+        text: 'Filtre ve haznenizi temizlediniz, kondenseri yıkadınız ama kurutma makineniz hâlâ ısıtmıyorsa, vakit kaybetmeden bağımsız teknik servis desteği almanızı öneririz. Ankara genelinde ekibimiz cihazı yerinde inceleyip termik sigorta, rezistans veya sensör arızasını tespit edip kalıcı çözüm sunar. Arıza kaydınızı oluşturmak için 0542 403 36 22 numaralı hattımızdan her gün 08:00–22:00 arası bize ulaşabilirsiniz.',
+      },
+    ],
+    seoTitle: 'Ankara Kurutma Makinesi Servisi: Isıtmıyor mu? | Servis Arıza Kayıt',
+    seoDescription:
+      'Ankara’da kurutma makinesi ısıtmıyor mu? Filtre, kondenser ve termik sigorta kontrolünden ne zaman servis gerektiğine kadar sebepleri anlatıyoruz. 0542 403 36 22',
+    keywords: [
+      'kurutma makinesi ısıtmıyor',
+      'ankara kurutma makinesi servisi',
+      'kurutma makinesi termik sigorta',
+      'kurutma makinesi kondenser tıkanması',
+      'kurutma makinesi arızası',
+    ],
+  },
 ];

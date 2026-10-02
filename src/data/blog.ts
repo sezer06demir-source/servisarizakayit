@@ -734,7 +734,7 @@ export const posts: BlogPost[] = [
       },
       {
         type: 'h2',
-        text: 'Ankara’da bu arızada ne sıklıkla ne görüyoruz?',
+        text: 'Ankara’da bu arızada en sık ne görüyoruz?',
       },
       {
         type: 'p',

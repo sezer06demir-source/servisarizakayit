@@ -756,4 +756,74 @@ export const posts: BlogPost[] = [
       'kurutma makinesi arızası',
     ],
   },
+  {
+    slug: 'ankara-derin-dondurucu-dondurmuyor',
+    title: 'Ankara’da Derin Dondurucu Yeterince Dondurmuyor mu? Nedenleri ve Çözümü',
+    excerpt:
+      'Derin dondurucu çalışıyor ama içindekiler yumuşak kalıyorsa önce kapak contasını ve buzlanmayı kontrol edin; düzelmiyorsa Ankara derin dondurucu servisi gerekir. Sebepleri anlatıyoruz.',
+    device: 'derin-dondurucu',
+    readMinutes: 6,
+    date: '2026-10-09',
+    body: [
+      {
+        type: 'p',
+        text: 'Derin dondurucuyla ilgili en çok aldığımız çağrı şu cümleyle başlıyor: “motor çalışıyor, ışık yanıyor ama içindekiler tam donmuyor.” Ankara’da bu şikayet özellikle kış ortasında ve kalabalık bir ailede sık alışveriş yapılan evlerde artıyor; sebep havayla değil, genelde cihazın soğutma döngüsünde bir noktada kayıp olmasıyla ilgili. Motor çalışıyor diye cihazın sağlam olduğunu düşünmek yanıltıcı olabilir.',
+      },
+      {
+        type: 'h2',
+        text: 'Yeterince dondurmamanın en sık görülen nedenleri',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Kapak contasının sertleşmesi veya aralanması nedeniyle sürekli dışarıdan sıcak hava girmesi',
+          'İç yüzeyde kalın bir buz tabakasının birikip hava dolaşımını ve soğutucu plakanın verimini düşürmesi',
+          'Dışarıdaki yoğuşturucu (arka ya da alt ızgara) bölümünün tozlanıp ısı atamaması',
+          'Termostat ayarının yanlış ya da arızalı olması',
+          'Soğutucu gaz kaçağı veya kompresörün eski haline göre zayıflamış olması',
+          'Cihazın aşırı doldurulması nedeniyle hava sirkülasyonunun kesilmesi',
+        ],
+      },
+      {
+        type: 'h2',
+        text: 'Evde güvenle kontrol edebileceğiniz noktalar',
+      },
+      {
+        type: 'ol',
+        items: [
+          'Kapağı kapatıp aralardan ışık sızıp sızmadığına bakın; conta ile gövde arasına ince bir kağıt sıkıştırıp çekince zor çıkması gerekir',
+          'İç yüzeydeki buz kalınlığına bakın, bir santimden fazlaysa cihazı boşaltıp buz çözdürmeyi planlayın',
+          'Arka veya alt ızgaradaki tozu fişi çekip fırça ya da elektrikli süpürgeyle temizleyin',
+          'Termostatı bir kademe daha soğuğa alıp 24 saat sonra farkı gözlemleyin',
+          'Cihazın duvara ya da dolaba çok yakın olmadığından, arkada hava boşluğu kaldığından emin olun',
+        ],
+      },
+      {
+        type: 'note',
+        text: 'Soğutucu gaz devresi, kompresör ve elektronik kart üzerindeki işlemler özel ekipman ve elektrikle doğrudan temas gerektirir; buz çözdürme ve temizlikten sonra cihaz hâlâ yeterince dondurmuyorsa gaz veya kompresör tarafını kendiniz açmayın, teknisyene bırakın.',
+      },
+      {
+        type: 'h2',
+        text: 'Ankara’da bu arızada en sık ne görüyoruz?',
+      },
+      {
+        type: 'p',
+        text: 'Sahada en çok rastladığımız tablo, kapak contası gevşemiş ve bu yüzden aylarca fazla çalışmış bir cihaz. Conta aralandığında içeri giren nemli hava hem buzlanmayı hızlandırıyor hem de kompresörü gereğinden fazla çalıştırıyor; bir süre sonra bu yorgunluk kompresörün soğutma gücünü de düşürüyor. Buz kalınlığı ve conta sorunu giderildiğinde cihazın çoğu zaman eski performansına döndüğünü görüyoruz; ama gaz kaçağı varsa bu, ölçüm ve basınç testi gerektiren ayrı bir konu.',
+      },
+      {
+        type: 'p',
+        text: 'Kapak contasını kontrol ettiniz, buzunu çözdürdünüz, yoğuşturucuyu temizlediniz ama derin dondurucunuz hâlâ yeterince dondurmuyorsa, vakit kaybetmeden bağımsız teknik servis desteği almanızı öneririz. Ankara genelinde ekibimiz cihazı yerinde inceleyip conta, gaz veya kompresör arızasını tespit edip kalıcı çözüm sunar. Arıza kaydınızı oluşturmak için 0542 403 36 22 numaralı hattımızdan her gün 08:00–22:00 arası bize ulaşabilirsiniz.',
+      },
+    ],
+    seoTitle: 'Ankara Derin Dondurucu Servisi: Dondurmuyor mu? | Servis Arıza Kayıt',
+    seoDescription:
+      'Ankara’da derin dondurucu yeterince dondurmuyor mu? Kapak contası, buzlanma ve yoğuşturucu kontrolünden ne zaman servis gerektiğine kadar sebepleri anlatıyoruz. 0542 403 36 22',
+    keywords: [
+      'derin dondurucu dondurmuyor',
+      'ankara derin dondurucu servisi',
+      'derin dondurucu buz tutması',
+      'derin dondurucu kapak contası',
+      'derin dondurucu arızası',
+    ],
+  },
 ];

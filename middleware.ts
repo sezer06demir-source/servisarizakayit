@@ -25,7 +25,7 @@
 
 export const config = {
   // Statik varlıklar, sitemap, robots ve manifest için çalışmaz; yalnızca sayfa isteklerinde devreye girer.
-  matcher: ['/((?!_astro/|images/|videos/|icons/|favicon\\.ico|favicon\\.svg|og-image\\.png|manifest\\.webmanifest|robots\\.txt|sitemap|sw\\.js|\\.well-known/).*)'],
+  matcher: ['/((?!_astro/|images/|videos/|icons/|favicon\\.ico|favicon\\.svg|og-image\\.png|manifest\\.webmanifest|robots\\.txt|llms\\.txt|sitemap|sw\\.js|\\.well-known/).*)'],
 };
 
 /* ----------------------------------------------------------------------------- yardımcılar */

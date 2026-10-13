@@ -7,7 +7,7 @@ export default defineConfig({
   site: SITE_URL,
   output: 'static',
   trailingSlash: 'never',
-  build: { format: 'file', inlineStylesheets: 'auto' },
+  build: { format: 'file', inlineStylesheets: 'always' },
   compressHTML: true,
   integrations: [
     sitemap({

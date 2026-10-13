@@ -348,6 +348,18 @@ export default async function middleware(req: Request): Promise<Response | undef
     return deny(404, 'Not found');
   }
 
+  // 6b) /api/ip — sayfanın üstündeki ziyaretçi bilgi çubuğu için IP ve ülke (yalnızca isteği yapan kişiye).
+  //    İyi-bot kontrolünden önce: PageSpeed/Lighthouse da bu adresi çağırır, 404 alırsa konsol hatası sayar.
+  if (path === '/api/ip') {
+    const apiCountry = getCountry(req, cf);
+    const names: Record<string, string> = { TR: 'Türkiye', DZ: 'Cezayir' };
+    const body = JSON.stringify({ ip: ip || null, country: apiCountry ?? null, countryName: apiCountry ? (names[apiCountry] ?? apiCountry) : null });
+    return new Response(body, {
+      status: 200,
+      headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store, private', 'x-robots-tag': 'noindex' },
+    });
+  }
+
   // 4) İyi botlar ülkeden bağımsız geçer (Googlebot ABD'den tarar).
   const isGoodBot = GOOD_BOTS.some((b) => ua.includes(b));
   if (isGoodBot) return undefined;
@@ -363,15 +375,6 @@ export default async function middleware(req: Request): Promise<Response | undef
     return deny(403, 'Bu site yalnızca hizmet verdiğimiz bölgelerden erişime açıktır.');
   }
 
-  // 6b) /api/ip — sayfanın üstündeki ziyaretçi bilgi çubuğu için IP ve ülke (yalnızca isteği yapan kişiye).
-  if (path === '/api/ip') {
-    const names: Record<string, string> = { TR: 'Türkiye', DZ: 'Cezayir' };
-    const body = JSON.stringify({ ip: ip || null, country: country ?? null, countryName: country ? (names[country] ?? country) : null });
-    return new Response(body, {
-      status: 200,
-      headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store, private', 'x-robots-tag': 'noindex' },
-    });
-  }
 
   // 7) Saldırı modu: JS doğrulama çerezi olmayan istemciye meydan okuma sayfası.
   //    Çerezi yazamayan tarayıcılar (çerez kapalı) JS'in eklediği __chk=1 işaretiyle döngüye girmeden geçer.

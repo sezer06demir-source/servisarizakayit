@@ -21,7 +21,7 @@
   --accent-deep: #e5670c;
   --accent-tint: #fff0e4;
   --gold: #f7b500;
-  --wa: #1faf54;
+  --wa: #15803d;
   --wa-deep: #0f8f42;
 
   /* Koyu blok (teal tonlu grafit) */
@@ -264,7 +264,7 @@ label {
   background: var(--accent-deep);
 }
 .btn--brand {
-  background: var(--brand);
+  background: #0b7f7b;
   color: #fff;
 }
 .btn--brand:hover {

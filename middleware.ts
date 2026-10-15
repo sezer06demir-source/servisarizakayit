@@ -49,6 +49,10 @@ const SECURITY_ON = (env.SECURITY_MODE ?? 'on').toLowerCase() !== 'off';
 const FIGHT_MODE = env.FIGHT_MODE === '1';
 /** Elle zorlama; normalde gerek yok, Cloudflare proxy'si bağlanan IP'den otomatik tespit edilir. */
 const BEHIND_CLOUDFLARE_ENV = env.BEHIND_CLOUDFLARE === '1';
+/** Reklam tıklaması IP kaydı (Google Apps Script web uygulaması). Tanımlı değilse kayıt yapılmaz. */
+const IPLOG_URL = env.IPLOG_URL;
+const IPLOG_TOKEN = env.IPLOG_TOKEN;
+const IPLOG_SITE = env.IPLOG_SITE ?? 'site';
 
 /** Cloudflare'in yayınladığı çıkış aralıkları (https://www.cloudflare.com/ips). Yalnızca bu IP'lerden gelen
  *  isteklerde cf-ipcountry / cf-connecting-ip başlıklarına güvenilir; böylece başlık sahteciliği engellenir. */
@@ -324,7 +328,7 @@ setTimeout(function(){
 
 /* ----------------------------------------------------------------------------- ana akış */
 
-export default async function middleware(req: Request): Promise<Response | undefined> {
+export default async function middleware(req: Request, ctx?: { waitUntil?: (p: Promise<unknown>) => void }): Promise<Response | undefined> {
   if (!SECURITY_ON) return undefined;
 
   const url = new URL(req.url);
@@ -371,6 +375,15 @@ export default async function middleware(req: Request): Promise<Response | undef
 
   // 6) Ülke filtresi. Ülke bilgisi yoksa (yerel geliştirme) geçir.
   const country = getCountry(req, cf);
+
+  // 5b) Reklam tıklaması kaydı: adres gclid/gbraid/wbraid taşıyorsa ziyareti Google E-Tablo'ya yaz (yanıtı bekletmez).
+  //     Google Ads komut dosyası bu tablodan, aynı IP'den çok sayıda farklı tıklama gelenleri hariç tutar.
+  const adClick = url.searchParams.get('gclid') ?? url.searchParams.get('gbraid') ?? url.searchParams.get('wbraid');
+  if (adClick && req.method === 'GET' && IPLOG_URL && IPLOG_TOKEN && ctx?.waitUntil) {
+    const payload = JSON.stringify({ t: IPLOG_TOKEN, s: IPLOG_SITE, ip, g: adClick.slice(0, 120), p: path.slice(0, 200), c: country ?? '', ua: ua.slice(0, 200) });
+    ctx.waitUntil(fetch(IPLOG_URL, { method: 'POST', headers: { 'content-type': 'application/json' }, body: payload }).catch(() => undefined));
+  }
+
   if (country && !ALLOWED_COUNTRIES.has(country)) {
     return deny(403, 'Bu site yalnızca hizmet verdiğimiz bölgelerden erişime açıktır.');
   }

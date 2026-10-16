@@ -826,4 +826,183 @@ export const posts: BlogPost[] = [
       'derin dondurucu arızası',
     ],
   },
+  {
+    slug: 'halkali-kombi-atesleme-yapmiyor',
+    title: 'Halkalı’da Kombi Ateşleme Yapmıyor: Olası Nedenler ve Ne Zaman Servis Gerekir',
+    excerpt:
+      'Halkalı’da kombi çalıştırınca ateşleme sesi geliyor ama alev tutmuyorsa sebep genelde gaz valfi, elektrot ya da iyonizasyon sensöründedir; hangi durumda kendiniz bakabileceğinizi, hangisinde servis gerektiğini anlatıyoruz.',
+    device: 'kombi',
+    readMinutes: 6,
+    date: '2026-10-16',
+    body: [
+      {
+        type: 'p',
+        text: 'Halkalı’da kış başlangıcında en sık aldığımız çağrılardan biri bu: kombi düğmesine basılıyor, cihaz çalışmaya hazırlanıyor, hatta kısa bir ateşleme sesi duyuluyor ama alev tutmuyor ve cihaz birkaç saniye sonra hata verip duruyor. Bu tabloya kısaca “ateşleme yapmıyor” diyoruz ve sebebi neredeyse hiçbir zaman tek bir parça değildir; gaz beslemesinden elektronik karta kadar birkaç noktayı sırayla elemek gerekir.',
+      },
+      {
+        type: 'h2',
+        text: 'Kombi ateşleme yapmıyorsa en olası nedenler nelerdir?',
+      },
+      {
+        type: 'p',
+        text: 'En sık karşılaştığımız üç sebep gaz valfinin tam açılmaması, ateşleme elektrotunun ucunda biriken kurum ve iyonizasyon (alev algılama) sensörünün alevi doğru okuyamamasıdır. Bunlara ek olarak doğalgaz kesintisi, sayaçtaki gaz vanasının yarım açık kalması ve nadiren de olsa elektronik karttaki bir arıza da benzer belirti verir.',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Doğalgaz sayacındaki ana vananın tam açık olmaması',
+          'Ateşleme elektrotunun ucunda kurum veya oksitlenme birikmesi',
+          'İyonizasyon sensörünün alevi doğru algılayamaması',
+          'Gaz valfinin kumanda sinyaline tam tepki vermemesi',
+          'Baca veya hava emiş sensöründe tıkanıklık',
+          'Elektronik kartın ateşleme sinyalini doğru zamanlayamaması',
+        ],
+      },
+      {
+        type: 'h2',
+        text: 'Servis çağırmadan önce evde kontrol edilebilecekler',
+      },
+      {
+        type: 'p',
+        text: 'Birkaç basit kontrol, çağrı öncesinde sorunu daraltmanıza yardımcı olur ve teknisyene doğru bilgiyi vermenizi sağlar.',
+      },
+      {
+        type: 'ol',
+        items: [
+          'Doğalgaz sayacındaki ana vananın hatta paralel, yani tam açık konumda olduğundan emin olun',
+          'Kombinin ekranındaki arıza kodunu not alın; kod varsa teşhis çok daha hızlı olur',
+          'Mutfaktaki ocak veya diğer doğalgazlı cihazların çalışıp çalışmadığına bakın; onlar da çalışmıyorsa sorun bina geneli gaz beslemesinde olabilir',
+          'Kombiyi kapatıp 2-3 dakika bekledikten sonra bir kez daha çalıştırın; tek seferlik bir ateşleme hatası bazen kendiliğinden geçer',
+        ],
+      },
+      {
+        type: 'note',
+        text: 'Kombi doğalgazla çalışan bir cihazdır. Gaz valfi, ateşleme elektrotu ve iyonizasyon sensörü üzerindeki işlemleri kendiniz yapmaya çalışmayın; yanlış müdahale hem cihaza zarar verir hem de güvenlik riski oluşturur.',
+      },
+      {
+        type: 'h2',
+        text: 'Halkalı’da sahada en çok ne görüyoruz?',
+      },
+      {
+        type: 'p',
+        text: 'Halkalı’daki sitelerde kombiler genelde bina ortak bacasına bağlı ve yıllık bakımı aksamış cihazlarda ateşleme elektrotunun ucunda ince bir kurum tabakası birikiyor; bu da ateşlemeyi düzensizleştirip kombiyi birkaç denemede bir hata verdiriyor. Müstakil ve bahçeli evlerde ise daha çok sayaç vanasının kışın ilk çalıştırmada tam açılmamış olduğunu ya da uzun süre kullanılmayan bir hatta hava birikmiş olduğunu görüyoruz. İkisi de kombiyi değiştirmeyi değil, doğru noktayı bulup temizlemeyi ya da ayarlamayı gerektiriyor.',
+      },
+      {
+        type: 'h2',
+        text: 'Sıkça Sorulan Sorular',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Kombi ateşleme sesi çıkarıyor ama alev hiç görünmüyor, bu ne demek? Gaz beslemesi kombiye ulaşıyor ama elektrot kıvılcım üretemiyor ya da gaz valfi tam açılmıyor olabilir; sayaç vanasını kontrol edip değişmiyorsa servise bırakmak gerekir.',
+          'Kombi bazen ateşliyor bazen ateşlemiyor, normal mi? Hayır, bu genelde elektrotta ya da sensörde başlayan bir sorunun ilk belirtisidir; parça tamamen bozulmadan önce kontrol ettirmek daha ucuza ve hızlıya gelir.',
+          'Halkalı’da akşam saatlerinde kombi arızasına bakıyor musunuz? Bakıyoruz; hattımız her gün 08:00–22:00 arası açık, akşam saatlerindeki çağrılara da aynı gün dönüyoruz.',
+          'Ateşleme sorunu kombinin ömrünü etkiler mi? Düzeltilmeden bırakılırsa evet; sürekli başarısız ateşleme denemeleri elektronik kartı ve valfi yıpratabilir.',
+        ],
+      },
+      {
+        type: 'p',
+        text: 'Halkalı’da kombiniz ateşleme yapmıyorsa yukarıdaki basit kontrolleri yapabilirsiniz; sonuç değişmiyorsa bağımsız teknik servis ekibimiz cihazı yerinde inceleyip gaz valfi, elektrot ya da sensör tarafındaki sorunu tespit eder. Küçükçekmece ve çevresinde arıza kaydınızı oluşturmak için 0542 403 36 22 numaralı hattımızdan her gün 08:00–22:00 arası ulaşabilir, ayrıca /ariza-kayit sayfasından da kayıt bırakabilirsiniz.',
+      },
+    ],
+    seoTitle: 'Halkalı Kombi Servisi: Ateşleme Yapmıyor mu? | Servis Arıza Kayıt',
+    seoDescription:
+      'Halkalı’da kombi ateşleme yapmıyorsa gaz valfi, elektrot ve iyonizasyon sensörü ilk bakılacak noktalardır. Küçükçekmece kombi servisi için 0542 403 36 22.',
+    keywords: [
+      'Halkalı kombi servisi',
+      'Halkalı kombi tamircisi',
+      'Küçükçekmece kombi servisi',
+      'kombi ateşleme yapmıyor',
+      'kombi yanmıyor',
+      'İstanbul kombi servisi',
+    ],
+  },
+  {
+    slug: 'ambarli-buzdolabi-buzlanma-no-frost-arizasi',
+    title: 'Ambarlı’da Buzdolabı Buz Tutuyor: No Frost Arızası mı, Conta mı?',
+    excerpt:
+      'Ambarlı’da buzdolabının arka duvarında ya da dondurucu bölmesinde aşırı buzlanma görülüyorsa sebep genelde kapak contası, defrost ısıtıcısı ya da sensör arızasıdır; farkı nasıl ayırt ettiğimizi anlatıyoruz.',
+    device: 'buzdolabi',
+    readMinutes: 6,
+    date: '2026-10-16',
+    body: [
+      {
+        type: 'p',
+        text: 'Ambarlı’da “no frost buzdolabımız buz tutmaz diye almıştık, şimdi arka duvarı buz kaplamış” diyen müşterilerimiz var. No frost sistemi normal şartlarda buzlanmayı otomatik olarak çözer; bu döngü bir yerde bozulduğunda buz birikmeye başlar ve çoğu zaman cihazın soğutma gücü de düşer.',
+      },
+      {
+        type: 'h2',
+        text: 'No frost buzdolabı neden buz tutar?',
+      },
+      {
+        type: 'p',
+        text: 'En sık nedeni kapak contasının bir noktadan sızdırması ya da defrost (buz çözme) ısıtıcısının çalışmamasıdır. Conta sızdırırsa dışarıdan giren nemli hava sürekli donar; defrost ısıtıcısı ya da sensörü arızalıysa cihaz periyodik buz çözme işlemini hiç yapamaz ve buz birikerek büyür.',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Kapak contasında yırtık, sertleşme veya tam kapanmama',
+          'Defrost ısıtıcısının yanması veya devre dışı kalması',
+          'Defrost termostatı ya da sensörünün arızalanması',
+          'Buz çözme suyunun tahliye kanalının tıkanması',
+          'Kapağın sık ve uzun süre açık tutulması',
+          'Cihazın arka tarafında yetersiz hava boşluğu',
+        ],
+      },
+      {
+        type: 'h2',
+        text: 'Servis çağırmadan önce evde yapılabilecek kontroller',
+      },
+      {
+        type: 'ol',
+        items: [
+          'Kapağı kapatıp conta ile gövde arasına ince bir kağıt sıkıştırın; kağıt kolayca çekiliyorsa contada sızıntı olabilir',
+          'Arka duvardaki ya da dondurucudaki buzun kalınlığına ve yayılma şekline bakın',
+          'Buz çözme suyunun aktığı küçük tahliye deliğinin tıkalı olup olmadığını kontrol edin',
+          'Cihazı fişten çekip birkaç saat kapakları açık bırakarak buzun bir kısmını kendiliğinden çözdürün',
+          'Cihazın arkasında duvara yapışık olmadığından, hava akımı için boşluk kaldığından emin olun',
+        ],
+      },
+      {
+        type: 'note',
+        text: 'Defrost ısıtıcısı, sensör ve elektronik kart üzerindeki işlemler doğrudan elektrikle temas gerektirir; buzu çözdürüp contayı kontrol ettikten sonra sorun devam ediyorsa ısıtıcı ya da sensör tarafını kendiniz açmayın, teknisyene bırakın.',
+      },
+      {
+        type: 'h2',
+        text: 'Ambarlı’da sahada en çok ne görüyoruz?',
+      },
+      {
+        type: 'p',
+        text: 'Ambarlı ve Firuzköy tarafındaki dairelerde en sık gördüğümüz tablo, birkaç yıllık cihazlarda kapak contasının köşelerden sertleşip esnekliğini kaybetmesi. Conta görünüşte sağlam dursa da köşede ince bir aralık bırakıyor, bu da sürekli nemli hava girişine ve arka duvarda kalın bir buz tabakasına yol açıyor. Defrost ısıtıcısı yanmışsa buzlanma daha hızlı ve daha kalın oluyor; bu durumda sadece buzu çözdürmek geçici bir rahatlama sağlasa da birkaç gün içinde buz yeniden birikiyor.',
+      },
+      {
+        type: 'h2',
+        text: 'Sıkça Sorulan Sorular',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Buzu çözdürdüm ama birkaç gün sonra yine birikti, neden? Bu genelde contada sızıntı ya da defrost ısıtıcısının çalışmadığının işaretidir; kaynağı giderilmeden buz her seferinde geri gelir.',
+          'No frost cihazda hiç buz olmaması gerekmiyor muydu? Doğru çalışan bir sistemde ince bir kırağı dışında belirgin buzlanma olmaz; kalın ve yaygın buz bir arızaya işaret eder.',
+          'Contayı kendim değiştirebilir miyim? Ölçüsü uygun bir conta bulunsa bile contanın gövdeye tam oturması ve sızdırmazlığı teknik bir iştir; yanlış takılan conta sorunu çözmez.',
+          'Ambarlı’ya ne zaman gelebilirsiniz? Hattımız her gün 08:00–22:00 arası açık; aynı gün ya da ertesi gün için randevu planlıyoruz.',
+        ],
+      },
+      {
+        type: 'p',
+        text: 'Ambarlı’da buzdolabınızda buzlanma sorunu yaşıyorsanız önce contayı ve tahliye kanalını kontrol edebilirsiniz; buz çözme sonrası sorun tekrarlıyorsa bağımsız teknik servis ekibimiz contayı, defrost ısıtıcısını ve sensörü yerinde kontrol edip kalıcı çözüm sunar. Avcılar ve çevresinde arıza kaydınızı oluşturmak için 0542 403 36 22 numaralı hattımızdan her gün 08:00–22:00 arası ulaşabilir, ayrıca /ariza-kayit sayfasından da kayıt bırakabilirsiniz.',
+      },
+    ],
+    seoTitle: 'Ambarlı Buzdolabı Servisi: Buz mu Tutuyor? | Servis Arıza Kayıt',
+    seoDescription:
+      'Ambarlı’da buzdolabı buz tutuyorsa conta, defrost ısıtıcısı ve sensör ilk bakılacak noktalardır. Avcılar buzdolabı servisi için 0542 403 36 22.',
+    keywords: [
+      'Ambarlı buzdolabı servisi',
+      'Avcılar buzdolabı servisi',
+      'Avcılar buzdolabı tamircisi',
+      'buzdolabı buz tutuyor',
+      'no frost arızası',
+      'İstanbul buzdolabı servisi',
+    ],
+  },
 ];

@@ -32,6 +32,8 @@ const cols = devices.slice(0, 6);
           <li><a href="/iletisim">İletişim</a></li>
           <li><a href="/gizlilik-politikasi">Gizlilik</a></li>
           <li><a href="/kvkk-aydinlatma-metni">KVKK</a></li>
+          <li><a href="/cerez-politikasi">Çerez Politikası</a></li>
+          {site.googleAds.id && <li><button type="button" class="ftr__cookie" data-cookie-settings>Çerez tercihleri</button></li>}
         </ul>
       </nav>
     </div>
@@ -104,6 +106,18 @@ const cols = devices.slice(0, 6);
     transition: color var(--dur);
   }
   .ftr nav a:hover {
+    color: #fff;
+  }
+  .ftr__cookie {
+    padding: 0;
+    border: 0;
+    background: none;
+    color: var(--on-dark-dim);
+    font: inherit;
+    cursor: pointer;
+    transition: color var(--dur);
+  }
+  .ftr__cookie:hover {
     color: #fff;
   }
   .ftr__disclaimer {

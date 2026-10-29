@@ -1,0 +1,110 @@
+---
+/**
+ * Çerez onay çubuğu (KVKK). Google Ads etiketi açıksa gösterilir; seçim yapılana kadar
+ * reklam çerezleri kapalıdır (GoogleAdsTag.astro onay modu varsayılanı: reddedildi).
+ * Sayfada [data-cookie-settings] olan bir düğme çubuğu yeniden açar.
+ */
+import { site } from '@data/site';
+---
+
+{
+  site.googleAds.id && (
+    <div class="cc" id="cookie-consent" role="dialog" aria-live="polite" aria-label="Çerez tercihi" hidden>
+      <p class="cc__text">
+        Reklamlarımızın işe yarayıp yaramadığını ölçmek için Google çerezlerini kullanmak istiyoruz. Onay vermezseniz
+        çerez yazılmaz. <a href="/cerez-politikasi">Çerez Politikası</a>
+      </p>
+      <div class="cc__actions">
+        <button type="button" class="cc__btn" data-cc="denied">Reddet</button>
+        <button type="button" class="cc__btn" data-cc="granted">Kabul Et</button>
+      </div>
+    </div>
+  )
+}
+
+<style>
+  .cc {
+    position: fixed;
+    left: 0.75rem;
+    right: 0.75rem;
+    bottom: calc(var(--mobile-bar-h) + env(safe-area-inset-bottom) + 0.75rem);
+    z-index: 95;
+    display: grid;
+    gap: 0.75rem;
+    padding: 1rem;
+    background: var(--dark);
+    color: var(--on-dark);
+    border: 1px solid var(--dark-line);
+    border-radius: var(--r);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+    font-size: var(--fs-sm);
+    line-height: 1.5;
+  }
+  .cc[hidden] {
+    display: none;
+  }
+  .cc__text {
+    margin: 0;
+  }
+  .cc__text a {
+    color: var(--accent);
+    text-decoration: underline;
+  }
+  .cc__actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+  /* İki seçenek eşit ağırlıkta (KVKK çerez rehberi). */
+  .cc__btn {
+    min-height: 44px;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--accent);
+    border-radius: var(--r);
+    background: transparent;
+    color: #fff;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .cc__btn:hover,
+  .cc__btn:focus-visible {
+    background: var(--accent);
+    color: #fff;
+  }
+  @media (min-width: 768px) {
+    .cc {
+      right: auto;
+      bottom: 1.5rem;
+      left: 1.5rem;
+      max-width: 420px;
+    }
+  }
+</style>
+
+<script>
+  const box = document.getElementById('cookie-consent');
+  if (box) {
+    let choice: string | null = null;
+    try {
+      choice = localStorage.getItem('sak_consent');
+    } catch {}
+    if (choice !== 'granted' && choice !== 'denied') box.hidden = false;
+
+    box.addEventListener('click', (e) => {
+      const btn = (e.target as HTMLElement).closest<HTMLButtonElement>('[data-cc]');
+      if (!btn) return;
+      const value = btn.dataset.cc === 'granted' ? 'granted' : 'denied';
+      try {
+        localStorage.setItem('sak_consent', value);
+      } catch {}
+      const gtag = (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag;
+      gtag?.('consent', 'update', { ad_storage: value, ad_user_data: value, ad_personalization: value });
+      box.hidden = true;
+    });
+
+    document.addEventListener('click', (e) => {
+      if ((e.target as HTMLElement).closest('[data-cookie-settings]')) box.hidden = false;
+    });
+  }
+</script>

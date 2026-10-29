@@ -1,0 +1,54 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import { breadcrumbSchema } from '@utils/seo';
+const crumbs = [
+  { name: 'Ana sayfa', href: '/' },
+  { name: 'Çerez Politikası', href: '/cerez-politikasi' },
+];
+---
+
+<BaseLayout title="Çerez Politikası" description="Servis Arıza Kayıt web sitesinde kullanılan çerezler, Google Ads dönüşüm ölçümü ve tarayıcı depolama alanları." schema={[breadcrumbSchema(crumbs)]}>
+  <section class="section">
+    <div class="container prose legal">
+      <ol class="crumbs">{crumbs.map((c, i) => <li>{i === crumbs.length - 1 ? <span>{c.name}</span> : <a href={c.href}>{c.name}</a>}</li>)}</ol>
+      <h1>Çerez Politikası</h1>
+      <p>Sitenin çalışması ve güvenliği için gerekli teknik çerezlerin yanında, yalnızca onay verirseniz Google Ads reklam çerezi kullanılır. İlk girişte çıkan çubukta "Reddet" ve "Kabul Et" seçenekleri eşit ağırlıktadır.</p>
+      <h2>Google Ads dönüşüm ölçümü</h2>
+      <p>Google reklamlarımızdan gelen ziyaretçilerin telefon veya WhatsApp düğmesine tıklayıp tıklamadığını ölçmek için kullanılır. Onay verirseniz Google tarayıcınıza reklam çerezi yazar. Onay vermezseniz çerez yazılmaz; Google'a yalnızca kimliğinizi içermeyen, çerezsiz bir sinyal gider. Seçiminiz tarayıcınızda <code>sak_consent</code> adıyla saklanır; sayfa altındaki "Çerez tercihleri" bağlantısıyla değiştirebilirsiniz.</p>
+      <h2>Kullanılan teknik çerezler ve depolama</h2>
+      <table>
+        <thead><tr><th>Ad</th><th>Amaç</th><th>Süre</th></tr></thead>
+        <tbody>
+          <tr><td>de_chk</td><td>Güvenlik doğrulaması: tarayıcının otomatik bir program olmadığını anlamak için</td><td>12 saat</td></tr>
+          <tr><td>Cloudflare çerezleri (__cf_bm vb.)</td><td>Bot koruması ve trafik yönetimi; Cloudflare tarafından yerleştirilir</td><td>30 dakikaya kadar</td></tr>
+        </tbody>
+      </table>
+      <h2>Çerezleri yönetme</h2>
+      <p>Tarayıcı ayarlarınızdan çerezleri silebilir ya da engelleyebilirsiniz. Güvenlik çerezi engellenirse site yine açılır; yalnızca ilk girişte kısa bir doğrulama sayfası görebilirsiniz.</p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .legal h2 {
+    font-size: var(--fs-lg);
+    margin: 1.75rem 0 0.5rem;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--fs-sm);
+    margin: 0.5rem 0 1rem;
+  }
+  th,
+  td {
+    text-align: left;
+    padding: 0.6rem 0.5rem;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  th {
+    color: var(--steel);
+    font-weight: 600;
+  }
+</style>

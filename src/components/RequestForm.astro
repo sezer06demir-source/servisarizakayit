@@ -182,6 +182,7 @@ const { title = 'Arıza kaydı oluşturun', presetDevice } = Astro.props;
         `Telefon: ${v('phone')}`,
       ].filter((l) => l !== '');
       const url = `https://wa.me/${form.dataset.wa}?text=${encodeURIComponent(lines.join('\n'))}`;
+      (window as unknown as { sakTrackWhatsApp?: () => void }).sakTrackWhatsApp?.();
       window.open(url, '_blank', 'noopener');
       say('Kaydınız hazırlandı. Açılan WhatsApp penceresinde Gönder’e basın.', true);
       form.reset();

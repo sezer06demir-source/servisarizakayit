@@ -1,0 +1,64 @@
+---
+/**
+ * Google Ads etiketi + onay modu v2 (varsayılan: reddedildi).
+ * Onay yoksa Google çerez yazmaz, yalnızca anonim sinyal gönderir (dönüşüm modellemesi).
+ * Sitedeki tüm tel: ve WhatsApp bağlantılarına tıklamalar dönüşüm olarak gönderilir.
+ * Seçim localStorage 'sak_consent' anahtarında tutulur ('granted' | 'denied'); çubuk CookieConsent.astro'da.
+ */
+import { site } from '@data/site';
+
+const { id, phoneLabel, whatsappLabel } = site.googleAds;
+---
+
+{
+  id && (
+    <>
+      <script is:inline define:vars={{ id, phoneLabel, whatsappLabel }}>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        window.gtag = gtag;
+        var choice = null;
+        try {
+          choice = localStorage.getItem('sak_consent');
+        } catch (e) {}
+        gtag('consent', 'default', {
+          ad_storage: 'denied',
+          ad_user_data: 'denied',
+          ad_personalization: 'denied',
+          analytics_storage: 'denied',
+          wait_for_update: 500,
+        });
+        if (choice === 'granted') {
+          gtag('consent', 'update', { ad_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted' });
+        }
+        gtag('set', 'ads_data_redaction', true);
+        gtag('set', 'url_passthrough', true);
+        gtag('js', new Date());
+        gtag('config', id);
+
+        // Bağlantı olmadan WhatsApp açan yerler (arıza kayıt formu window.open kullanır) bunu çağırır.
+        window.sakTrackWhatsApp = function () {
+          if (whatsappLabel) gtag('event', 'conversion', { send_to: id + '/' + whatsappLabel });
+        };
+
+        // Tüm sayfalardaki arama ve WhatsApp bağlantıları (menü, sabit çubuk, yüzen düğme, sayfa içi).
+        document.addEventListener(
+          'click',
+          function (e) {
+            var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+            if (!a) return;
+            var href = a.getAttribute('href') || '';
+            var label = '';
+            if (href.indexOf('tel:') === 0) label = phoneLabel;
+            else if (/^https?:\/\/(wa\.me|api\.whatsapp\.com|(www\.)?whatsapp\.com)\//i.test(href)) label = whatsappLabel;
+            if (label) gtag('event', 'conversion', { send_to: id + '/' + label });
+          },
+          true,
+        );
+      </script>
+      <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${id}`} />
+    </>
+  )
+}

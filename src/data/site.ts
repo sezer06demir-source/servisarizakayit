@@ -32,7 +32,7 @@ export const site = {
     whatsappLabel: 'dxFbCOWgra4dEIzJgqFE',
   },
 
-  hours: { display: '08:00 – 22:00', opens: '08:00', closes: '22:00', daysText: 'Haftanın 7 günü' },
+  hours: { display: '24 saat', opens: '00:00', closes: '23:59', daysText: 'Haftanın 7 günü' },
   area: 'Türkiye geneli servis ağı',
   /** Yasal ibare — sitenin her yerinde görünür kılınmalı. */
   disclaimer:

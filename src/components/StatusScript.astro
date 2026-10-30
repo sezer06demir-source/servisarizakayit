@@ -1,7 +1,7 @@
 ---
 import { site } from '@data/site';
 const open = Number(site.hours.opens.split(':')[0]);
-const close = Number(site.hours.closes.split(':')[0]);
+const close = site.hours.closes === '23:59' ? 24 : Number(site.hours.closes.split(':')[0]);
 ---
 
 <script is:inline define:vars={{ open, close, display: site.hours.display, days: site.hours.daysText }}>

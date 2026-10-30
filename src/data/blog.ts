@@ -1005,4 +1005,220 @@ export const posts: BlogPost[] = [
       'İstanbul buzdolabı servisi',
     ],
   },
+  {
+    slug: 'beylikduzu-kombi-sicak-su-vermiyor',
+    title: 'Beylikdüzü’nde Kombi Sıcak Su Vermiyor mu? Nedenleri ve Çözüm Yolları',
+    excerpt:
+      'Beylikdüzü’nde kombi ısıtmaya devam edip musluktan sıcak su gelmiyorsa sebep genelde üç yollu vana, debi sensörü ya da kireçlenmiş eşanjördür; hangisine bakılacağını ve evde neyi kontrol edebileceğinizi anlatıyoruz.',
+    device: 'kombi',
+    readMinutes: 7,
+    date: '2026-10-30',
+    body: [
+      {
+        type: 'p',
+        text: 'Beylikdüzü’nde kışın en çok duyduğumuz şikâyetlerden biri şu: salonlar sıcak, kombi çalışıyor, ama musluğu açınca sıcak su ya hiç gelmiyor ya da birkaç saniye ılık akıp hemen soğuyor. Çoğu kişi bunu duyunca kombinin ömrünü tamamladığını düşünüyor, hatta bazı müşterilerimiz telefonda doğrudan "yenisini mi almalıyız" diye soruyor; oysa bu tablo neredeyse her zaman tek bir parçaya işaret ediyor ve kombiyi değiştirmeden onarılabiliyor. İş sadece hangi parçanın suçlu olduğunu doğru sırayla elemekten ibaret.',
+      },
+      {
+        type: 'p',
+        text: 'Burada kafa karıştıran nokta şu: ısıtma tarafı sorunsuz çalıştığı için insanlar kombinin genel olarak sağlıklı olduğunu düşünüyor, sıcak su tarafındaki arızayı ayrı bir cihaz sorunu gibi değerlendiriyor. Oysa ikisi aynı kombi içinde, suyu yönlendiren tek bir mekanizmaya bağlı; mekanizma takılınca sadece sıcak su tarafı etkileniyor, ısıtma devam ediyor.',
+      },
+      {
+        type: 'h2',
+        text: 'Kombi ısıtma yapıyor ama sıcak su vermiyorsa sorun nedir?',
+      },
+      {
+        type: 'p',
+        text: 'Bu durumda akla gelmesi gereken ilk parça üç yollu vanadır (diverter valve); vana suyu ısıtma hattı ile sıcak su hattı arasında yönlendirir ve mekanizması tutukluk yaptığında su hep radyatör tarafına gidip musluğa hiç yönlenmez. Daha az sıklıkla debi sensörünün musluğun açıldığını algılayamaması ya da sıcak su eşanjörünün tamamen tıkanması da aynı belirtiyi verir.',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Üç yollu vananın mekanik olarak sıkışması',
+          'Üç yollu vana motorunun ya da aktüatörünün arızalanması',
+          'Sıcak su debi sensörünün kirlenmesi veya arızalanması',
+          'Plaka eşanjörün kireçle tamamen tıkanması',
+          'Sıcak su hattındaki filtrenin tıkalı olması',
+          'Elektronik kartın vana sinyalini doğru vermemesi',
+        ],
+      },
+      {
+        type: 'h2',
+        text: 'Kombi hiç ısıtmıyor ve sıcak su da yoksa neye bakılır?',
+      },
+      {
+        type: 'p',
+        text: 'Bu durumda sorun artık vanada değil, kombinin genel çalışmasındadır; ateşleme, gaz beslemesi ya da su basıncı tarafına bakmak gerekir. Kombi ateşleme yapmıyor ya da sürekli hata verip duruyorsa bu konuyu ayrıntılı ele aldığımız /blog/halkali-kombi-atesleme-yapmiyor yazımıza bakabilirsiniz; kısaca gaz valfi, elektrot ve iyonizasyon sensörü ilk bakılacak noktalardır.',
+      },
+      {
+        type: 'h2',
+        text: 'Musluktan gelen su önce ılık sonra soğuk oluyor, bu normal mi?',
+      },
+      {
+        type: 'p',
+        text: 'Hayır, bu plaka eşanjörün kireçle kısmen tıkandığının tipik belirtisidir. Eşanjör kısa bir süre ısıtıp sonra yeterli debiyi geçiremeyince akış soğuk suyla karışmış gibi algılanır. Su sertliği yüksek bölgelerde bu durum birkaç yıl içinde ortaya çıkabilir ve eşanjörün kimyasal olarak temizlenmesi ya da değiştirilmesi gerekir.',
+      },
+      {
+        type: 'h2',
+        text: 'Servis çağırmadan önce evde kontrol edilebilecekler',
+      },
+      {
+        type: 'ol',
+        items: [
+          'Kombinin su basıncını gösterge üzerinden kontrol edin; genelde 1-1,5 bar aralığında olmalı',
+          'Isıtma ve sıcak su musluğunu birlikte açıp kombi ekranında hata kodu çıkıp çıkmadığına bakın',
+          'Sıcak su musluğunun önündeki filtre ya da aeratörü sökerek tıkalı olup olmadığını kontrol edin',
+          'Kombiyi kapatıp yeniden başlatın; tek seferlik bir sensör hatası bazen kendiliğinden düzelir',
+        ],
+      },
+      {
+        type: 'note',
+        text: 'Üç yollu vana, eşanjör ve elektronik kart basınçlı su hattına ve kombinin iç devresine doğrudan bağlıdır. Bu parçaları kendiniz sökmeyin; yanlış bir müdahale hem sızıntıya hem elektronik arızaya yol açabilir.',
+      },
+      {
+        type: 'h2',
+        text: 'Beylikdüzü’nde sahada en çok ne görüyoruz?',
+      },
+      {
+        type: 'p',
+        text: 'Yakuplu ve Gürpınar tarafındaki sitelerde en sık rastladığımız tablo, 5-6 yaşını geçmiş kombilerde üç yollu vananın contasının sertleşip tam kapanamaması; vana yarım açık kaldığı için su hem radyatöre hem sıcak su hattına az miktarda gidiyor, sonuçta ikisi de yarım yarım ısınıyor. Daha yeni yapılan sitelerde ise su sertliğine bağlı kireçlenme eşanjörde daha hızlı birikiyor, bu da vananın kendisi sağlam olsa da sıcak suyun kısa sürede soğumasına yol açıyor. Beylikdüzü kombi servisi taleplerinin önemli bir kısmı bu iki nedenden geliyor ve ikisi de kombiyi tamamen değiştirmeden, doğru parçayı bulup onararak çözülebiliyor; kombi arızaları hakkında daha fazla bilgi için /servis/kombi sayfamıza da göz atabilirsiniz.',
+      },
+      {
+        type: 'h2',
+        text: 'Sıkça Sorulan Sorular',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Üç yollu vana değişmeden geçici bir çözüm var mı? Bazı vanalarda mekanizma birkaç kez zorlanarak kısa süreli rahatlama sağlanabilir ama bu kalıcı değildir; vana ya da aktüatör değişmeden sorun tekrar eder.',
+          'Kombi kireç temizliği ne sıklıkla yapılmalı? Su sertliğine göre değişir, ama genelde iki-üç yılda bir eşanjör ve genel bakım kontrolü yaptırmak kireçlenmenin ileri seviyeye gelmesini önler.',
+          'Yazın bu sorun fark edilir mi? Çoğu zaman hayır; yazın yalnızca sıcak su devresi çalışır ve ısıtma hattı test edilmez, sorun genelde ısıtma devreye girdiğinde fark edilir.',
+          'Vana değişimi kombiyi değiştirmekten daha mı ucuza gelir? Evet, büyük çoğunlukla; üç yollu vana ya da aktüatör değişimi kombinin kendisini değiştirmekle kıyaslanamayacak kadar küçük bir işlemdir, teknisyen yerinde söküp takabilir.',
+          'Beylikdüzü’ne ne zaman gelebilirsiniz? Hattımız her gün 08:00–22:00 arası açık; arıza kaydınızı aldıktan sonra kısa sürede dönüp uygun randevu saatini birlikte belirliyoruz.',
+        ],
+      },
+      {
+        type: 'p',
+        text: 'Beylikdüzü’nde kombiniz sıcak su konusunda sorun yapıyorsa yukarıdaki kontrolleri yapabilir, basıncı ve filtreyi gözden geçirebilirsiniz; sonuç değişmiyorsa bağımsız teknik servis ekibimiz üç yollu vana, debi sensörü ve eşanjörü yerinde kontrol edip kalıcı çözüm sunar. Beylikdüzü ve çevresinde arıza kaydınızı oluşturmak için 0542 403 36 22 numaralı hattımızdan her gün 08:00–22:00 arası ulaşabilir, ayrıca /ariza-kayit sayfasından da kayıt bırakabilirsiniz.',
+      },
+    ],
+    seoTitle: 'Beylikdüzü Kombi Servisi: Sıcak Su Vermiyor mu? | Servis Arıza Kayıt',
+    seoDescription:
+      'Beylikdüzü’nde kombi sıcak su vermiyorsa üç yollu vana, debi sensörü ve eşanjör ilk bakılacak noktalardır. Beylikdüzü kombi servisi için 0542 403 36 22.',
+    keywords: [
+      'Beylikdüzü kombi servisi',
+      'Beylikdüzü kombi tamircisi',
+      'Beylikdüzü kombi bakımı',
+      'kombi sıcak su vermiyor',
+      'kombi üç yollu vana arızası',
+      'İstanbul kombi servisi',
+    ],
+  },
+  {
+    slug: 'bahcesehir-buzdolabi-alt-tabanda-su',
+    title: 'Bahçeşehir’de Buzdolabının Altında Su Birikiyor mu? Nedenleri ve Çözümü',
+    excerpt:
+      'Bahçeşehir’de buzdolabı soğutuyor ama altında ya da önünde su birikintisi oluşuyorsa sebep genelde tıkanmış tahliye kanalı, kaymış su toplama tavası ya da kapı contasıdır; hangisine bakılacağını anlatıyoruz.',
+    device: 'buzdolabi',
+    readMinutes: 6,
+    date: '2026-10-30',
+    body: [
+      {
+        type: 'p',
+        text: 'Bahçeşehir’de girdiğimiz çağrıların bir kısmında tablo hep aynı: buzdolabı çalışıyor, içindeki yiyecekler soğuk, ama dolabın önünde ya da altında küçük bir su birikintisi var. Ev sahibi önce sızıntı sanıp telaşlanıyor, bazen altındaki parkeyi ya da dolabı bozacağından korkup dolabı prizden çekiyor; oysa bu çoğunlukla dolabın kendi defrost suyunu düzgün tahliye edememesinden kaynaklanıyor ve çoğu zaman sandığından daha basit bir sebebi var.',
+      },
+      {
+        type: 'p',
+        text: 'Bu belirtiyi gerçek bir su kaçağından ayırt etmek önemli, çünkü ikisinin çözümü tamamen farklı. Gerçek sızıntı genelde su ve buz dispenserli modellerde hattın bağlantı noktalarında görülür ve dolap çalışırken sürekli devam eder; defrost suyu birikmesi ise belirli aralıklarla, genelde dolabın buz çözme döngüsüne denk gelen saatlerde ortaya çıkar.',
+      },
+      {
+        type: 'h2',
+        text: 'Buzdolabının altında su birikmesinin en sık nedeni nedir?',
+      },
+      {
+        type: 'p',
+        text: 'En sık neden, dolabın arkasındaki tahliye kanalının ya da alt gövdedeki su toplama tavasının tıkanmasıdır. Normalde defrost sırasında eriyen su bu kanaldan geçip arkadaki tavaya akar ve orada buharlaşır; kanal kırıntı ya da yağ birikintisiyle tıkandığında su dolabın içinden taşıp tabana sızar.',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Arka tahliye kanalının kırıntı veya yağla tıkanması',
+          'Su toplama tavasının (drip tray) yerinden kayması ya da çatlaması',
+          'Kapı contasının sızdırması ve yoğuşan suyun tabana damlaması',
+          'Dolabın terazi üzerinde durmaması, hafif öne eğik kurulum',
+          'Defrost ısıtıcısının zamanlamasının bozulup fazla su üretmesi',
+          'Su ve buz dispenserli modellerde su hattı bağlantısındaki sızıntı',
+        ],
+      },
+      {
+        type: 'h2',
+        text: 'Su birikintisi her zaman bir arıza anlamına mı gelir?',
+      },
+      {
+        type: 'p',
+        text: 'Hayır, bazen basit bir kurulum sorunu bile aynı belirtiyi verebilir. Dolap hafif öne doğru eğikse ya da mutfak zemini düz değilse, içeride oluşan yoğuşma suyu normal tahliye yolunu bulamadan öne akabilir. Ama su birikimi tekrarlıyorsa ve dolap aynı zeminde sabit duruyorsa, kanal tıkanıklığı ya da conta sorunu aramak gerekir.',
+      },
+      {
+        type: 'h2',
+        text: 'Buzdolabı soğutuyor ama tabanda su varsa ne yapılmalı?',
+      },
+      {
+        type: 'p',
+        text: 'Soğutma normalse sorun büyük ihtimalle tahliye tarafındadır, kompresörde değil; bu da onarımı nispeten basitleştirir. Ama aynı anda soğutma gücü de düşmüşse iş biraz daha kapsamlı hale gelir; bu durumu ayrıntılı ele aldığımız /blog/buzdolabi-sogutmuyor yazımıza bakabilirsiniz.',
+      },
+      {
+        type: 'h2',
+        text: 'Evde kontrol edilebilecekler',
+      },
+      {
+        type: 'ol',
+        items: [
+          'Dolabın arkasını çekip altındaki su toplama tavasını kontrol edin, taşmışsa boşaltıp temizleyin',
+          'Kapı contasının gövdeye tam oturup oturmadığını elle kontrol edin',
+          'Dolabın gövdesinin terazisini gözle ya da bir su seviyesi aletiyle kontrol edin',
+          'İçeride, özellikle sebzelik rafının altında damlama olup olmadığına bakın; buradaki sızıntı farklı bir tahliye deliğine işaret eder',
+        ],
+      },
+      {
+        type: 'note',
+        text: 'Arka taraftaki kompresör ve soğutucu devre basınçlı gaz içerir. Tahliye kanalını ve tavayı kontrol ederken bu bölüme müdahale etmeyin; temizlik dışındaki her söküm işini teknisyene bırakın.',
+      },
+      {
+        type: 'h2',
+        text: 'Bahçeşehir’de sahada en çok ne görüyoruz?',
+      },
+      {
+        type: 'p',
+        text: 'Bahçeşehir 1. Kısım’daki sitelerde mutfak zemini genelde düz olduğu için su birikintisinin asıl sebebi çoğunlukla arka tahliye kanalındaki kırıntı tıkanıklığı oluyor; yoğun kullanılan dolaplarda bu kanal yılda bir kez bile temizlense sorun büyük oranda önleniyor. Yeni taşınılan dairelerde ise dolabın nakliye sırasında hafif eğik bırakıldığını, bu yüzden yoğuşma suyunun öne doğru aktığını görüyoruz; buradaki çözüm genelde dolabı terazisine almak kadar basit. Bahçeşehir buzdolabı servisi taleplerinin bir kısmı da yaz sonunda, yoğun kullanımdan sonra tahliye kanalı tıkandığında geliyor; kapı contası yıpranmış eski model dolaplarda ise aynı belirti kışın ısıtmanın da devrede olduğu dönemlerde daha sık görülüyor, çünkü mutfaktaki nem farkı yoğuşmayı artırıyor. Buzdolabı arızaları hakkında daha fazla bilgi için /servis/buzdolabi sayfamıza da bakabilirsiniz.',
+      },
+      {
+        type: 'h2',
+        text: 'Sıkça Sorulan Sorular',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Su toplama tavasını kendim temizleyebilir miyim? Dolabı birkaç santim çekerek tavaya ulaşabilirsiniz; ama tava gövdeye kilitli ya da erişilemiyorsa zorlamak yerine teknisyene bırakmak daha güvenlidir.',
+          'Tahliye kanalını ne ile açabilirim? İnce bir tel ya da pipet yardımıyla kanal ağzındaki kırıntıyı çıkarabilirsiniz; ılık su dökmek bazen kanaldaki ince buz tıkaçını da çözebilir.',
+          'Su birikintisi dolaba zarar verir mi? Uzun süre fark edilmezse zeminde ve alt kapak panelinde paslanmaya, bazı modellerde elektronik aksamın nemlenmesine yol açabilir.',
+          'Dolabı birkaç gün prizden çekip beklesem sorun kendiliğinden geçer mi? Tıkanıklık hafifse eriyen buzla birlikte bir süreliğine rahatlayabilir, ama kanal fiziksel olarak temizlenmediği sürece birikinti bir noktada yine başlar.',
+          'Bahçeşehir’e randevu için ne kadar beklerim? Hattımız her gün 08:00–22:00 arası açık; arıza kaydınızı aldıktan sonra kısa sürede dönüp uygun saati birlikte belirliyoruz.',
+        ],
+      },
+      {
+        type: 'p',
+        text: 'Bahçeşehir’de buzdolabınızın altında su birikintisi görüyorsanız önce tahliye kanalını ve tavayı kontrol edebilirsiniz; sorun tekrarlıyorsa bağımsız teknik servis ekibimiz kanalı, contayı ve gerekirse defrost sistemini yerinde inceleyip kalıcı çözüm sunar. Bahçeşehir ve çevresinde arıza kaydınızı oluşturmak için 0542 403 36 22 numaralı hattımızdan her gün 08:00–22:00 arası ulaşabilir, ayrıca /ariza-kayit sayfasından da kayıt bırakabilirsiniz.',
+      },
+    ],
+    seoTitle: 'Bahçeşehir Buzdolabı Servisi: Altında Su mu Birikiyor? | Servis Arıza Kayıt',
+    seoDescription:
+      'Bahçeşehir’de buzdolabının altında su birikiyorsa tahliye kanalı, su toplama tavası ve kapı contası ilk bakılacak noktalardır. Bahçeşehir buzdolabı servisi için 0542 403 36 22.',
+    keywords: [
+      'Bahçeşehir buzdolabı servisi',
+      'Bahçeşehir buzdolabı tamircisi',
+      'Bahçeşehir buzdolabı bakımı',
+      'buzdolabı altında su birikmesi',
+      'buzdolabı tahliye kanalı tıkanması',
+      'İstanbul buzdolabı servisi',
+    ],
+  },
 ];

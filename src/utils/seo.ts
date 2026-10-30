@@ -33,7 +33,7 @@ export function localBusinessSchema() {
     url: absoluteUrl('/'),
     telephone: site.phone.e164,
     image: absoluteUrl('/og-image.png'),
-    logo: absoluteUrl('/icons/icon-512.png'),
+    logo: absoluteUrl('/logo-servis-ariza-kayit.png'),
     description: site.description,
     priceRange: '₺₺',
     areaServed: { '@type': 'Country', name: 'Türkiye' },

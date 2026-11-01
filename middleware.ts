@@ -364,6 +364,23 @@ export default async function middleware(req: Request, ctx?: { waitUntil?: (p: P
     });
   }
 
+  // 6c) /api/vz — reklam ziyaretinin süre/kaydırma/düğme bilgisi (AdVisitBeacon). Tablodaki "sayfa" sütununa ~ ile yazılır;
+  //     gclid aynı kaldığı için Google Ads komut dosyasının IP sayımını değiştirmez.
+  if (path === '/api/vz') {
+    const q = url.searchParams;
+    const visitClick = q.get('g') ?? '';
+    if (/^[\w-]{10,120}$/.test(visitClick) && IPLOG_URL && IPLOG_TOKEN && ctx?.waitUntil) {
+      const seconds = Math.min(Math.max(parseInt(q.get('s') ?? '', 10) || 0, 0), 3600);
+      const scroll = Math.min(Math.max(parseInt(q.get('k') ?? '', 10) || 0, 0), 100);
+      const action = q.get('a') === 'tel' || q.get('a') === 'wa' ? q.get('a') : 'yok';
+      const page = (q.get('p') ?? '').replace(/[^\w/-]/g, '').slice(0, 120);
+      const visit = `~${seconds}sn kaydirma%${scroll} buton:${action} ${page}`;
+      const payload = JSON.stringify({ t: IPLOG_TOKEN, s: IPLOG_SITE, ip, g: visitClick, p: visit, c: getCountry(req, cf) ?? '', ua: ua.slice(0, 200) });
+      ctx.waitUntil(fetch(IPLOG_URL, { method: 'POST', headers: { 'content-type': 'application/json' }, body: payload }).catch(() => undefined));
+    }
+    return new Response(null, { status: 204, headers: { 'cache-control': 'no-store, private', 'x-robots-tag': 'noindex' } });
+  }
+
   // 4) İyi botlar ülkeden bağımsız geçer (Googlebot ABD'den tarar).
   const isGoodBot = GOOD_BOTS.some((b) => ua.includes(b));
   if (isGoodBot) return undefined;

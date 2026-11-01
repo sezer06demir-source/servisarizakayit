@@ -7,6 +7,7 @@ import Footer from '@components/Footer.astro';
 import MobileBar from '@components/MobileBar.astro';
 import GoogleAdsTag from '@components/GoogleAdsTag.astro';
 import CookieConsent from '@components/CookieConsent.astro';
+import AdVisitBeacon from '@components/AdVisitBeacon.astro';
 import { site } from '@data/site';
 import { buildTitle, canonicalUrl, localBusinessSchema, websiteSchema } from '@utils/seo';
 
@@ -67,5 +68,6 @@ const kw = keywords.length ? keywords : ['beyaz eşya servisi', 'arıza kayıt',
     <Footer />
     <MobileBar />
     <CookieConsent />
+    <AdVisitBeacon />
   </body>
 </html>

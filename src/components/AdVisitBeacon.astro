@@ -1,0 +1,57 @@
+---
+/**
+ * Reklamdan gelen ziyaretin kalitesi: sayfada kalma süresi, kaydırma ve arama/WhatsApp düğmesi.
+ * Yalnızca adresinde gclid/gbraid/wbraid olan sayfalarda çalışır, çerez yazmaz.
+ * Sekme gizlenince middleware /api/vz'ye gönderir; middleware IP kayıt tablosuna satır ekler.
+ */
+---
+
+<script>
+  const params = new URLSearchParams(location.search);
+  const click = params.get('gclid') ?? params.get('gbraid') ?? params.get('wbraid');
+
+  if (click) {
+    const started = Date.now();
+    let maxScroll = 0;
+    let action = '-';
+    let lastSent = '';
+    let sends = 0;
+
+    const readScroll = () => {
+      const height = document.documentElement.scrollHeight - window.innerHeight;
+      const percent = height > 0 ? Math.round((window.scrollY / height) * 100) : 0;
+      maxScroll = Math.max(maxScroll, Math.min(percent, 100));
+    };
+
+    const send = () => {
+      const state = `${maxScroll}|${action}`;
+      if (sends >= 3 || (sends > 0 && state === lastSent)) return;
+      sends += 1;
+      lastSent = state;
+      const query = new URLSearchParams({
+        g: click.slice(0, 120),
+        p: location.pathname,
+        s: String(Math.round((Date.now() - started) / 1000)),
+        k: String(maxScroll),
+        a: action,
+      });
+      fetch(`/api/vz?${query}`, { keepalive: true, cache: 'no-store', credentials: 'same-origin' }).catch(() => undefined);
+    };
+
+    window.addEventListener('scroll', readScroll, { passive: true });
+    document.addEventListener(
+      'click',
+      (event) => {
+        const link = (event.target as Element | null)?.closest?.('a[href]');
+        const href = link?.getAttribute('href') ?? '';
+        if (href.startsWith('tel:')) action = 'tel';
+        else if (/^https?:\/\/(wa\.me|api\.whatsapp\.com|(www\.)?whatsapp\.com)\//i.test(href)) action = 'wa';
+      },
+      true,
+    );
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'hidden') send();
+    });
+    window.addEventListener('pagehide', send);
+  }
+</script>

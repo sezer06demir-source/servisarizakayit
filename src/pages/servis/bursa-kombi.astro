@@ -1,0 +1,177 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Icon from '@components/Icon.astro';
+import StatusScript from '@components/StatusScript.astro';
+import RequestForm from '@components/RequestForm.astro';
+import { site, devices } from '@data/site';
+import { deviceDetails } from '@data/device-details';
+import { breadcrumbSchema, faqSchema, serviceSchema } from '@utils/seo';
+
+const device = devices.find((d) => d.slug === 'kombi')!;
+const detail = deviceDetails.find((x) => x.slug === 'kombi')!;
+const path = '/servis/bursa-kombi';
+const crumbs = [
+  { name: 'Ana sayfa', href: '/' },
+  { name: 'Kombi', href: '/servis/kombi' },
+  { name: 'Bursa Kombi Servisi', href: path },
+];
+const ilceler = ['Nilüfer', 'Osmangazi', 'Yıldırım'];
+const waHref = `https://wa.me/${site.whatsapp.number}?text=${encodeURIComponent('Merhaba, Bursa\'da kombi arızası için servis kaydı oluşturmak istiyorum.')}`;
+const desc = 'Bursa Nilüfer, Osmangazi ve Yıldırım\'da kombi servisi. 1 saate servis kapında. Tüm markalara servis, şeffaf fiyat, garantili tamir. 0542 403 36 22';
+const faq = [
+  { q: 'Bursa\'da hangi ilçelere servis veriyorsunuz?', a: 'Nilüfer, Osmangazi ve Yıldırım ilçelerine kombi servisi veriyoruz.' },
+  { q: 'Servis ne kadar sürede gelir?', a: 'Bu üç ilçede 1 saate servis kapında. Aradığınızda adresinize göre net süreyi söylüyoruz.' },
+  ...detail.faq,
+];
+---
+
+<BaseLayout
+  title="Bursa Kombi Servisi | Nilüfer, Osmangazi, Yıldırım | Servis Arıza Kayıt"
+  rawTitle={true}
+  description={desc}
+  schema={[breadcrumbSchema(crumbs), serviceSchema({ name: 'Bursa Kombi Servisi', description: desc, path }), faqSchema(faq)]}
+>
+  <StatusScript />
+
+  <section class="dhead dark">
+    <div class="container">
+      <ol class="crumbs">{crumbs.map((c, i) => <li>{i === crumbs.length - 1 ? <span>{c.name}</span> : <a href={c.href}>{c.name}</a>}</li>)}</ol>
+      <p class="eyebrow"><Icon name="wrench" size={16} /> {ilceler.join(' · ')}</p>
+      <h1>Bursa Kombi Servisi</h1>
+      <p class="lead">1 saate servis kapında. Kombi yanmıyor, ısıtmıyor ya da basınç mı düşüyor? Tüm marka ve model kombilere servis veriyoruz.</p>
+      <div class="dhead__cta">
+        <a href={site.phone.href} class="btn btn--accent"><Icon name="phone" size={18} /> {site.phone.display}</a>
+        <a href={waHref} class="btn btn--ghost-light">WhatsApp'tan Yazın</a>
+      </div>
+    </div>
+  </section>
+
+  <article class="section">
+    <div class="container ledger">
+      <div class="body">
+        <div class="prose">
+          <p>Bursa'nın Nilüfer, Osmangazi ve Yıldırım ilçelerinde kombi arızalarına yerinde bakıyoruz. Arayın ya da WhatsApp'tan yazın, adresinizi ve şikâyetinizi alalım, ekibimiz 1 saate kapınızda olsun.</p>
+          <p>{detail.intro[2]}</p>
+        </div>
+
+        <section aria-labelledby="neden">
+          <h2 id="neden" class="h">Neden biz?</h2>
+          <ul class="tags">
+            {['Tüm Markalara Servis', 'Deneyimli Ekip', 'Şeffaf Fiyat', 'Garantili Tamir', 'Aynı Gün Servis'].map((t) => <li><span class="tag"><Icon name="shield-check" size={15} /> {t}</span></li>)}
+          </ul>
+        </section>
+
+        <section aria-labelledby="belirti">
+          <h2 id="belirti" class="h">Sık gelen kombi arızaları</h2>
+          <ul class="symp">
+            {detail.causes.map((c) => (
+              <li>
+                <span class="symp__s"><Icon name="alert-triangle" size={16} /> {c.symptom}</span>
+                <span class="symp__c">{c.cause}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <section aria-labelledby="surec">
+          <h2 id="surec" class="h">Servis süreci</h2>
+          <p class="proc">{detail.process}</p>
+        </section>
+
+        <section aria-labelledby="sss">
+          <h2 id="sss" class="h">Bursa kombi servisi hakkında sorular</h2>
+          <div class="faq">{faq.map((f) => <details><summary>{f.q}</summary><p>{f.a}</p></details>)}</div>
+        </section>
+
+        <p class="disc"><Icon name="alert-triangle" size={16} /> {site.disclaimer}</p>
+      </div>
+      <div class="ledger__rail">
+        <RequestForm title="Bursa kombi arıza kaydı" presetDevice={device.slug} />
+      </div>
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .dhead {
+    padding-block: clamp(1.75rem, 4vw, 3rem);
+  }
+  .dhead .crumbs {
+    color: var(--on-dark-dim);
+    margin-bottom: 1.25rem;
+  }
+  .dhead .crumbs a:hover {
+    color: #fff;
+  }
+  .dhead h1 {
+    max-width: 18ch;
+    margin-bottom: 0.75rem;
+  }
+  .dhead__cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    margin-top: 1.5rem;
+  }
+  .h {
+    font-size: var(--fs-lg);
+    margin: 2.25rem 0 0.85rem;
+  }
+  .body > .prose:first-child {
+    font-size: var(--fs-md);
+  }
+  .symp {
+    display: grid;
+    gap: 0.75rem;
+  }
+  @media (min-width: 620px) {
+    .symp {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .symp li {
+    padding: 0.9rem 1.05rem;
+    border: 1.5px solid var(--line);
+    border-radius: var(--r);
+    background: var(--paper);
+  }
+  .symp__s {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+  }
+  .symp__s svg {
+    color: var(--accent);
+    flex: none;
+  }
+  .symp__c {
+    display: block;
+    margin-top: 0.3rem;
+    color: var(--steel);
+    font-size: var(--fs-sm);
+    line-height: 1.5;
+  }
+  .proc {
+    color: var(--ink-2);
+    max-width: 70ch;
+    margin: 0;
+  }
+  .disc {
+    display: flex;
+    gap: 0.6rem;
+    align-items: flex-start;
+    margin: 2.25rem 0 0;
+    padding: 0.9rem 1.05rem;
+    border-radius: var(--r);
+    background: var(--fog);
+    color: var(--steel);
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+  .disc svg {
+    flex: none;
+    margin-top: 2px;
+    color: var(--accent);
+  }
+</style>

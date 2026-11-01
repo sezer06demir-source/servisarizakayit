@@ -1,0 +1,193 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Icon from '@components/Icon.astro';
+import StatusScript from '@components/StatusScript.astro';
+import RequestForm from '@components/RequestForm.astro';
+import { site } from '@data/site';
+import { deviceDetails } from '@data/device-details';
+import { breadcrumbSchema, faqSchema, serviceSchema } from '@utils/seo';
+
+export function getStaticPaths() {
+  return [
+    { params: { marka: 'demirdokum-kombi' }, props: { ad: 'DemirDöküm', iyelik: "DemirDöküm'ün" } },
+    { params: { marka: 'eca-kombi' }, props: { ad: 'ECA', iyelik: "ECA'nın" } },
+    { params: { marka: 'viessmann-kombi' }, props: { ad: 'Viessmann', iyelik: "Viessmann'ın" } },
+    { params: { marka: 'ferroli-kombi' }, props: { ad: 'Ferroli', iyelik: "Ferroli'nin" } },
+    { params: { marka: 'bosch-kombi' }, props: { ad: 'Bosch', iyelik: "Bosch'un" } },
+  ];
+}
+const { ad, iyelik } = Astro.props;
+const { marka } = Astro.params;
+const detail = deviceDetails.find((x) => x.slug === 'kombi')!;
+const path = `/servis/ankara-${marka}`;
+const baslik = `Ankara ${ad} Kombi Servisi`;
+const crumbs = [
+  { name: 'Ana sayfa', href: '/' },
+  { name: 'Kombi', href: '/servis/kombi' },
+  { name: baslik, href: path },
+];
+const ilceler = ['Çankaya', 'Keçiören', 'Mamak', 'Yenimahalle', 'Etimesgut', 'Sincan', 'Altındağ'];
+const waHref = `https://wa.me/${site.whatsapp.number}?text=${encodeURIComponent(`Merhaba, Ankara'da ${ad} kombim için servis kaydı oluşturmak istiyorum.`)}`;
+const desc = `Ankara Çankaya, Keçiören, Mamak, Yenimahalle, Etimesgut, Sincan ve Altındağ'da ${ad} kombiler için bağımsız özel servis. Aynı gün servis. ${iyelik} yetkili servisi değildir. 0542 403 36 22`;
+const faq = [
+  { q: `${iyelik} yetkili servisi misiniz?`, a: `Hayır. Servis Arıza Kayıt bağımsız bir özel teknik servistir; ${iyelik} yetkili servisi, resmi temsilcisi ya da bayisi değildir. Cihazınızın üretici garantisi devam ediyorsa önce markanın yetkili servisine başvurmanızı öneririz.` },
+  { q: 'Ankara\'da hangi ilçelere servis veriyorsunuz?', a: 'Çankaya, Keçiören, Mamak, Yenimahalle, Etimesgut, Sincan ve Altındağ ilçelerine kombi servisi veriyoruz.' },
+  { q: 'Servis ücreti nasıl belirlenir?', a: 'Servis çağrısı ücretlidir. Teknisyen arızayı yerinde tespit eder, servis, işçilik ve parça ücretini işleme başlamadan söyler. Onayınız olmadan onarım yapılmaz.' },
+  { q: 'Servis ne kadar sürede gelir?', a: 'Bu ilçelerde aynı gün servis veriyoruz. Aradığınızda adresinize göre net saati söylüyoruz.' },
+];
+---
+
+<BaseLayout
+  title={`${baslik} | Bağımsız Özel Servis | Servis Arıza Kayıt`}
+  rawTitle={true}
+  description={desc}
+  schema={[breadcrumbSchema(crumbs), serviceSchema({ name: baslik, description: desc, path }), faqSchema(faq)]}
+>
+  <StatusScript />
+
+  <section class="dhead dark">
+    <div class="container">
+      <ol class="crumbs">{crumbs.map((c, i) => <li>{i === crumbs.length - 1 ? <span>{c.name}</span> : <a href={c.href}>{c.name}</a>}</li>)}</ol>
+      <p class="eyebrow"><Icon name="wrench" size={16} /> {ilceler.join(' · ')}</p>
+      <h1>{baslik}</h1>
+      <p class="lead">Aynı gün servis. {ad} kombiniz yanmıyor, ısıtmıyor ya da basıncı mı düşüyor? Yerinde tespit edip onayınızla onaralım.</p>
+      <p class="dhead__note">Bağımsız özel teknik servistir. {iyelik} yetkili servisi değildir.</p>
+      <div class="dhead__cta">
+        <a href={site.phone.href} class="btn btn--accent"><Icon name="phone" size={18} /> {site.phone.display}</a>
+        <a href={waHref} class="btn btn--ghost-light">WhatsApp'tan Yazın</a>
+      </div>
+    </div>
+  </section>
+
+  <article class="section">
+    <div class="container ledger">
+      <div class="body">
+        <div class="prose">
+          <p>Ankara'nın Çankaya, Keçiören, Mamak, Yenimahalle, Etimesgut, Sincan ve Altındağ ilçelerinde {ad} kombilere yerinde bakıyoruz. Arayın ya da WhatsApp'tan yazın, adresinizi ve şikâyetinizi alalım, aynı gün servis için ekibimizi yönlendirelim.</p>
+          <p>{detail.intro[2]}</p>
+        </div>
+
+        <section aria-labelledby="ucret">
+          <h2 id="ucret" class="h">Ücret nasıl belirlenir?</h2>
+          <p class="proc">Servis çağrısı ücretlidir. Teknisyen arızayı yerinde tespit eder, servis, işçilik ve parça ücretini işleme başlamadan size söyler. Onayınız olmadan onarım yapılmaz.</p>
+        </section>
+
+        <section aria-labelledby="belirti">
+          <h2 id="belirti" class="h">Sık gelen kombi arızaları</h2>
+          <ul class="symp">
+            {detail.causes.map((c) => (
+              <li>
+                <span class="symp__s"><Icon name="alert-triangle" size={16} /> {c.symptom}</span>
+                <span class="symp__c">{c.cause}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <section aria-labelledby="surec">
+          <h2 id="surec" class="h">Servis süreci</h2>
+          <p class="proc">{detail.process}</p>
+        </section>
+
+        <section aria-labelledby="sss">
+          <h2 id="sss" class="h">{ad} kombi servisi hakkında sorular</h2>
+          <div class="faq">{faq.map((f) => <details><summary>{f.q}</summary><p>{f.a}</p></details>)}</div>
+        </section>
+
+        <p class="disc"><Icon name="alert-triangle" size={16} /> {site.disclaimer}</p>
+      </div>
+      <div class="ledger__rail">
+        <RequestForm title={`${ad} kombi arıza kaydı`} presetDevice="kombi" />
+      </div>
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .dhead {
+    padding-block: clamp(1.75rem, 4vw, 3rem);
+  }
+  .dhead .crumbs {
+    color: var(--on-dark-dim);
+    margin-bottom: 1.25rem;
+  }
+  .dhead .crumbs a:hover {
+    color: #fff;
+  }
+  .dhead h1 {
+    max-width: 18ch;
+    margin-bottom: 0.75rem;
+  }
+  .dhead__note {
+    margin: 0.75rem 0 0;
+    color: var(--on-dark-dim);
+    font-size: var(--fs-sm);
+  }
+  .dhead__cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    margin-top: 1.5rem;
+  }
+  .h {
+    font-size: var(--fs-lg);
+    margin: 2.25rem 0 0.85rem;
+  }
+  .body > .prose:first-child {
+    font-size: var(--fs-md);
+  }
+  .symp {
+    display: grid;
+    gap: 0.75rem;
+  }
+  @media (min-width: 620px) {
+    .symp {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .symp li {
+    padding: 0.9rem 1.05rem;
+    border: 1.5px solid var(--line);
+    border-radius: var(--r);
+    background: var(--paper);
+  }
+  .symp__s {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+  }
+  .symp__s svg {
+    color: var(--accent);
+    flex: none;
+  }
+  .symp__c {
+    display: block;
+    margin-top: 0.3rem;
+    color: var(--steel);
+    font-size: var(--fs-sm);
+    line-height: 1.5;
+  }
+  .proc {
+    color: var(--ink-2);
+    max-width: 70ch;
+    margin: 0;
+  }
+  .disc {
+    display: flex;
+    gap: 0.6rem;
+    align-items: flex-start;
+    margin: 2.25rem 0 0;
+    padding: 0.9rem 1.05rem;
+    border-radius: var(--r);
+    background: var(--fog);
+    color: var(--steel);
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+  .disc svg {
+    flex: none;
+    margin-top: 2px;
+    color: var(--accent);
+  }
+</style>

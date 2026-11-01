@@ -1,7 +1,7 @@
 import { SITE_URL } from './site-url.mjs';
 
 /**
- * İşletme bilgileri — tek kaynak. Ankara, İstanbul, Bursa ve Denizli'de bağımsız beyaz eşya ve
+ * İşletme bilgileri — tek kaynak. Ankara, İstanbul, Bursa ve Denizli illerinde bağımsız beyaz eşya ve
  * iklimlendirme teknik servisi. Hiçbir markanın yetkili servisi / bayisi değildir.
  */
 export const site = {
@@ -10,7 +10,7 @@ export const site = {
   url: SITE_URL,
   tagline: 'Ankara, İstanbul, Bursa ve Denizli Beyaz Eşya ve İklimlendirme Teknik Servisi',
   description:
-    'Servis Arıza Kayıt: klima, kombi, buzdolabı, çamaşır ve bulaşık makinesi, televizyon, ankastre ocak arızalarında Ankara, İstanbul, Bursa ve Denizli'de servis. Arızanızı kaydedin, ekip sizi arasın. 0542 403 36 22.',
+    'Servis Arıza Kayıt: klima, kombi, buzdolabı, çamaşır ve bulaşık makinesi, televizyon, ankastre ocak arızalarında Ankara, İstanbul, Bursa ve Denizli illerinde servis. Arızanızı kaydedin, ekip sizi arasın. 0542 403 36 22.',
 
   phone: {
     display: '0542 403 36 22',

@@ -5,7 +5,7 @@ export const deviceDetails: DeviceDetail[] = [
     slug: 'camasir-makinesi',
     intro: [
       'Çamaşır makinesi su almıyorsa, sıkmıyorsa ya da kapıda kilit hatası veriyorsa çoğu zaman sorun tek bir parçada toplanır. Tahliye pompası tıkanması, rulman aşınması ya da kömür bitmesi en sık karşılaştığımız üç başlıktır. Marka bağımsız çalışıyoruz; her marka çamaşır makinesinde aynı titizlikle arıza tespiti yapıyoruz.',
-      'Çamaşır makinesi arızası genelde ansızın çıkar, tam da en yoğun günde. Biz bu yüzden Ankara, İstanbul, Bursa ve Denizli'de servis veriyoruz: arama sonrası aynı gün teknisyen yönlendirmesi yapmaya çalışıyoruz. Program yarıda kalıyor, tambur dönmüyor ya da makineden yanık kokusu geliyorsa telefonu açık tutmanızı öneririz; bazı arızalar ilerledikçe motoru da etkileyebilir.',
+      'Çamaşır makinesi arızası genelde ansızın çıkar, tam da en yoğun günde. Biz bu yüzden Ankara, İstanbul, Bursa ve Denizli illerinde servis veriyoruz: arama sonrası aynı gün teknisyen yönlendirmesi yapmaya çalışıyoruz. Program yarıda kalıyor, tambur dönmüyor ya da makineden yanık kokusu geliyorsa telefonu açık tutmanızı öneririz; bazı arızalar ilerledikçe motoru da etkileyebilir.',
       'Bulaşık değil çamaşır makinesinden bahsediyoruz ama ortak bir kural var: erken müdahale, parça maliyetini düşürür. Tahliye pompasındaki bir tıkanıklık zamanında giderilmezse motor bloğuna kadar yük bindirebilir. Servis Arıza Kayıt olarak randevu öncesi telefonda ön bilgi alıyor, yerinde kesin teşhis koyuyoruz.',
     ],
     causes: [
@@ -24,7 +24,7 @@ export const deviceDetails: DeviceDetail[] = [
     ],
     process: 'Telefonda belirtileri dinleyip ön değerlendirme yapıyor, yerinde teşhis sonrası işlem ücretini söylüyoruz. Değişen parçalarda garanti veriyoruz.',
     faq: [
-      { q: 'Çamaşır makinesi arızası için aynı gün gelebiliyor musunuz?', a: 'Ankara, İstanbul, Bursa ve Denizli'deki servis ekiplerimiz sayesinde aynı gün yönlendirme yapabiliyoruz. Kesin saat için 0542 403 36 22 numarasından teyit almanızı öneririz.' },
+      { q: 'Çamaşır makinesi arızası için aynı gün gelebiliyor musunuz?', a: 'Ankara, İstanbul, Bursa ve Denizli illerindeki servis ekiplerimiz sayesinde aynı gün yönlendirme yapabiliyoruz. Kesin saat için 0542 403 36 22 numarasından teyit almanızı öneririz.' },
       { q: 'Her markaya bakıyor musunuz?', a: 'Evet, marka bağımsız çalışıyoruz; herhangi bir markanın yetkili servisi değiliz, tüm markalara teknik destek veriyoruz.' },
       { q: 'Rulman değişimi ne kadar sürer?', a: 'Modele göre değişir; teknisyen yerinde inceleme yapıp süre ve işlemi size anlatır, onayınız olmadan işleme başlamaz.' },
     ],
@@ -45,7 +45,7 @@ export const deviceDetails: DeviceDetail[] = [
     intro: [
       'Bulaşık makinesi temiz yıkamıyorsa, tabanda su birikiyorsa ya da program bir türlü bitmiyorsa aramanız gereken yer belliydi: biz. Marka bağımsız servis olarak her markanın bulaşık makinesinde püskürtme kolu tıkanıklığından ısıtıcı arızasına kadar geniş bir yelpazede müdahale ediyoruz.',
       'Bulaşık makinesi arızalarının çoğu göründüğü kadar büyük değildir; filtre tıkanıklığı ya da tuz/parlatıcı haznesi kapağının tam kapanmaması bile "yıkamıyor" şikayetine yol açabilir. Yine de su kaçağı gibi durumları uzatmamak gerekir, çünkü zemine ve mobilyaya zarar verebilir.',
-      'Ankara, İstanbul, Bursa ve Denizli'deki servis ekiplerimizle arama sonrası aynı gün teknisyen yönlendirmesi hedefliyoruz. Program takılıyor, kapı kilitlenmiyor ya da makineden yanık kokusu geliyorsa mümkün olan en kısa sürede iletişime geçmenizi öneririz.',
+      'Ankara, İstanbul, Bursa ve Denizli illerindeki servis ekiplerimizle arama sonrası aynı gün teknisyen yönlendirmesi hedefliyoruz. Program takılıyor, kapı kilitlenmiyor ya da makineden yanık kokusu geliyorsa mümkün olan en kısa sürede iletişime geçmenizi öneririz.',
     ],
     causes: [
       { symptom: 'Bulaşıklar temiz çıkmıyor', cause: 'Püskürtme kollarındaki delikler tıkanmış ya da filtre bakımsız kalmış olabilir.' },
@@ -83,7 +83,7 @@ export const deviceDetails: DeviceDetail[] = [
     slug: 'buzdolabi',
     intro: [
       'Buzdolabı soğutmuyorsa ya da her zamankinden fazla çalışıyorsa çoğunlukla üç noktaya bakılır: kompresör, no-frost fan ve termostat. Gaz kaçağı da göz ardı edilmemesi gereken bir ihtimaldir, özellikle dolap soğutmayı tamamen bıraktıysa. Marka bağımsız servis olarak her markanın buzdolabında bu kontrolleri yerinde yapıyoruz.',
-      'Buzdolabı bekletilecek bir cihaz değildir; içindeki gıda güvenliği söz konusu. Bu yüzden Ankara, İstanbul, Bursa ve Denizli'deki servis ekiplerimizle arama sonrası mümkün olan en kısa sürede, çoğu zaman aynı gün, teknisyen yönlendirmesi yapmaya çalışıyoruz.',
+      'Buzdolabı bekletilecek bir cihaz değildir; içindeki gıda güvenliği söz konusu. Bu yüzden Ankara, İstanbul, Bursa ve Denizli illerindeki servis ekiplerimizle arama sonrası mümkün olan en kısa sürede, çoğu zaman aynı gün, teknisyen yönlendirmesi yapmaya çalışıyoruz.',
       'Alt tabanda su birikmesi ya da dolap içinde aşırı buzlanma da sık gördüğümüz şikayetlerdendir. Bunlar genelde tahliye deliği tıkanıklığı ya da kapı contası sorunuyla ilgilidir; ciddi bir kompresör arızasından önce fark edilip giderilebilir.',
     ],
     causes: [
@@ -104,7 +104,7 @@ export const deviceDetails: DeviceDetail[] = [
     faq: [
       { q: 'Buzdolabı gaz kaçağı tehlikeli mi?', a: 'Soğutma gazı kapalı devrede az miktardadır ama kaçak kompresörü yorar ve soğutmayı tamamen durdurabilir; erken müdahale önemlidir.' },
       { q: 'Sadece belirli markalara mı bakıyorsunuz?', a: 'Hayır, marka bağımsız çalışıyoruz; her markaya teknik destek veriyoruz, hiçbir markanın yetkili servisi değiliz.' },
-      { q: 'Aynı gün gelebiliyor musunuz?', a: 'Ankara, İstanbul, Bursa ve Denizli'deki servis ekiplerimiz sayesinde aynı gün yönlendirme yapabiliyoruz, kesin saat için bizi aramanızı öneririz.' },
+      { q: 'Aynı gün gelebiliyor musunuz?', a: 'Ankara, İstanbul, Bursa ve Denizli illerindeki servis ekiplerimiz sayesinde aynı gün yönlendirme yapabiliyoruz, kesin saat için bizi aramanızı öneririz.' },
     ],
     seoTitle: 'Buzdolabı Servisi | Ankara, İstanbul, Bursa, Denizli | Servis Arıza Kayıt',
     seoDescription: 'Buzdolabı soğutmuyor, su biriktiriyor mu? Marka bağımsız servis, Ankara, İstanbul, Bursa, Denizli aynı gün destek. Hemen arayın: 0542 403 36 22',
@@ -122,7 +122,7 @@ export const deviceDetails: DeviceDetail[] = [
     slug: 'derin-dondurucu',
     intro: [
       'Derin dondurucu yeterince dondurmuyorsa ya da içinde sürekli buz birikiyorsa genelde soğutma devresinde ya da kapak sızdırmazlığında bir sorun vardır. Marka bağımsız servis olarak her markanın derin dondurucusunda kompresörden termostata kadar yerinde kontrol yapıyoruz.',
-      'Derin dondurucularda saklanan ürünlerin çoğu uzun süreli gıda stoklarıdır, bu yüzden arızayı ertelemek riskli olur. Ankara, İstanbul, Bursa ve Denizli'deki servis ekiplerimizle arama sonrası mümkün olduğunca hızlı, aynı gün teknisyen yönlendirmesi yapmaya çalışıyoruz.',
+      'Derin dondurucularda saklanan ürünlerin çoğu uzun süreli gıda stoklarıdır, bu yüzden arızayı ertelemek riskli olur. Ankara, İstanbul, Bursa ve Denizli illerindeki servis ekiplerimizle arama sonrası mümkün olduğunca hızlı, aynı gün teknisyen yönlendirmesi yapmaya çalışıyoruz.',
       'Kapağın tam kapanmaması, sıcaklık alarmının sık ötmesi ya da dondurucunun normalden fazla çalışması, ciddileşmeden önce fark edilebilecek erken belirtilerdir. Erken müdahale hem içerideki ürünleri hem de kompresörün ömrünü korur.',
     ],
     causes: [
@@ -161,7 +161,7 @@ export const deviceDetails: DeviceDetail[] = [
     slug: 'klima',
     intro: [
       'Klima soğutmuyorsa, iç üniteden su damlatıyorsa ya da içeriden kötü koku geliyorsa gaz seviyesinden tahliye hattına kadar birkaç noktaya bakmak gerekir. Marka bağımsız servis olarak her markanın klimasında bakım, gaz dolumu ve arıza tespiti yapıyoruz.',
-      'Klima arızaları genelde sezon başında, en çok ihtiyaç duyulan günlerde ortaya çıkar. Ankara, İstanbul, Bursa ve Denizli'deki servis ekiplerimizle arama sonrası aynı gün teknisyen yönlendirmesi yapmaya çalışıyoruz; sıcak günlerde beklemek istemezsiniz.',
+      'Klima arızaları genelde sezon başında, en çok ihtiyaç duyulan günlerde ortaya çıkar. Ankara, İstanbul, Bursa ve Denizli illerindeki servis ekiplerimizle arama sonrası aynı gün teknisyen yönlendirmesi yapmaya çalışıyoruz; sıcak günlerde beklemek istemezsiniz.',
       'İç üniteden su damlaması küçük bir tıkanıklık gibi görünse de zamanla tavana ya da duvara zarar verebilir. Kondens suyunun düzgün tahliye edilmesi, klimanın sağlıklı çalışması için gaz seviyesi kadar önemlidir.',
     ],
     causes: [
@@ -201,7 +201,7 @@ export const deviceDetails: DeviceDetail[] = [
     slug: 'kombi',
     intro: [
       'Kombi yanmıyorsa, basınç düşüyorsa ya da sıcak su vermiyorsa çoğu zaman ateşleme elektrodu, eşanjör ya da basınç sensörü ile ilgili bir sorun vardır. Marka bağımsız servis olarak her markanın kombisinde bu noktaları yerinde kontrol ediyoruz.',
-      'Kombi hem ısınma hem sıcak su ihtiyacını karşıladığı için arızası bekletilecek bir konu değildir. Ankara, İstanbul, Bursa ve Denizli'deki servis ekiplerimizle arama sonrası aynı gün teknisyen yönlendirmesi yapmaya çalışıyoruz.',
+      'Kombi hem ısınma hem sıcak su ihtiyacını karşıladığı için arızası bekletilecek bir konu değildir. Ankara, İstanbul, Bursa ve Denizli illerindeki servis ekiplerimizle arama sonrası aynı gün teknisyen yönlendirmesi yapmaya çalışıyoruz.',
       'Kombide gaz ve yanma ile ilgili müdahaleler risklidir; bu yüzden panel açma, elektrot temizliği ya da basınç ayarı gibi işlemleri kesinlikle kendiniz yapmamanızı, bize bırakmanızı öneririz.',
     ],
     causes: [
@@ -240,7 +240,7 @@ export const deviceDetails: DeviceDetail[] = [
     slug: 'televizyon',
     intro: [
       'Televizyon açılmıyorsa, ekranda çizgi varsa ya da görüntü gelmeden ses alınıyorsa panelden anakarta kadar birkaç farklı ihtimal söz konusudur. Marka bağımsız servis olarak her markanın televizyonunda bu arızaları yerinde tespit ediyoruz.',
-      'Televizyon arızaları bazen basit bir bağlantı sorunu, bazen de panel değişimi gerektirecek ciddi bir durumdur. Ankara, İstanbul, Bursa ve Denizli'deki servis ekiplerimizle arama sonrası aynı gün teknisyen yönlendirmesi yapmaya çalışıyoruz.',
+      'Televizyon arızaları bazen basit bir bağlantı sorunu, bazen de panel değişimi gerektirecek ciddi bir durumdur. Ankara, İstanbul, Bursa ve Denizli illerindeki servis ekiplerimizle arama sonrası aynı gün teknisyen yönlendirmesi yapmaya çalışıyoruz.',
       'Ekranda leke, kararan bölge ya da kısa süreli açılıp kapanma gibi belirtiler ilerleyebileceği için erken bildirmenizi öneririz. Bazı arızalar zamanla panelin tamamını etkileyebilir.',
     ],
     causes: [
@@ -280,7 +280,7 @@ export const deviceDetails: DeviceDetail[] = [
     intro: [
       'Kurutma makinesi kurutmuyorsa, ısınmıyorsa ya da su haznesi dolu uyarısı sürekli veriyorsa filtre tıkanıklığından ısıtıcı arızasına kadar birkaç ihtimal vardır. Marka bağımsız servis olarak her markanın kurutma makinesinde bu kontrolleri yerinde yapıyoruz.',
       'Kurutma makinesi arızaları çoğu zaman basit bir bakım eksikliğinden kaynaklanır; tüy filtresinin ya da kondansatörün temizlenmemesi kurutma süresini uzatır, hatta cihazı tamamen durdurabilir. Yine de tambur dönmüyorsa ya da motor sesi geliyorsa daha ciddi bir arıza söz konusu olabilir.',
-      'Ankara, İstanbul, Bursa ve Denizli'deki servis ekiplerimizle arama sonrası aynı gün teknisyen yönlendirmesi yapmaya çalışıyoruz. Kurutma makinesi genelde çamaşır makinesiyle birlikte yoğun kullanıldığı için arızayı uzatmamanızı öneririz.',
+      'Ankara, İstanbul, Bursa ve Denizli illerindeki servis ekiplerimizle arama sonrası aynı gün teknisyen yönlendirmesi yapmaya çalışıyoruz. Kurutma makinesi genelde çamaşır makinesiyle birlikte yoğun kullanıldığı için arızayı uzatmamanızı öneririz.',
     ],
     causes: [
       { symptom: 'Kurutmuyor ya da çok geç kurutuyor', cause: 'Tüy filtresi ya da kondansatör birikimle tıkanmış, hava akışı azalmış olabilir.' },
@@ -319,7 +319,7 @@ export const deviceDetails: DeviceDetail[] = [
     intro: [
       'Ankastre ocak ateş almıyorsa ya da fırın ısınmıyorsa sorun genelde ateşleme modülünde, gaz musluğunda ya da rezistansta toplanır. Marka bağımsız servis olarak her markanın ankastre ocak ve fırınında bu kontrolleri yerinde yapıyoruz.',
       'Ankastre setlerde ocak ve fırın genelde birlikte kullanıldığı için ikisinden birinin arızası günlük düzeni doğrudan etkiler. Isı ayarının tutmaması, camda çatlak ya da fırın kapısındaki contanın gevşemesi de sık karşılaştığımız durumlardır.',
-      'Ankara, İstanbul, Bursa ve Denizli'deki servis ekiplerimizle arama sonrası aynı gün teknisyen yönlendirmesi yapmaya çalışıyoruz. Gaz kokusu, kıvılcım ya da elektrik kaçağı şüphesi varsa cihazı kapatıp bizi aramanızı öneririz; bu tür müdahaleleri kendiniz yapmayın.',
+      'Ankara, İstanbul, Bursa ve Denizli illerindeki servis ekiplerimizle arama sonrası aynı gün teknisyen yönlendirmesi yapmaya çalışıyoruz. Gaz kokusu, kıvılcım ya da elektrik kaçağı şüphesi varsa cihazı kapatıp bizi aramanızı öneririz; bu tür müdahaleleri kendiniz yapmayın.',
     ],
     causes: [
       { symptom: 'Ocak ateş almıyor', cause: 'Ateşleme modülü ya da piezo ateşleyici arızalanmış olabilir; gaz musluğunda tıkanıklık da mümkündür.' },

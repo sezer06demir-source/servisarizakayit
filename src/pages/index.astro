@@ -2,18 +2,17 @@
 import BaseLayout from '@layouts/BaseLayout.astro';
 import Icon from '@components/Icon.astro';
 import StatusScript from '@components/StatusScript.astro';
-import Reviews from '@components/Reviews.astro';
 import RequestForm from '@components/RequestForm.astro';
-import { site, devices, steps, stats, faq, reviews } from '@data/site';
-import { faqSchema, reviewSchema, serviceSchema } from '@utils/seo';
+import { site, devices, steps, stats, faq } from '@data/site';
+import { faqSchema, serviceSchema } from '@utils/seo';
 ---
 
 <BaseLayout
-  title="Beyaz Eşya Servisi | Türkiye Geneli Arıza Kayıt | Servis Arıza Kayıt"
+  title="Beyaz Eşya Servisi | Ankara, İstanbul, Bursa, Denizli | Servis Arıza Kayıt"
   rawTitle
   description={site.description}
-  keywords={['beyaz eşya servisi', 'buzdolabı tamiri', 'çamaşır makinesi servisi', 'klima servisi', 'kombi servisi', 'arıza kayıt', 'Türkiye geneli teknik servis']}
-  schema={[serviceSchema({ name: 'Beyaz Eşya ve İklimlendirme Teknik Servisi', description: site.description, path: '/' }), reviewSchema([...reviews]), faqSchema([...faq])]}
+  keywords={['beyaz eşya servisi', 'buzdolabı tamiri', 'çamaşır makinesi servisi', 'klima servisi', 'kombi servisi', 'arıza kayıt', 'Ankara teknik servis', 'İstanbul teknik servis', 'Bursa teknik servis', 'Denizli teknik servis']}
+  schema={[serviceSchema({ name: 'Beyaz Eşya ve İklimlendirme Teknik Servisi', description: site.description, path: '/' }), faqSchema([...faq])]}
 >
   <StatusScript />
 
@@ -26,7 +25,7 @@ import { faqSchema, reviewSchema, serviceSchema } from '@utils/seo';
           Beyaz eşyanız bozuldu mu?<br /><span class="hero__hl">Arızayı kaydedin, biz sizi arayalım.</span>
         </h1>
         <p class="hero__lead reveal" style="animation-delay:.12s">
-          Buzdolabı, çamaşır ve bulaşık makinesi, klima, kombi, televizyon ve ankastre cihazlarda Türkiye geneli servis ağı. Marka
+          Buzdolabı, çamaşır ve bulaşık makinesi, klima, kombi, televizyon ve ankastre cihazlarda Ankara, İstanbul, Bursa ve Denizli'de servis. Marka
           bağımsız çalışıyor, ücreti işlem öncesi söylüyor, yaptığımız işe garanti veriyoruz.
         </p>
         <div class="hero__cta reveal" style="animation-delay:.18s">
@@ -97,9 +96,6 @@ import { faqSchema, reviewSchema, serviceSchema } from '@utils/seo';
       <p class="steps__cta"><a href="/ariza-kayit" class="btn btn--brand"><Icon name="send" size={18} /> Şimdi arıza kaydı oluştur</a></p>
     </div>
   </section>
-
-  <!-- YORUMLAR -->
-  <Reviews />
 
   <!-- FORM + SSS -->
   <section class="section section--fog" aria-labelledby="form-title">

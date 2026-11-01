@@ -1,5 +1,7 @@
 import { site } from '@data/site';
 
+const hizmetIlleri = ['Ankara', 'İstanbul', 'Bursa', 'Denizli'];
+
 export interface BreadcrumbItem {
   name: string;
   href: string;
@@ -36,7 +38,7 @@ export function localBusinessSchema() {
     logo: absoluteUrl('/logo-servis-ariza-kayit.png'),
     description: site.description,
     priceRange: '₺₺',
-    areaServed: { '@type': 'Country', name: 'Türkiye' },
+    areaServed: hizmetIlleri.map((name) => ({ '@type': 'City', name })),
     knowsLanguage: 'tr',
     openingHoursSpecification: [
       {
@@ -51,7 +53,7 @@ export function localBusinessSchema() {
       '@type': 'ContactPoint',
       telephone: site.phone.e164,
       contactType: 'customer service',
-      areaServed: 'TR',
+      areaServed: [...hizmetIlleri],
       availableLanguage: 'Turkish',
     },
   };
@@ -103,35 +105,11 @@ export function serviceSchema(opts: { name: string; description: string; path: s
     url: absoluteUrl(opts.path),
     serviceType: opts.name,
     provider: { '@id': `${absoluteUrl('/')}#business` },
-    areaServed: { '@type': 'Country', name: 'Türkiye' },
+    areaServed: hizmetIlleri.map((name) => ({ '@type': 'City', name })),
     availableChannel: {
       '@type': 'ServiceChannel',
       servicePhone: { '@type': 'ContactPoint', telephone: site.phone.e164 },
     },
-  };
-}
-
-/** Yıldızlı yorumlar için aggregateRating + review şeması. */
-export function reviewSchema(reviews: { name: string; stars: number; text: string }[]) {
-  const avg = reviews.reduce((s, r) => s + r.stars, 0) / reviews.length;
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'HomeAndConstructionBusiness',
-    '@id': `${absoluteUrl('/')}#business`,
-    name: site.name,
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: avg.toFixed(1),
-      reviewCount: reviews.length,
-      bestRating: 5,
-      worstRating: 1,
-    },
-    review: reviews.slice(0, 8).map((r) => ({
-      '@type': 'Review',
-      author: { '@type': 'Person', name: r.name },
-      reviewRating: { '@type': 'Rating', ratingValue: r.stars, bestRating: 5 },
-      reviewBody: r.text,
-    })),
   };
 }
 

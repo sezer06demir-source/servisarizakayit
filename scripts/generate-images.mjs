@@ -36,7 +36,7 @@ const og = `
   <text x="200" y="164" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#5B6B75">Beyaz Eşya &amp; İklimlendirme Teknik Servisi</text>
   <text x="80" y="320" font-family="Segoe UI, Arial, sans-serif" font-size="66" font-weight="800" fill="${INK}">Arızayı kaydedin,</text>
   <text x="80" y="398" font-family="Segoe UI, Arial, sans-serif" font-size="66" font-weight="800" fill="${TEAL}">biz sizi arayalım.</text>
-  <text x="80" y="470" font-family="Segoe UI, Arial, sans-serif" font-size="27" fill="#5B6B75">Türkiye geneli servis ağı · Marka bağımsız · Her gün 08:00–22:00</text>
+  <text x="80" y="470" font-family="Segoe UI, Arial, sans-serif" font-size="27" fill="#5B6B75">Ankara · İstanbul · Bursa · Denizli · Marka bağımsız · 7/24</text>
   <rect x="80" y="510" width="360" height="66" rx="33" fill="#FF7A1A"/>
   <text x="112" y="552" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="800" fill="#fff">0542 403 36 22</text>
 </svg>`;

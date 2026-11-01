@@ -1,7 +1,7 @@
 {
   "name": "Servis Arıza Kayıt",
   "short_name": "Arıza Kayıt",
-  "description": "Türkiye geneli beyaz eşya ve iklimlendirme teknik servisi. Arıza kaydı oluşturun, sizi arayalım.",
+  "description": "Ankara, İstanbul, Bursa ve Denizli'de beyaz eşya ve iklimlendirme teknik servisi. Arıza kaydı oluşturun, sizi arayalım.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

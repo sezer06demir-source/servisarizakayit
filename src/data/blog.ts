@@ -57,7 +57,7 @@ export const posts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'Basit kontrolleri denediniz ve sonuç alamadınız mı? Türkiye genelinde bağımsız teknik servis ekibimiz çamaşır makinenizi yerinde inceleyip kalıcı çözüm sunar. Arıza kaydınızı oluşturmak veya sorularınız için 0542 403 36 22 numaralı hattımızdan günün her saati bize ulaşabilirsiniz.',
+        text: 'Basit kontrolleri denediniz ve sonuç alamadınız mı? Ankara, İstanbul, Bursa ve Denizli'de bağımsız teknik servis ekibimiz çamaşır makinenizi yerinde inceleyip kalıcı çözüm sunar. Arıza kaydınızı oluşturmak veya sorularınız için 0542 403 36 22 numaralı hattımızdan günün her saati bize ulaşabilirsiniz.',
       },
     ],
     seoTitle: 'Çamaşır Makinesi Su Almıyor: Nedenleri ve Çözümü | Servis Arıza Kayıt',
@@ -127,7 +127,7 @@ export const posts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'Buzdolabınızdaki soğutma sorunu devam ediyorsa vakit kaybetmeden arıza kaydı oluşturabilirsiniz. Türkiye genelinde bağımsız servis ekibimize 0542 403 36 22 numaralı hattan günün her saatinda ulaşabilirsiniz.',
+        text: 'Buzdolabınızdaki soğutma sorunu devam ediyorsa vakit kaybetmeden arıza kaydı oluşturabilirsiniz. Ankara, İstanbul, Bursa ve Denizli'de bağımsız servis ekibimize 0542 403 36 22 numaralı hattan günün her saatinda ulaşabilirsiniz.',
       },
     ],
     seoTitle: 'Buzdolabı Soğutmuyor mu? Nedenleri ve Kontrol Listesi | Servis Arıza Kayıt',
@@ -199,7 +199,7 @@ export const posts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'Bulaşık makinenizdeki yıkama sorunu devam ediyorsa arıza kaydınızı kolayca oluşturabilirsiniz. Türkiye genelinde bağımsız servis ekibimize 0542 403 36 22 numaralı hattan günün her saati ulaşabilirsiniz.',
+        text: 'Bulaşık makinenizdeki yıkama sorunu devam ediyorsa arıza kaydınızı kolayca oluşturabilirsiniz. Ankara, İstanbul, Bursa ve Denizli'de bağımsız servis ekibimize 0542 403 36 22 numaralı hattan günün her saati ulaşabilirsiniz.',
       },
     ],
     seoTitle: 'Bulaşık Makinesi İyi Yıkamıyor: 7 Yaygın Neden | Servis Arıza Kayıt',
@@ -268,7 +268,7 @@ export const posts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'Klimanızda soğutma sorunu yaşıyorsanız ya da periyodik bakım zamanı geldiyse arıza kaydınızı hemen oluşturabilirsiniz. Türkiye genelinde bağımsız servis ekibimize 0542 403 36 22 numaralı hattan günün her saati ulaşabilirsiniz.',
+        text: 'Klimanızda soğutma sorunu yaşıyorsanız ya da periyodik bakım zamanı geldiyse arıza kaydınızı hemen oluşturabilirsiniz. Ankara, İstanbul, Bursa ve Denizli'de bağımsız servis ekibimize 0542 403 36 22 numaralı hattan günün her saati ulaşabilirsiniz.',
       },
     ],
     seoTitle: 'Klima Soğutmuyor: Gaz mı Bitti, Bakım mı Gerekiyor? | Servis Arıza Kayıt',
@@ -338,7 +338,7 @@ export const posts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'Kombinizde basınç düşüşü yaşıyorsanız arıza kaydınızı hemen oluşturabilirsiniz. Türkiye genelinde bağımsız servis ekibimize 0542 403 36 22 numaralı hattan günün her saati ulaşabilirsiniz.',
+        text: 'Kombinizde basınç düşüşü yaşıyorsanız arıza kaydınızı hemen oluşturabilirsiniz. Ankara, İstanbul, Bursa ve Denizli'de bağımsız servis ekibimize 0542 403 36 22 numaralı hattan günün her saati ulaşabilirsiniz.',
       },
     ],
     seoTitle: 'Kombi Basıncı Düşüyor: Nedeni ve Servis Zamanı | Servis Arıza Kayıt',
@@ -399,7 +399,7 @@ export const posts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'Beyaz eşyalarınızda alışılmadık bir durum fark ettiyseniz ya da periyodik bakım zamanı geldiyse, sorunu büyümeden çözmek için bizimle iletişime geçebilirsiniz. Türkiye genelinde bağımsız servis ekibimize 0542 403 36 22 numaralı hattan günün her saati ulaşarak arıza kaydınızı oluşturabilirsiniz.',
+        text: 'Beyaz eşyalarınızda alışılmadık bir durum fark ettiyseniz ya da periyodik bakım zamanı geldiyse, sorunu büyümeden çözmek için bizimle iletişime geçebilirsiniz. Ankara, İstanbul, Bursa ve Denizli'de bağımsız servis ekibimize 0542 403 36 22 numaralı hattan günün her saati ulaşarak arıza kaydınızı oluşturabilirsiniz.',
       },
     ],
     seoTitle: 'Beyaz Eşyanızın Ömrünü Uzatan 10 Alışkanlık | Servis Arıza Kayıt',
@@ -541,7 +541,7 @@ export const posts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'Servis Arıza Kayıt olarak Ankara dahil Türkiye genelinde bağımsız teknik servis ekipleriyle çalışıyoruz. Arıza kaydınızı siteden oluşturabilir ya da doğrudan 0542 403 36 22 numaralı hattan günün her saatinda ulaşabilirsiniz. Cihaz, marka ve şikâyeti alır, bölgenizdeki teknisyenle randevunuzu planlarız; ücret tespit sonrası, işleme başlamadan önce söylenir.',
+        text: 'Servis Arıza Kayıt olarak Ankara, İstanbul, Bursa ve Denizli'de bağımsız teknik servis ekipleriyle çalışıyoruz. Arıza kaydınızı siteden oluşturabilir ya da doğrudan 0542 403 36 22 numaralı hattan günün her saatinda ulaşabilirsiniz. Cihaz, marka ve şikâyeti alır, bölgenizdeki teknisyenle randevunuzu planlarız; ücret tespit sonrası, işleme başlamadan önce söylenir.',
       },
     ],
     seoTitle: 'Ankara Beyaz Eşya Servisi: Doğru Servisi Seçme Rehberi | Servis Arıza Kayıt',

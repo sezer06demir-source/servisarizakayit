@@ -23,7 +23,7 @@ const { title, description, rawTitle = false, keywords = [], schema = [], noinde
 const fullTitle = buildTitle(title, !rawTitle);
 const canonical = canonicalUrl(Astro.url.pathname);
 const jsonLd = [localBusinessSchema(), websiteSchema(), ...schema];
-const kw = keywords.length ? keywords : ['beyaz eşya servisi', 'arıza kayıt', 'teknik servis', 'Türkiye geneli servis'];
+const kw = keywords.length ? keywords : ['beyaz eşya servisi', 'arıza kayıt', 'teknik servis', 'Ankara İstanbul Bursa Denizli servis'];
 ---
 
 <!doctype html>

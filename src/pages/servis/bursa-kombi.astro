@@ -16,6 +16,7 @@ const crumbs = [
   { name: 'Bursa Kombi Servisi', href: path },
 ];
 const ilceler = ['Nilüfer', 'Osmangazi', 'Yıldırım'];
+const kombiMarkalari = ['DemirDöküm', 'ECA', 'Viessmann', 'Bosch', 'Vaillant', 'Baymak'];
 const waHref = `https://wa.me/${site.whatsapp.number}?text=${encodeURIComponent('Merhaba, Bursa\'da kombi arızası için servis kaydı oluşturmak istiyorum.')}`;
 const desc = 'Bursa Nilüfer, Osmangazi ve Yıldırım\'da kombi servisi. 1 saate servis kapında. Tüm markalara servis, şeffaf fiyat, garantili tamir. 0542 403 36 22';
 const faq = [
@@ -39,6 +40,7 @@ const faq = [
       <p class="eyebrow"><Icon name="wrench" size={16} /> {ilceler.join(' · ')}</p>
       <h1>Bursa Kombi Servisi</h1>
       <p class="lead">1 saate servis kapında. Kombi yanmıyor, ısıtmıyor ya da basınç mı düşüyor? Tüm marka ve model kombilere servis veriyoruz.</p>
+      <p class="dhead__note">Bağımsız özel teknik servistir. Hiçbir markanın yetkili servisi değildir.</p>
       <div class="dhead__cta">
         <a href={site.phone.href} class="btn btn--accent"><Icon name="phone" size={18} /> {site.phone.display}</a>
         <a href={waHref} class="btn btn--ghost-light">WhatsApp'tan Yazın</a>
@@ -59,6 +61,16 @@ const faq = [
           <ul class="tags">
             {['Tüm Markalara Servis', 'Deneyimli Ekip', 'Şeffaf Fiyat', 'Garantili Tamir', 'Aynı Gün Servis'].map((t) => <li><span class="tag"><Icon name="shield-check" size={15} /> {t}</span></li>)}
           </ul>
+        </section>
+
+        <section aria-labelledby="markalar">
+          <h2 id="markalar" class="h">Servis verdiğimiz kombi markaları</h2>
+          <p class="proc">{kombiMarkalari.join(', ')} ve diğer marka kombilere bağımsız özel servis olarak bakıyoruz. Bu markaların yetkili servisi değiliz; marka adları yalnızca hangi cihazlara hizmet verdiğimizi belirtmek için kullanılır.</p>
+        </section>
+
+        <section aria-labelledby="ucret">
+          <h2 id="ucret" class="h">Ücret nasıl belirlenir?</h2>
+          <p class="proc">Servis çağrısı ücretlidir. Teknisyen arızayı yerinde tespit eder, servis, işçilik ve parça ücretini işleme başlamadan size söyler. Onayınız olmadan onarım yapılmaz.</p>
         </section>
 
         <section aria-labelledby="belirti">
@@ -106,6 +118,11 @@ const faq = [
   .dhead h1 {
     max-width: 18ch;
     margin-bottom: 0.75rem;
+  }
+  .dhead__note {
+    margin: 0.75rem 0 0;
+    color: var(--on-dark-dim);
+    font-size: var(--fs-sm);
   }
   .dhead__cta {
     display: flex;

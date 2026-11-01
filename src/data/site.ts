@@ -1,16 +1,16 @@
 import { SITE_URL } from './site-url.mjs';
 
 /**
- * İşletme bilgileri — tek kaynak. Türkiye geneli bağımsız beyaz eşya ve
+ * İşletme bilgileri — tek kaynak. Ankara, İstanbul, Bursa ve Denizli'de bağımsız beyaz eşya ve
  * iklimlendirme teknik servisi. Hiçbir markanın yetkili servisi / bayisi değildir.
  */
 export const site = {
   name: 'Servis Arıza Kayıt',
   legalName: 'Servis Arıza Kayıt',
   url: SITE_URL,
-  tagline: 'Türkiye Geneli Beyaz Eşya ve İklimlendirme Teknik Servisi',
+  tagline: 'Ankara, İstanbul, Bursa ve Denizli Beyaz Eşya ve İklimlendirme Teknik Servisi',
   description:
-    'Servis Arıza Kayıt: klima, kombi, buzdolabı, çamaşır ve bulaşık makinesi, televizyon, ankastre ocak arızalarında Türkiye geneli servis ağı. Arızanızı kaydedin, ekip sizi arasın. 0542 403 36 22.',
+    'Servis Arıza Kayıt: klima, kombi, buzdolabı, çamaşır ve bulaşık makinesi, televizyon, ankastre ocak arızalarında Ankara, İstanbul, Bursa ve Denizli'de servis. Arızanızı kaydedin, ekip sizi arasın. 0542 403 36 22.',
 
   phone: {
     display: '0542 403 36 22',
@@ -33,7 +33,7 @@ export const site = {
   },
 
   hours: { display: '24 saat', opens: '00:00', closes: '23:59', daysText: 'Haftanın 7 günü' },
-  area: 'Türkiye geneli servis ağı',
+  area: 'Ankara, İstanbul, Bursa ve Denizli',
   /** Yasal ibare — sitenin her yerinde görünür kılınmalı. */
   disclaimer:
     'Servis Arıza Kayıt bağımsız bir özel teknik servistir. Hiçbir markanın yetkili servisi, resmi temsilcisi ya da bayisi değildir. Marka adları yalnızca hangi cihazlara hizmet verdiğimizi belirtmek için kullanılır.',
@@ -42,7 +42,6 @@ export const site = {
 export const nav = [
   { label: 'Cihazlar', href: '/#cihazlar' },
   { label: 'Servis Süreci', href: '/#surec' },
-  { label: 'Yorumlar', href: '/#yorumlar' },
   { label: 'Arıza Kaydı', href: '/ariza-kayit' },
   { label: 'İletişim', href: '/iletisim' },
 ] as const;
@@ -78,41 +77,17 @@ export const steps = [
 ];
 
 export const stats = [
-  { value: '81', label: 'ilde servis ağı' },
+  { value: '4', label: 'ilde servis' },
   { value: '9', label: 'cihaz türü' },
-  { value: '08–22', label: 'her gün açık' },
+  { value: '7/24', label: 'her gün açık' },
 ] as const;
-
-export interface Review {
-  name: string;
-  city: string;
-  device: string;
-  stars: number;
-  text: string;
-}
-
-/** Örnek müşteri yorumları. İşletme gerçek yorumlarla değiştirebilir. */
-export const reviews: Review[] = [
-  { name: 'Ayşe K.', city: 'İstanbul', device: 'Çamaşır Makinesi', stars: 5, text: 'Makinem su almıyordu, aynı gün geldiler. Usta arızayı 10 dakikada buldu, fiyatı baştan söyledi. Temiz iş çıkardılar.' },
-  { name: 'Mehmet D.', city: 'Ankara', device: 'Kombi', stars: 5, text: 'Kombi kışın ortasında sustu. Akşam aradım, ertesi sabah buradaydılar. Basınç sorununu çözdüler, güler yüzlüydüler.' },
-  { name: 'Zeynep A.', city: 'İzmir', device: 'Buzdolabı', stars: 5, text: 'Dolap soğutmuyordu, bozulacak diye korktum. Hızlı geldiler, gaz ve kompresör kontrolü yaptılar. Şimdi buz gibi.' },
-  { name: 'Hasan Y.', city: 'Bursa', device: 'Klima', stars: 4, text: 'Yaz sıcağında klima soğutmuyordu. Bakım ve gaz dolumu yaptılar. Randevuya birkaç saat geç kaldılar ama iş temizdi.' },
-  { name: 'Fatma T.', city: 'Antalya', device: 'Bulaşık Makinesi', stars: 5, text: 'Su kaçırıyordu, mutfağı su basıyordu. Contayı ve tahliyeyi değiştirdiler. Fiyatı gayet uygundu, teşekkürler.' },
-  { name: 'Ömer S.', city: 'Konya', device: 'Televizyon', stars: 5, text: 'Ekranda görüntü gitmişti, çöpe atacaktım. Panel yerine bir kart değişimiyle çözdüler. Dürüst servis, tavsiye ederim.' },
-  { name: 'Elif B.', city: 'Gaziantep', device: 'Ankastre Fırın', stars: 5, text: 'Fırın ısınmıyordu. Rezistans değişti, aynı gün bitti. Usta çok bilgiliydi, her şeyi açıkladı.' },
-  { name: 'Mustafa Ç.', city: 'Adana', device: 'Kurutma Makinesi', stars: 4, text: 'Kurutmuyordu, nem sensörü arızalıymış. Parça bir gün sonra geldi ama sağ olsunlar hallettiler.' },
-  { name: 'Seda N.', city: 'Kayseri', device: 'Derin Dondurucu', stars: 5, text: 'Dondurucu buz tutmuştu, alarm veriyordu. Termostatı değiştirdiler, garanti belgesi bıraktılar. Çok memnun kaldım.' },
-  { name: 'Kemal R.', city: 'Samsun', device: 'Çamaşır Makinesi', stars: 5, text: 'Sıkma yapmıyordu, rulman sesi vardı. Randevu saatinde geldiler, işi tek seferde bitirdiler. Fiyat baştan belliydi.' },
-  { name: 'Gül İ.', city: 'Eskişehir', device: 'Klima', stars: 5, text: 'İç üniteden su damlıyordu. Tahliye hortumunu temizleyip bakım yaptılar. Nazik ve titiz çalıştılar.' },
-  { name: 'Burak V.', city: 'Mersin', device: 'Buzdolabı', stars: 5, text: 'No-frost dolabım çalışmıyordu. Fanı ve sensörü değiştirdiler. Aynı gün servis, uygun ücret. Numarayı kaydettim.' },
-];
 
 /** Sık sorulan sorular. */
 export const faq = [
   { q: 'Hangi markalara bakıyorsunuz?', a: 'Cihaz türüne giren tüm markalara servis veriyoruz. Bağımsız bir özel servis olduğumuz için tek markaya bağlı değiliz; parça temininde de esnekiz. Herhangi bir markanın yetkili servisi ya da bayisi değiliz.' },
-  { q: 'Ne kadar sürede gelirsiniz?', a: 'Arıza kaydınızı aldıktan sonra en yakın bölge teknisyenimiz kısa sürede sizi arar. Çoğu ilde aynı gün ya da ertesi gün randevu veriyoruz.' },
+  { q: 'Ne kadar sürede gelirsiniz?', a: 'Arıza kaydınızı aldıktan sonra en yakın bölge teknisyenimiz kısa sürede sizi arar. Hizmet verdiğimiz illerde aynı gün ya da ertesi gün randevu veriyoruz.' },
   { q: 'Ücreti önceden öğrenebilir miyim?', a: 'Teknisyen arızayı yerinde tespit eder ve işleme başlamadan önce ücreti net söyler. Onayınız olmadan işlem yapılmaz.' },
   { q: 'Yapılan işe garanti veriyor musunuz?', a: 'Evet. Değişen parçaya ve işçiliğe garanti belgesi veriyoruz. Aynı arıza garanti süresi içinde tekrarlarsa ücretsiz bakıyoruz.' },
-  { q: 'Servis hangi bölgeleri kapsıyor?', a: 'Türkiye geneli bir servis ağıyla çalışıyoruz. Bulunduğunuz ili arıza kaydında belirtmeniz yeterli; size en yakın teknisyeni yönlendiririz.' },
+  { q: 'Servis hangi bölgeleri kapsıyor?', a: 'Ankara, İstanbul, Bursa ve Denizli illerinde servis veriyoruz. Bulunduğunuz ilçeyi arıza kaydında belirtin, hizmet bölgemizdeyse en yakın teknisyeni yönlendirelim.' },
   { q: 'Nasıl arıza kaydı oluştururum?', a: 'Sayfadaki formu doldurun ya da WhatsApp\'tan yazın. Cihazınızı, markayı ve şikâyeti iletin; sizi biz arayalım.' },
 ];

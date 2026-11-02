@@ -1,11 +1,12 @@
 ---
 import Icon from './Icon.astro';
 import { site } from '@data/site';
+const { whatsappOnly = false } = Astro.props;
 ---
 
-<div class="mbar" role="region" aria-label="Hızlı iletişim">
-  <a href="/ariza-kayit" class="mbar__rec"><Icon name="clipboard-list" size={20} /> Arıza Kaydı</a>
-  <a href={site.phone.href} class="mbar__call" aria-label="Ara"><Icon name="phone" size={20} /></a>
+<div class:list={['mbar', { 'mbar--wa': whatsappOnly }]} role="region" aria-label="Hızlı iletişim">
+  <a href={whatsappOnly ? '#ariza-form' : '/ariza-kayit'} class="mbar__rec"><Icon name="clipboard-list" size={20} /> Arıza Kaydı</a>
+  {!whatsappOnly && <a href={site.phone.href} class="mbar__call" aria-label="Ara"><Icon name="phone" size={20} /></a>}
   <a href={site.whatsapp.href} target="_blank" rel="noopener" class="mbar__wa" aria-label="WhatsApp"><Icon name="whatsapp" size={22} /></a>
 </div>
 
@@ -23,6 +24,9 @@ import { site } from '@data/site';
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(8px);
     border-top: 1px solid var(--line);
+  }
+  .mbar--wa {
+    grid-template-columns: 1fr 56px;
   }
   .mbar a {
     display: flex;

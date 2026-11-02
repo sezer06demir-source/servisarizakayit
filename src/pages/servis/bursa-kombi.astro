@@ -17,11 +17,12 @@ const crumbs = [
 ];
 const ilceler = ['Nilüfer', 'Osmangazi', 'Yıldırım'];
 const kombiMarkalari = ['DemirDöküm', 'ECA', 'Viessmann', 'Bosch', 'Vaillant', 'Baymak'];
+const surec = "WhatsApp'tan arıza kodunu ve belirtileri alıp ön değerlendirme yapıyoruz; yerinde teşhis sonrası ücreti bildiriyoruz. Değişen parçaya garanti veriyoruz.";
 const waHref = `https://wa.me/${site.whatsapp.number}?text=${encodeURIComponent('Merhaba, Bursa\'da kombi arızası için servis kaydı oluşturmak istiyorum.')}`;
-const desc = 'Bursa Nilüfer, Osmangazi ve Yıldırım\'da kombi servisi. 1 saate servis kapında. Tüm markalara servis, şeffaf fiyat, garantili tamir. 0542 403 36 22';
+const desc = 'Bursa Nilüfer, Osmangazi ve Yıldırım\'da kombi servisi. 1 saate servis kapında. Tüm markalara servis, şeffaf fiyat, garantili tamir.';
 const faq = [
   { q: 'Bursa\'da hangi ilçelere servis veriyorsunuz?', a: 'Nilüfer, Osmangazi ve Yıldırım ilçelerine kombi servisi veriyoruz.' },
-  { q: 'Servis ne kadar sürede gelir?', a: 'Bu üç ilçede 1 saate servis kapında. Aradığınızda adresinize göre net süreyi söylüyoruz.' },
+  { q: 'Servis ne kadar sürede gelir?', a: 'Bu üç ilçede 1 saate servis kapında. Kaydınızı aldığımızda adresinize göre net süreyi söylüyoruz.' },
   ...detail.faq,
 ];
 ---
@@ -29,6 +30,7 @@ const faq = [
 <BaseLayout
   title="Bursa Kombi Servisi | Nilüfer, Osmangazi, Yıldırım | Servis Arıza Kayıt"
   rawTitle={true}
+  whatsappOnly
   description={desc}
   schema={[breadcrumbSchema(crumbs), serviceSchema({ name: 'Bursa Kombi Servisi', description: desc, path }), faqSchema(faq)]}
 >
@@ -42,8 +44,7 @@ const faq = [
       <p class="lead">1 saate servis kapında. Kombi yanmıyor, ısıtmıyor ya da basınç mı düşüyor? Tüm marka ve model kombilere servis veriyoruz.</p>
       <p class="dhead__note">Bağımsız özel teknik servistir. Hiçbir markanın yetkili servisi değildir.</p>
       <div class="dhead__cta">
-        <a href={site.phone.href} class="btn btn--accent"><Icon name="phone" size={18} /> {site.phone.display}</a>
-        <a href={waHref} class="btn btn--ghost-light">WhatsApp'tan Yazın</a>
+        <a href={waHref} target="_blank" rel="noopener" class="btn btn--wa"><Icon name="whatsapp" size={20} /> WhatsApp'tan Arıza Kaydı</a>
       </div>
     </div>
   </section>
@@ -52,7 +53,7 @@ const faq = [
     <div class="container ledger">
       <div class="body">
         <div class="prose">
-          <p>Bursa'nın Nilüfer, Osmangazi ve Yıldırım ilçelerinde kombi arızalarına yerinde bakıyoruz. Arayın ya da WhatsApp'tan yazın, adresinizi ve şikâyetinizi alalım, ekibimiz 1 saate kapınızda olsun.</p>
+          <p>Bursa'nın Nilüfer, Osmangazi ve Yıldırım ilçelerinde kombi arızalarına yerinde bakıyoruz. WhatsApp'tan yazın, adresinizi ve şikâyetinizi alalım, ekibimiz 1 saate kapınızda olsun.</p>
           <p>{detail.intro[2]}</p>
         </div>
 
@@ -87,7 +88,7 @@ const faq = [
 
         <section aria-labelledby="surec">
           <h2 id="surec" class="h">Servis süreci</h2>
-          <p class="proc">{detail.process}</p>
+          <p class="proc">{surec}</p>
         </section>
 
         <section aria-labelledby="sss">
@@ -98,7 +99,7 @@ const faq = [
         <p class="disc"><Icon name="alert-triangle" size={16} /> {site.disclaimer}</p>
       </div>
       <div class="ledger__rail">
-        <RequestForm title="Bursa kombi arıza kaydı" presetDevice={device.slug} />
+        <RequestForm title="Bursa kombi arıza kaydı" presetDevice={device.slug} whatsappOnly />
       </div>
     </div>
   </article>

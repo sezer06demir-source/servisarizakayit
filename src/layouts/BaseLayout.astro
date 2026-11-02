@@ -18,11 +18,15 @@ interface Props {
   keywords?: string[];
   schema?: Record<string, unknown>[];
   noindex?: boolean;
+  /** Reklam sayfaları: görünür telefon yok, iletişim yalnızca WhatsApp ve arıza formu. */
+  whatsappOnly?: boolean;
 }
-const { title, description, rawTitle = false, keywords = [], schema = [], noindex = false } = Astro.props;
+const { title, description, rawTitle = false, keywords = [], schema = [], noindex = false, whatsappOnly = false } = Astro.props;
 const fullTitle = buildTitle(title, !rawTitle);
 const canonical = canonicalUrl(Astro.url.pathname);
-const jsonLd = [localBusinessSchema(), websiteSchema(), ...schema];
+const telefonsuz = (obj: Record<string, unknown>) =>
+  JSON.parse(JSON.stringify(obj, (k, v) => (k === 'telephone' || k === 'servicePhone' ? undefined : typeof v === 'string' ? v.replace(/\s*0542 403 36 22\.?/g, '') : v)));
+const jsonLd = [localBusinessSchema(), websiteSchema(), ...schema].map((o) => (whatsappOnly ? telefonsuz(o) : o));
 const kw = keywords.length ? keywords : ['beyaz eşya servisi', 'arıza kayıt', 'teknik servis', 'Ankara İstanbul Bursa Denizli servis'];
 ---
 
@@ -61,12 +65,12 @@ const kw = keywords.length ? keywords : ['beyaz eşya servisi', 'arıza kayıt',
   </head>
   <body>
     <a class="skip-link" href="#main">İçeriğe geç</a>
-    <Header />
+    <Header whatsappOnly={whatsappOnly} />
     <main id="main">
       <slot />
     </main>
-    <Footer />
-    <MobileBar />
+    <Footer whatsappOnly={whatsappOnly} />
+    <MobileBar whatsappOnly={whatsappOnly} />
     <CookieConsent />
     <AdVisitBeacon />
   </body>

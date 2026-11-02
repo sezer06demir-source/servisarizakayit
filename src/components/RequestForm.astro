@@ -6,14 +6,15 @@ interface Props {
   title?: string;
   compact?: boolean;
   presetDevice?: string;
+  whatsappOnly?: boolean;
 }
-const { title = 'Arıza kaydı oluşturun', presetDevice } = Astro.props;
+const { title = 'Arıza kaydı oluşturun', presetDevice, whatsappOnly = false } = Astro.props;
 ---
 
 <form class="rf" id="ariza-form" novalidate data-wa={site.whatsapp.number}>
   <div class="rf__head">
     <h2 class="rf__title">{title}</h2>
-    <p class="rf__lead">Bilgileri girin, WhatsApp'tan bize ulaşsın. Sizi en kısa sürede arayıp randevu verelim. Acilse <a href={site.phone.href}>{site.phone.display}</a></p>
+    <p class="rf__lead">Bilgileri girin, WhatsApp'tan bize ulaşsın. {whatsappOnly ? 'En kısa sürede WhatsApp\'tan yanıtlayıp randevu verelim.' : 'Sizi en kısa sürede arayıp randevu verelim.'}{!whatsappOnly && <> Acilse <a href={site.phone.href}>{site.phone.display}</a></>}</p>
   </div>
 
   <div class="rf__grid">
@@ -58,7 +59,7 @@ const { title = 'Arıza kaydı oluşturun', presetDevice } = Astro.props;
   </label>
 
   <button type="submit" class="btn btn--wa rf__send"><Icon name="whatsapp" size={20} /> WhatsApp ile gönder</button>
-  <p class="rf__alt">WhatsApp kullanmıyorsanız <a href={site.phone.href}>arayın</a>, kaydı telefonda alalım.</p>
+  {!whatsappOnly && <p class="rf__alt">WhatsApp kullanmıyorsanız <a href={site.phone.href}>arayın</a>, kaydı telefonda alalım.</p>}
   <p class="rf__status" data-status role="status" aria-live="polite"></p>
 </form>
 

@@ -3,6 +3,8 @@ import Icon from './Icon.astro';
 import Logo from './Logo.astro';
 import { site, nav } from '@data/site';
 const path = Astro.url.pathname.replace(/\/$/, '') || '/';
+const { whatsappOnly = false } = Astro.props;
+const kayit = whatsappOnly ? '#ariza-form' : '/ariza-kayit';
 ---
 
 <header class="hdr" id="site-header">
@@ -25,14 +27,18 @@ const path = Astro.url.pathname.replace(/\/$/, '') || '/';
     </nav>
 
     <div class="hdr__end">
-      <a href={site.phone.href} class="hdr__phone">
-        <span class="hdr__phone-ic"><Icon name="phone" size={18} /></span>
-        <span class="hdr__phone-txt">
-          <small data-status-text>{site.hours.daysText}</small>
-          <strong class="metric">{site.phone.display}</strong>
-        </span>
-      </a>
-      <a href="/ariza-kayit" class="btn btn--accent hdr__cta">Arıza Kaydı</a>
+      {
+        !whatsappOnly && (
+          <a href={site.phone.href} class="hdr__phone">
+            <span class="hdr__phone-ic"><Icon name="phone" size={18} /></span>
+            <span class="hdr__phone-txt">
+              <small data-status-text>{site.hours.daysText}</small>
+              <strong class="metric">{site.phone.display}</strong>
+            </span>
+          </a>
+        )
+      }
+      <a href={kayit} class="btn btn--accent hdr__cta">Arıza Kaydı</a>
       <button type="button" class="hdr__menu js-only" aria-expanded="false" aria-controls="mnav" aria-label="Menüyü aç"><Icon name="menu" size={24} /></button>
     </div>
   </div>
@@ -41,7 +47,7 @@ const path = Astro.url.pathname.replace(/\/$/, '') || '/';
     <ul>
       {nav.map((n) => <li><a href={n.href}>{n.label}</a></li>)}
     </ul>
-    <a href="/ariza-kayit" class="btn btn--accent">Arıza Kaydı Oluştur</a>
+    <a href={kayit} class="btn btn--accent">Arıza Kaydı Oluştur</a>
   </div>
 </header>
 

@@ -1221,4 +1221,222 @@ export const posts: BlogPost[] = [
       'İstanbul buzdolabı servisi',
     ],
   },
+  {
+    slug: 'esenyurt-kombi-ses-yapiyor',
+    title: 'Esenyurt’ta Kombi Ses Yapıyor mu? Vınlama, Takırtı ve Gürültünün Sebepleri',
+    excerpt:
+      'Esenyurt’ta kombi çalışırken vınlama, takırtı ya da su kaynama sesi yapıyorsa sebep genelde pompa, kireçlenmiş eşanjör ya da havası alınmamış tesisattır; hangi sesin neyi işaret ettiğini anlatıyoruz.',
+    device: 'kombi',
+    readMinutes: 7,
+    date: '2026-11-06',
+    body: [
+      {
+        type: 'p',
+        text: 'Esenyurt’ta kış bastırınca kombiyle ilgili ikinci büyük şikâyet kategorisi ses oluyor. Kombi ısıtıyor, hata kodu da vermiyor, ama çalışırken vınlıyor, takırdıyor ya da içinden su kaynıyormuş gibi bir ses geliyor. Müşterilerimiz çoğu zaman "arıza yok ama rahatsız edici" diye tarif ediyor; oysa her ses tipi aslında belirli bir parçaya işaret ediyor ve çoğu kombi değişmeden, tek bir parça ya da bakımla düzeliyor.',
+      },
+      {
+        type: 'p',
+        text: 'Burada önemli olan, sesin tipini doğru tarif etmek. Vınlama, takırtı, su kaynama sesi ve metalik tıkırtı birbirinden farklı sebeplerden gelir; telefonda bu dört sesi birbirinden ayırabilirsek, yerinde hangi parçaya bakacağımızı önceden tahmin edebiliyoruz.',
+      },
+      {
+        type: 'h2',
+        text: 'Kombiden sürekli vınlama sesi geliyorsa sebep nedir?',
+      },
+      {
+        type: 'p',
+        text: 'Sürekli, motor sesine benzeyen bir vınlama genelde sirkülasyon pompasından gelir; pompanın rulmanı yıprandığında ya da pompa içinde hava kaldığında bu ses ortaya çıkar. Pompa aşırı çalışıp ısınıyorsa ses zamanla yükselir ve pompa bir süre sonra tamamen durabilir.',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Pompa rulmanının yıpranması',
+          'Pompa gövdesinde hava kalması',
+          'Pompa motorunun aşırı ısınması',
+          'Pompa bağlantı vidalarının gevşemesi',
+        ],
+      },
+      {
+        type: 'h2',
+        text: 'Su kaynama sesi (gug gug) neyi gösterir?',
+      },
+      {
+        type: 'p',
+        text: 'Bu ses doğrudan kireçlenmiş eşanjöre işaret eder; eşanjör içindeki kanallar kireçle daraldıkça su o dar bölümden geçerken yerel olarak buharlaşıp kaynama sesine benzeyen bir ses çıkarır. Su sertliği yüksek bölgelerde bu belirti birkaç yıl içinde ortaya çıkabilir ve eşanjörün kimyasal temizliği ya da değişimi gerekir.',
+      },
+      {
+        type: 'h2',
+        text: 'Tesisattan gelen takırtı ve gurultu sesi neden olur?',
+      },
+      {
+        type: 'p',
+        text: 'Kombiden değil, radyatör tesisatından gelen bir takırtı çoğu zaman tesisatta hava kaldığının işaretidir; su ısınıp genişlerken sıkışan hava cepleri boru içinde yer değiştirir ve bu da takırtı sesi yaratır. Radyatörlerin üst vanalarından hava alma işlemi genelde bu sesi büyük ölçüde azaltır; hava almadan sonra da sürüyorsa petek içinde çökme ya da boru desteğinde gevşeklik olabilir.',
+      },
+      {
+        type: 'h2',
+        text: 'Hangi sesler ciddiye alınmalı, hangileri geçici olabilir?',
+      },
+      {
+        type: 'p',
+        text: 'Kombi ilk çalıştığında ya da uzun bir aradan sonra devreye girdiğinde kısa süreli bir tıkırtı normaldir, metal parçalar ısınıp genişlediği için olur. Ama ses sürekliyse, zamanla yükseliyorsa ya da ısıtmada performans düşüşüyle birlikte geliyorsa bu bir parçanın yıprandığının işaretidir ve ihmal edilmemesi gerekir; pompa tamamen durursa kombi ısıtmayı keser.',
+      },
+      {
+        type: 'h2',
+        text: 'Servis çağırmadan önce evde yapılabilecekler',
+      },
+      {
+        type: 'ol',
+        items: [
+          'Hangi odadan ya da kombinin hangi tarafından ses geldiğini not edin',
+          'Radyatör üst vanalarından havayı alıp sesin azalıp azalmadığına bakın',
+          'Su basıncını kontrol edin; çok düşük basınç pompanın boşta dönüp ses çıkarmasına yol açabilir',
+          'Sesin ısıtma mı yoksa sıcak su kullanırken mi ortaya çıktığını ayırt edin',
+        ],
+      },
+      {
+        type: 'note',
+        text: 'Pompa ve eşanjör kombinin basınçlı su devresine bağlıdır. Bu parçaları kendiniz sökmeyin; yanlış bir müdahale su kaçağına ve daha büyük bir arızaya yol açabilir.',
+      },
+      {
+        type: 'h2',
+        text: 'Esenyurt’ta sahada en çok ne görüyoruz?',
+      },
+      {
+        type: 'p',
+        text: 'Kıraç ve Akçaburgaz tarafındaki yeni sitelerde en sık rastladığımız tablo, tesisata ilk doldurulan suyun havası tam alınmadan kombinin devreye alınması; kış ortasında bu hava cepleri harekete geçip takırtı sesi veriyor. Saadetdere ve Mehterçeşme’deki daha eski binalarda ise sirkülasyon pompasının yaşı ilerlemiş oluyor, rulman sesi zamanla belirginleşiyor. Esenyurt kombi servisi taleplerinin önemli bir kısmı bu iki nedenden geliyor; kombi arızaları hakkında daha fazla bilgi için /servis/kombi sayfamıza da göz atabilirsiniz.',
+      },
+      {
+        type: 'h2',
+        text: 'Sıkça Sorulan Sorular',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Kombi yeni takıldı ama ses yapıyor, normal mi? İlk günlerde tesisatta hava kalmış olabilir; hava alma işlemiyle çoğu zaman kısa sürede geçer, sürüyorsa teknisyen kontrolü gerekir.',
+          'Pompa değişimi kombiyi değiştirmekten daha mı ucuza gelir? Evet, büyük ölçüde; pompa değişimi kombinin kendisini değiştirmekle kıyaslanamayacak kadar küçük bir işlemdir.',
+          'Ses sadece gece mi oluyor, önemi var mı? Gece ortam sessiz olduğu için gündüz fark edilmeyen bir ses gece daha rahatsız edici gelebilir; sesin kendisi gün boyunca aynı şekilde var olmaya devam eder.',
+          'Esenyurt’a ne zaman gelebilirsiniz? Hattımız günün her saati açık; arıza kaydınızı aldıktan sonra kısa sürede dönüp uygun randevu saatini birlikte belirliyoruz.',
+        ],
+      },
+      {
+        type: 'p',
+        text: 'Esenyurt’ta kombiniz ses yapıyorsa önce hangi tip sesle karşılaştığınızı ayırt edebilir, radyatörlerin havasını alabilirsiniz; ses sürmeye devam ediyorsa bağımsız teknik servis ekibimiz pompayı, eşanjörü ve tesisatı yerinde kontrol edip kalıcı çözüm sunar. Esenyurt ve çevresinde arıza kaydınızı oluşturmak için 0542 403 36 22 numaralı hattımızdan günün her saati ulaşabilir, ayrıca /ariza-kayit sayfasından da kayıt bırakabilirsiniz. Sıcak su tarafında sorun yaşıyorsanız /blog/beylikduzu-kombi-sicak-su-vermiyor yazımıza da bakabilirsiniz.',
+      },
+    ],
+    seoTitle: 'Esenyurt Kombi Servisi: Ses mi Yapıyor? | Servis Arıza Kayıt',
+    seoDescription:
+      'Esenyurt’ta kombi vınlama, takırtı ya da su kaynama sesi yapıyorsa pompa, eşanjör ve tesisat havası ilk bakılacak noktalardır. Esenyurt kombi servisi için 0542 403 36 22.',
+    keywords: [
+      'Esenyurt kombi servisi',
+      'Esenyurt kombi tamircisi',
+      'Esenyurt kombi bakımı',
+      'kombi ses yapıyor',
+      'kombi pompası sesi',
+      'İstanbul kombi servisi',
+    ],
+  },
+  {
+    slug: 'buyukcekmece-buzdolabi-surekli-calisiyor',
+    title: 'Büyükçekmece’de Buzdolabı Hiç Durmadan Çalışıyor mu? Nedenleri ve Çözümü',
+    excerpt:
+      'Büyükçekmece’de buzdolabı soğutuyor ama kompresör hiç durmadan çalışıyorsa sebep genelde kapı contası, kirlenmiş yoğuşturucu ya da aşırı yüklenmiş bir dolap içidir; hangisine bakılacağını anlatıyoruz.',
+    device: 'buzdolabi',
+    readMinutes: 6,
+    date: '2026-11-06',
+    body: [
+      {
+        type: 'p',
+        text: 'Büyükçekmece’de buzdolabıyla ilgili gelen çağrıların bir kısmında dolap soğutuyor, içindeki yiyecekler bozulmuyor, ama kompresör günün her saati çalışıyor, hiç durmuyor. Müşterilerimiz bunu genelde faturadaki artıştan fark ediyor; soğutma sorunu olmadığı için çoğu kişi bunu arıza olarak görmüyor, oysa sürekli çalışan bir kompresör hem elektrik faturasını yükseltiyor hem de zamanla kompresörün ömrünü kısaltıyor.',
+      },
+      {
+        type: 'p',
+        text: 'Normal bir buzdolabında kompresör belirli aralıklarla durup dinlenir; termostat iç sıcaklığı istenen seviyeye getirince kompresörü kapatır, sıcaklık yükselince yeniden çalıştırır. Kompresör hiç durmuyorsa bu döngü bir yerde bozulmuştur ve sebep çoğu zaman üç noktadan birine çıkar.',
+      },
+      {
+        type: 'h2',
+        text: 'Kapı contası buzdolabını neden sürekli çalıştırır?',
+      },
+      {
+        type: 'p',
+        text: 'Conta sertleşip tam oturmadığında ya da bir noktasında yırtık olduğunda dışarıdan sıcak hava içeri sızar; dolap bu sızıntıyı sürekli karşılamaya çalıştığı için kompresör bir türlü hedef sıcaklığa ulaşıp durma fırsatı bulamaz. Bir kağıt parçasını kapı kapanırken araya sıkıştırıp çekmeyi deneyebilirsiniz; kağıt kolayca çıkıyorsa conta o bölgede sızdırıyor demektir.',
+      },
+      {
+        type: 'h2',
+        text: 'Kirlenmiş yoğuşturucu (arka ızgara) nasıl etkiler?',
+      },
+      {
+        type: 'p',
+        text: 'Buzdolabının arkasında veya altında bulunan yoğuşturucu ızgarası toz ve yağla kaplandığında ısıyı dışarı atma verimi düşer; kompresör aynı soğutmayı sağlamak için daha uzun süre ve daha sık çalışmak zorunda kalır. Büyükçekmece’deki site mutfaklarında dolabın duvara çok yakın yerleştirilmiş olması da aynı etkiyi yaratıyor, çünkü arkadaki ızgaranın hava alması engelleniyor.',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Yoğuşturucu ızgarasında biriken toz ve yağ tabakası',
+          'Dolabın duvara çok yakın yerleştirilmesi',
+          'Fan motorunun yavaşlaması ya da arızalanması',
+          'Soğutucu gaz seviyesinin azalması',
+        ],
+      },
+      {
+        type: 'h2',
+        text: 'Dolabın aşırı yüklenmesi ya da sık açılması etkiler mi?',
+      },
+      {
+        type: 'p',
+        text: 'Evet; sıcak yemeğin doğrudan dolaba konması, dolabın raflara sığmayacak kadar doldurulması ya da kapının sık ve uzun süre açık tutulması, her seferinde içeri giren sıcak havayı karşılamak için kompresörü normalden uzun çalıştırır. Bu, parça arızası değildir ama alışkanlık değişmediği sürece kompresör gerçekten daha fazla yorulur ve ömrü kısalır.',
+      },
+      {
+        type: 'h2',
+        text: 'Servis çağırmadan önce evde kontrol edilebilecekler',
+      },
+      {
+        type: 'ol',
+        items: [
+          'Kapı contasını elle kontrol edin, sertleşmiş ya da yırtık bölge olup olmadığına bakın',
+          'Dolabı duvardan çekip arkadaki ızgarayı tozdan temizleyin',
+          'Dolap içinde havayı tıkayan fazla yüklenmiş rafları seyreltin',
+          'Termostat ayarının gerektiğinden daha düşük bir dereceye çekilmediğini kontrol edin',
+        ],
+      },
+      {
+        type: 'note',
+        text: 'Soğutucu gaz devresi kapalı ve basınçlı bir sistemdir. Gaz seviyesiyle ilgili bir şüpheniz varsa dolabı kendiniz açmayın; bu işlem özel ekipman ve teknik bilgi gerektirir.',
+      },
+      {
+        type: 'h2',
+        text: 'Büyükçekmece’de sahada en çok ne görüyoruz?',
+      },
+      {
+        type: 'p',
+        text: 'Mimarsinan ve Kumburgaz tarafındaki sitelerde en sık rastladığımız tablo, dolabın mutfak tadilatı sırasında duvara ya da dolaba çok yakın yerleştirilmesi; yoğuşturucu hava alamadığı için kompresör sürekli çalışır hale geliyor. Tepecik ve Alkent’teki daha eski dairelerde ise kapı contası yıllar içinde sertleşiyor, özellikle alt köşelerden hava sızıntısı başlıyor. Büyükçekmece buzdolabı servisi taleplerinin önemli bir kısmı bu iki nedenden geliyor; buzdolabı arızaları hakkında daha fazla bilgi için /servis/buzdolabi sayfamıza da göz atabilirsiniz.',
+      },
+      {
+        type: 'h2',
+        text: 'Sıkça Sorulan Sorular',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Kompresör sürekli çalışıyor ama dolap iyi soğutuyor, yine de sorun mu? Evet; soğutma yeterli olsa da sürekli çalışma hem faturayı yükseltir hem kompresörün ömrünü kısaltır, sebebi bulup gidermek daha ekonomiktir.',
+          'Conta değişimi kendim yapılabilir mi? Conta genelde takılıp çıkarılabilir bir parçadır ama doğru ölçü ve modeli bulmak önemlidir; yanlış conta sızıntıyı tam kapatmaz.',
+          'Dolabı duvardan kaç santim boşlukla yerleştirmeliyim? Genelde arkada ve üstte en az 5-10 santim boşluk bırakmak yoğuşturucunun hava alması için yeterli olur; tam ölçü modele göre değişir.',
+          'Büyükçekmece’ye ne zaman gelebilirsiniz? Hattımız günün her saati açık; arıza kaydınızı aldıktan sonra kısa sürede dönüp uygun randevu saatini birlikte belirliyoruz.',
+        ],
+      },
+      {
+        type: 'p',
+        text: 'Büyükçekmece’de buzdolabınızın kompresörü hiç durmadan çalışıyorsa önce kapı contasını ve arka ızgarayı kontrol edebilirsiniz; sorun sürüyorsa bağımsız teknik servis ekibimiz contayı, yoğuşturucuyu ve gaz seviyesini yerinde kontrol edip kalıcı çözüm sunar. Büyükçekmece ve çevresinde arıza kaydınızı oluşturmak için 0542 403 36 22 numaralı hattımızdan günün her saati ulaşabilir, ayrıca /ariza-kayit sayfasından da kayıt bırakabilirsiniz. Buzlanma ile ilgili sorun yaşıyorsanız /blog/ambarli-buzdolabi-buzlanma-no-frost-arizasi yazımıza da bakabilirsiniz.',
+      },
+    ],
+    seoTitle: 'Büyükçekmece Buzdolabı Servisi: Sürekli mi Çalışıyor? | Servis Arıza Kayıt',
+    seoDescription:
+      'Büyükçekmece’de buzdolabının kompresörü hiç durmuyorsa kapı contası, yoğuşturucu ve aşırı yükleme ilk bakılacak noktalardır. Büyükçekmece buzdolabı servisi için 0542 403 36 22.',
+    keywords: [
+      'Büyükçekmece buzdolabı servisi',
+      'Büyükçekmece buzdolabı tamircisi',
+      'Büyükçekmece buzdolabı bakımı',
+      'buzdolabı sürekli çalışıyor',
+      'buzdolabı kompresör durmuyor',
+      'İstanbul buzdolabı servisi',
+    ],
+  },
 ];

@@ -1439,4 +1439,216 @@ export const posts: BlogPost[] = [
       'İstanbul buzdolabı servisi',
     ],
   },
+  {
+    slug: 'avcilar-kombi-bakimi',
+    title: 'Avcılar’da Kombi Bakımı: Kışa Girmeden Neler Kontrol Edilir?',
+    excerpt:
+      'Avcılar’da kombi bakımı kış başlamadan yapıldığında ateşleme, basınç ve verim sorunlarının çoğu önceden fark edilir; bakımda nelere bakıldığını ve evde neyi kontrol edebileceğinizi anlatıyoruz.',
+    device: 'kombi',
+    readMinutes: 7,
+    date: '2026-11-13',
+    body: [
+      {
+        type: 'p',
+        text: 'Avcılar’da kasım ayı başladığında telefon trafiğimizde belirgin bir değişiklik oluyor: insanlar artık arıza için değil, bakım için arıyor. Yazın hiç çalışmayan kombi ilk soğuk günlerde devreye alınıyor, bir süre sorunsuz ısıtıyor, sonra ya ateşlemede bir duraksama ya da basınçta küçük bir düşüş kendini gösteriyor. Oysa bu sorunların büyük bölümü, kış başlamadan yapılan düzenli bir bakımla önceden fark edilip giderilebilir.',
+      },
+      {
+        type: 'h2',
+        text: 'Kombi bakımı neden her yıl tekrarlanmalı?',
+      },
+      {
+        type: 'p',
+        text: 'Kombi bakımı her yıl tekrarlanmalı çünkü yanma verimliliği ve güvenlik zamanla değişen koşullara bağlıdır. Doğal gaz yanma sürecinde oluşan is ve kurum, ateşleme elektrotunun üzerinde ince bir tabaka bırakır; bu tabaka arttıkça ateşleme zorlaşır, bazen birkaç denemeden sonra ancak tutar. Aynı şekilde baca gazı değerleri, su sertliğine bağlı kireçlenme ve contaların esnekliği de zamanla değişir. Yıllık bakım, bu değişimi büyümeden yakalamanın en pratik yoludur.',
+      },
+      {
+        type: 'h2',
+        text: 'Bakım sırasında teknisyen hangi noktaları kontrol eder?',
+      },
+      {
+        type: 'p',
+        text: 'Bakımda teknisyenin ilk işi kombiyi söküp yanma odasını, ateşleme elektrotunu ve ısı değiştiricisini gözle ve ölçümle kontrol etmektir.',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Ateşleme elektrotu ve iyonizasyon sensörünün temizliği ve ayarı',
+          'Baca gazı değerlerinin ölçülüp yanma veriminin kontrolü',
+          'Genleşme tankındaki hava yastığı basıncının ölçülmesi',
+          'Sistem basıncının ve varsa sızıntı izlerinin kontrolü',
+          'Sirkülasyon pompasının çalışma sesi ve verimi',
+          'Gaz valfi ve emniyet devrelerinin çalışma testleri',
+        ],
+      },
+      {
+        type: 'h2',
+        text: 'Evde kendi başınıza bakabileceğiniz noktalar',
+      },
+      {
+        type: 'p',
+        text: 'Teknisyen gelmeden önce evde güvenle kontrol edebileceğiniz birkaç nokta var; bunlar bakımın yerini tutmaz ama basit bir sorunu önceden fark etmenizi sağlar.',
+      },
+      {
+        type: 'ol',
+        items: [
+          'Basınç göstergesinin 1-1,5 bar aralığında olduğunu kontrol edin',
+          'Kombinin bulunduğu odada kötü koku, is izi ya da pencere kenarında buğulanma olup olmadığına bakın',
+          'Radyatörlerin alt ve üst kısımlarının eşit ısındığından emin olun, eşit ısınmıyorsa tesisatta hava birikmiş olabilir',
+          'Dış cephedeki baca ağzının önünün kapalı olup olmadığını kontrol edin, çöp ya da başka bir eşya birikmemeli',
+        ],
+      },
+      {
+        type: 'note',
+        text: 'Ateşleme elektrotu, gaz valfi ve elektronik kart gaz ve elektrikle doğrudan temas eder; bu parçaları kendiniz sökmeye çalışmayın, bakımı yetkin bir teknisyene bırakın.',
+      },
+      {
+        type: 'h2',
+        text: 'Bakımı ihmal etmenin bedeli ne olur?',
+      },
+      {
+        type: 'p',
+        text: 'Bakımı ihmal etmenin bedeli genelde küçük bir tasarruftan çok daha büyük bir onarım faturası olur. Kurum tutmuş bir elektrot zamanla ateşlemeyi tamamen durdurabilir, kireçlenmiş bir eşanjör kademeli olarak tıkanıp değişim gerektirebilir, havası alınmamış bir tesisat sirkülasyon pompasını erken yorabilir. Bu parçaların hepsi, düzenli bakımla yıllarca sorunsuz çalışabilecek parçalar; ihmal onları erken tüketiyor.',
+      },
+      {
+        type: 'h2',
+        text: 'Avcılar’da sahada en çok ne görüyoruz?',
+      },
+      {
+        type: 'p',
+        text: 'Avcılar’da Firuzköy ve Gümüşpala tarafındaki sitelerde en sık rastladığımız tablo, kombinin üç-dört yıldır hiç bakım görmeden çalıştırılması; ilk soğuk haftada ateşleme birkaç denemede ancak tutuyor, bazı dairelerde basınç göstergesi hiç kontrol edilmemiş oluyor. Denizköşkler tarafındaki daha eski binalarda ise bacanın önü yıllar içinde komşu dairelerin klima dış ünitesiyle ya da bir tabelayla kapanmış oluyor, bu da yanma havasını ve tahliyeyi etkiliyor. Avcılar kombi servisi taleplerinin kış başındaki artışının önemli bir kısmı bu iki nedenden geliyor; kombi arızaları hakkında daha fazla bilgi için /servis/kombi sayfamıza da göz atabilirsiniz.',
+      },
+      {
+        type: 'h2',
+        text: 'Sıkça Sorulan Sorular',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Kombi bakımı ne kadar sürer? Normal şartlarda yarım saat ile bir saat arasında tamamlanır, kombinin kirlilik derecesine göre bu süre uzayabilir.',
+          'Bakım yaptırdığım kombi yine de arıza verebilir mi? Evet, bakım arıza olasılığını sıfıra indirmez ama önemli ölçüde azaltır ve küçük bir sorunun büyümeden fark edilmesini sağlar.',
+          'Her yıl aynı kombiye bakım yaptırmak gerekli mi? Evet, özellikle doğal gazla çalışan cihazlarda yıllık bakım hem verim hem güvenlik açısından önerilir.',
+          'Avcılar’a bakım için ne zaman gelebilirsiniz? Hattımız günün her saati açık; arıza kaydınızı aldıktan sonra kısa sürede dönüp uygun randevu saatini birlikte belirliyoruz.',
+        ],
+      },
+      {
+        type: 'p',
+        text: 'Avcılar’da kombinizin bakımını kış ortasında değil, şimdi yaptırmanız hem ateşleme hem basınç tarafında sürpriz aramaların önüne geçer; bağımsız teknik servis ekibimiz elektrottan baca gazına kadar tüm noktaları yerinde kontrol eder. Avcılar ve çevresinde arıza kaydınızı oluşturmak için 0542 403 36 22 numaralı hattımızdan günün her saati ulaşabilir, ayrıca /ariza-kayit sayfasından da kayıt bırakabilirsiniz. Ateşleme sorunu yaşıyorsanız /blog/halkali-kombi-atesleme-yapmiyor yazımıza da bakabilirsiniz.',
+      },
+    ],
+    seoTitle: 'Avcılar Kombi Servisi: Yıllık Bakım Rehberi | Servis Arıza Kayıt',
+    seoDescription:
+      'Avcılar’da kombi bakımı kış öncesi yapılmazsa ateşleme ve basınç sorunları sık görülür. Bakımda neler kontrol edilir, evde ne yapabilirsiniz? Arıza kaydı: 0542 403 36 22.',
+    keywords: [
+      'Avcılar kombi servisi',
+      'Avcılar kombi tamircisi',
+      'Avcılar kombi bakımı',
+      'kombi yıllık bakım',
+      'kombi bakımı nasıl yapılır',
+      'İstanbul kombi servisi',
+    ],
+  },
+  {
+    slug: 'bakirkoy-buzdolabi-ses-titresim',
+    title: 'Bakırköy’de Buzdolabı Ses ve Titreşim Yapıyor mu? Nedenleri ve Çözümü',
+    excerpt:
+      'Bakırköy’de buzdolabı soğutmaya devam ederken vınlama, tıkırtı ya da gümbürtü sesi çıkarıyorsa sebep genelde kompresör, fan ya da dengesiz yerleşimdir; hangi sesin neyi gösterdiğini anlatıyoruz.',
+    device: 'buzdolabi',
+    readMinutes: 6,
+    date: '2026-11-13',
+    body: [
+      {
+        type: 'p',
+        text: 'Bakırköy’de buzdolabı çağrılarının bir kısmı soğutma şikayeti değil, ses şikayeti olarak geliyor. Dolap soğutuyor, içindeki yiyecekler bozulmuyor, ama mutfaktan sürekli bir vınlama, zaman zaman bir tıkırtı ya da gece duyulan bir gümbürtü geliyor. Ev sahibi bunun arıza olup olmadığından emin olamıyor, çünkü soğutma tarafında bir sorun görünmüyor; oysa her ses tipi aslında belirli bir parçaya işaret ediyor.',
+      },
+      {
+        type: 'h2',
+        text: 'Buzdolabından gelen ses normal mi, arıza mı?',
+      },
+      {
+        type: 'p',
+        text: 'Buzdolabından gelen hafif bir uğultu normaldir, çünkü kompresör ve fan çalışırken bir miktar ses üretir. Ancak ses zamanla yükseliyorsa, ritmik bir tıkırtıya dönüşüyorsa ya da dolap titreşerek zemine ya da yan dolaba vuruyorsa bu durum artık normal çalışma sesinin dışına çıkmış demektir ve altında bir neden vardır.',
+      },
+      {
+        type: 'h2',
+        text: 'Hangi ses tipi hangi parçaya işaret eder?',
+      },
+      {
+        type: 'p',
+        text: 'Sesin tipini doğru tarif etmek, teknisyenin yerinde hangi parçaya önce bakacağını önceden tahmin etmesini sağlar.',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Sürekli, motor sesine benzeyen vınlama: kompresörden ya da kompresör takozlarının eskimesinden kaynaklanır',
+          'Düzenli aralıklarla gelen hafif tıkırtı: buz çözme (defrost) ısıtıcısının devreye girip çıkmasından kaynaklanır, genelde normaldir',
+          'Gümbürtü ya da titreşimle birlikte gelen ses: dolabın zemine dengesiz basmasından ya da arka tarafın duvara çok yakın olmasından kaynaklanır',
+          'Zamanla yükselen bir uğultu: arka ya da alttaki fan motorunun rulmanının yıpranmasından gelir',
+        ],
+      },
+      {
+        type: 'h2',
+        text: 'Evde yapabileceğiniz kontroller',
+      },
+      {
+        type: 'p',
+        text: 'Teknisyen çağırmadan önce evde güvenle bakabileceğiniz birkaç nokta var.',
+      },
+      {
+        type: 'ol',
+        items: [
+          'Dolabın dört ayağının da zemine dengeli bastığından emin olun, gerekirse ayar ayaklarını çevirerek dengeleyin',
+          'Arka tarafta duvara ya da yan dolaba yeterli boşluk (en az 5-10 santim) bırakılıp bırakılmadığını kontrol edin',
+          'Üzerine ya da içine konan eşyaların titreşimle birlikte ses yapıp yapmadığını kontrol edin, bazen ses dolaptan değil üstündeki bir kavanozdan gelir',
+          'Sesin hangi saatte ve ne sıklıkla geldiğini not edin, defrost döngüsüyle mi yoksa sürekli mi olduğunu ayırt edin',
+        ],
+      },
+      {
+        type: 'note',
+        text: 'Kompresör ve gaz devresi basınçlı ve kapalı bir sistemdir; bu kısımlara kendiniz müdahale etmeyin, yanlış bir işlem gaz kaçağına ve daha büyük bir arızaya yol açabilir.',
+      },
+      {
+        type: 'h2',
+        text: 'Ses uzun süre görmezden gelinirse ne olur?',
+      },
+      {
+        type: 'p',
+        text: 'Ses uzun süre görmezden gelinirse genelde küçük bir rahatsızlıktan daha büyük bir arızaya dönüşür. Yıpranmış bir kompresör takozu zamanla titreşimi artırıp boru bağlantılarını gevşetebilir, yorulan bir fan motoru tamamen durup soğutmayı etkileyebilir. Erken fark edilen bir ses çoğu zaman küçük bir parça değişimiyle çözülürken, geciktirilen durumlarda kompresörün kendisi risk altına girebilir.',
+      },
+      {
+        type: 'h2',
+        text: 'Bakırköy’de sahada en çok ne görüyoruz?',
+      },
+      {
+        type: 'p',
+        text: 'Bakırköy’de Ataköy tarafındaki apartman mutfaklarında en sık rastladığımız durum, dolabın yenilenen mutfak dolapları arasına ölçüsüz sıkıştırılması; arkada hava alacak boşluk kalmıyor, fan sesi mutfağın her yerinden duyuluyormuş gibi geliyor. Yeşilköy tarafındaki daha eski binalarda ise genelde kompresör takozlarının yaşı ilerlemiş oluyor, dolap her çalıştığında hafif bir titreşimle zemine vuruyor. Bakırköy buzdolabı servisi taleplerinin önemli bir kısmı bu iki nedenden geliyor; buzdolabı arızaları hakkında daha fazla bilgi için /servis/buzdolabi sayfamıza da göz atabilirsiniz.',
+      },
+      {
+        type: 'h2',
+        text: 'Sıkça Sorulan Sorular',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Yeni aldığım buzdolabı da ses yapıyor, normal mi? İlk günlerde kompresörün yerleşmesiyle ses biraz değişebilir, ama sürekli yüksek bir ses varsa nakliye sırasında bir parça gevşemiş olabilir, kontrol ettirmekte fayda var.',
+          'Dolabı dengeleyince ses hemen geçer mi? Çoğu titreşim kaynaklı seste evet, ayarı doğru yapınca ses büyük ölçüde azalır; ama ses kompresörden geliyorsa dengeleme yardımcı olmaz.',
+          'Ses kendiliğinden kesildi, yine de servis çağırmalı mıyım? Ses geçici olarak kesilse de kaynağı giderilmediyse genelde tekrar eder; bir kez teknisyene göstermek ileride büyük bir arızayı önleyebilir.',
+          'Bakırköy’e ne kadar sürede gelebilirsiniz? Hattımız günün her saati açık; arıza kaydınızı aldıktan sonra kısa sürede dönüp uygun randevu saatini birlikte belirliyoruz.',
+        ],
+      },
+      {
+        type: 'p',
+        text: 'Bakırköy’de buzdolabınız ses ya da titreşim yapıyorsa önce dengeleme ve boşluk kontrolünü deneyebilirsiniz; sorun sürüyorsa bağımsız teknik servis ekibimiz kompresörü, fanı ve takozları yerinde kontrol edip kalıcı çözüm sunar. Bakırköy ve çevresinde arıza kaydınızı oluşturmak için 0542 403 36 22 numaralı hattımızdan günün her saati ulaşabilir, ayrıca /ariza-kayit sayfasından da kayıt bırakabilirsiniz. Kompresörün sürekli çalışmasıyla ilgili bir sorun yaşıyorsanız /blog/buyukcekmece-buzdolabi-surekli-calisiyor yazımıza da bakabilirsiniz.',
+      },
+    ],
+    seoTitle: 'Bakırköy Buzdolabı Servisi: Ses ve Titreşim Sorunu | Servis Arıza Kayıt',
+    seoDescription:
+      'Bakırköy’de buzdolabı ses ya da titreşim yapıyorsa kompresör, fan ve zemin dengesi ilk bakılacak noktalardır. Arıza kaydı için 0542 403 36 22.',
+    keywords: [
+      'Bakırköy buzdolabı servisi',
+      'Bakırköy buzdolabı tamircisi',
+      'buzdolabı ses yapıyor',
+      'buzdolabı titreşim',
+      'buzdolabı kompresör sesi',
+      'İstanbul buzdolabı servisi',
+    ],
+  },
 ];

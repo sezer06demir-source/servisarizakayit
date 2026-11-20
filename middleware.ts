@@ -28,6 +28,9 @@ export const config = {
   matcher: ['/((?!_astro/|images/|videos/|icons/|favicon\\.ico|favicon\\.svg|og-image\\.png|manifest\\.webmanifest|robots\\.txt|llms\\.txt|sitemap|sw\\.js|\\.well-known/).*)'],
 };
 
+/** Kopya site bildirimi: aynı kopya alan adı bu sunucu örneğinde saatte en fazla bir kez tabloya yazılır. */
+const KOPYA_SEEN = new Map<string, number>();
+
 /* ----------------------------------------------------------------------------- yardımcılar */
 
 /** Kalıcı IP engel listesi — security/blocked-ips.ts ile aynı içerik; middleware dış dosya import etmez. */
@@ -407,6 +410,21 @@ export default async function middleware(req: Request, ctx?: { waitUntil?: (p: P
       headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store, private', 'x-robots-tag': 'noindex' },
     });
   }
+  // 6a) /api/kopya — site başka bir alan adında (kopya) açılınca sayfadaki iz buraya haber verir; IP kayıt tablosuna
+  //     "KOPYA-UYARI" satırı yazılır. IP bilerek boş bırakılır: reklam IP hariç tutma sayımını etkilemez.
+  if (path === '/api/kopya') {
+    const kh = (url.searchParams.get('h') ?? '').toLowerCase().slice(0, 100);
+    const kp = (url.searchParams.get('p') ?? '').replace(/[^\w/.-]/g, '').slice(0, 120);
+    const now = Date.now();
+    if (/^[a-z0-9.-]{1,100}$/.test(kh) && !kh.endsWith('servisarizakayit.online') && IPLOG_URL && IPLOG_TOKEN && ctx?.waitUntil
+        && (KOPYA_SEEN.get(kh) ?? 0) < now - 3600_000 && KOPYA_SEEN.size < 200) {
+      KOPYA_SEEN.set(kh, now);
+      const payload = JSON.stringify({ t: IPLOG_TOKEN, s: IPLOG_SITE, ip: '', g: 'KOPYA-UYARI', p: `KOPYA SITE: ${kh}${kp}`, c: getCountry(req, cf) ?? '', ua: ua.slice(0, 200) });
+      ctx.waitUntil(fetch(IPLOG_URL, { method: 'POST', headers: { 'content-type': 'application/json' }, body: payload }).catch(() => undefined));
+    }
+    return new Response(null, { status: 204, headers: { 'cache-control': 'no-store, private', 'x-robots-tag': 'noindex', 'access-control-allow-origin': '*' } });
+  }
+
 
   // 6c) /api/vz — reklam ziyaretinin süre/kaydırma/düğme bilgisi (AdVisitBeacon). Tablodaki "sayfa" sütununa ~ ile yazılır;
   //     gclid aynı kaldığı için Google Ads komut dosyasının IP sayımını değiştirmez.

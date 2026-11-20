@@ -1651,4 +1651,206 @@ export const posts: BlogPost[] = [
       'İstanbul buzdolabı servisi',
     ],
   },
+  {
+    slug: 'bahcesehir-kombi-basinc-dusuyor',
+    title: 'Bahçeşehir’de Kombi Basıncı Düşüyor mu? Nedenleri ve Ne Zaman Servis Gerekir',
+    excerpt:
+      'Bahçeşehir’de kombi göstergesi gün içinde yavaşça düşüyor ya da birden sıfıra iniyorsa sebep genelde küçük bir su kaçağı veya genleşme tankıdır; hangi durumda kendi başınıza su eklenir, hangisinde servis gerekir anlatıyoruz.',
+    device: 'kombi',
+    readMinutes: 6,
+    date: '2026-11-20',
+    body: [
+      {
+        type: 'p',
+        text: 'Bahçeşehir 1. Kısım ve 2. Kısım’dan gelen kombi çağrılarının önemli bir bölümü, cihaz hiç çalışmayı kesmeden geliyor: ev sahibi sadece kombi ekranındaki basınç göstergesinin yavaş yavaş düştüğünü fark ediyor. Bazen bu düşüş haftalar içinde yavaş oluyor, bazen bir günde sıfıra kadar iniyor. İkisi de aynı sebepten değil; biri genelde küçük bir kaçak, diğeri daha farklı bir arızaya işaret ediyor.',
+      },
+      {
+        type: 'h2',
+        text: 'Kombi basıncı ideal olarak kaç bar olmalı?',
+      },
+      {
+        type: 'p',
+        text: 'Soğuk haldeki bir kombide basıncın 1 ile 1,5 bar arasında olması beklenir; çoğu cihazda gösterge üzerinde bu aralık yeşil bantla işaretlenmiştir. Basınç bu bandın altına düşerse su devresinde yeterli dolaşım kalmaz, kombi önce performans kaybeder, sonra güvenlik için kendini kilitleyip çalışmayı durdurur.',
+      },
+      {
+        type: 'h2',
+        text: 'Basınç yavaşça mı düşüyor, birden mi düşüyor?',
+      },
+      {
+        type: 'p',
+        text: 'Bu ayrım teşhisin en önemli parçası. Haftalar içinde, her ay bir kademe düşen bir basınç genelde tesisatın bir noktasındaki görülmeyen küçük bir sızıntıya işaret eder; su yere akmaz, çoğu zaman buharlaşır ya da duvar içinde emilir. Buna karşılık basınç bir günde ya da birkaç saat içinde sıfıra inerse bu çoğunlukla ani bir kaçak, bozulmuş bir contadan ya da genleşme tankından kaynaklanır ve beklenmeden bakılması gerekir.',
+      },
+      {
+        type: 'h2',
+        text: 'En sık rastladığımız sebepler',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Petek vanalarında, tesisat birleşim noktalarında ya da radyatör gövdesinde görülmeyen küçük bir sızıntı',
+          'Genleşme tankının hava yastığının zayıflaması; tank suyu doğru dengelemediği için basınç anormal davranır',
+          'Boşaltma (tahliye) vanasının tam kapanmaması, suyun yavaşça sızmasına yol açması',
+          'Kombi dolum musluğunun eskimiş contası nedeniyle ufak miktarda su kaçırması',
+        ],
+      },
+      {
+        type: 'h2',
+        text: 'Evde güvenle yapabileceğiniz kontrol nedir?',
+      },
+      {
+        type: 'p',
+        text: 'Kombinin altındaki ya da yanındaki dolum musluğunu bularak basıncı yeşil bandın içine çıkarabilirsiniz; bu işlem çoğu cihazda musluğu yavaşça açıp gösterge istenen değere gelince kapatmak kadar basittir.',
+      },
+      {
+        type: 'ol',
+        items: [
+          'Kombinin fişini çekmeden önce dolum musluğunun yerini ve çevirme yönünü kullanım kılavuzundan ya da cihaz üzerindeki etiketten doğrulayın',
+          'Musluğu yavaşça açıp gösterge 1 ile 1,5 bar arasına gelene kadar bekleyin, aceleyle fazla doldurmayın',
+          'Doldurma sonrası bir gün içinde basıncın tekrar düşüp düşmediğini takip edin',
+          'Aynı işlemi haftada birden fazla tekrarlamanız gerekiyorsa bu artık kendi başınıza çözülecek bir durum değildir',
+        ],
+      },
+      {
+        type: 'note',
+        text: 'Basınç kısa aralıklarla tekrar tekrar düşüyorsa musluğu sürekli açıp doldurmak yerine kaçağın kaynağını bulmak gerekir; aksi halde tesisata sürekli yeni su girip kireçlenmeyi hızlandırır.',
+      },
+      {
+        type: 'h2',
+        text: 'Bahçeşehir’de sahada en çok ne görüyoruz?',
+      },
+      {
+        type: 'p',
+        text: 'Bahçeşehir 2. Kısım’daki villa tipi evlerde genleşme tankının yaşlanması ve hava yastığının zayıflamasıyla sık karşılaşıyoruz; bu evlerde tesisat uzun ve geniş olduğu için tankın doğru çalışması daha kritik hale geliyor. 1. Kısım’daki apartman dairelerinde ise daha çok petek vanalarındaki küçük sızıntılar ve eski dolum musluklarının contaları öne çıkıyor. Bahçeşehir kombi servisi taleplerinin bir kısmı tam da bu iki noktadan geliyor; kombi arızaları hakkında daha fazla bilgi için /servis/kombi sayfamıza da göz atabilirsiniz.',
+      },
+      {
+        type: 'h2',
+        text: 'Sıkça Sorulan Sorular',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Basıncı kendim doldursam kombi sorunsuz çalışır mı? Kaçak yoksa evet, doldurma yeterli olur; ama basınç tekrar tekrar düşüyorsa doldurmak geçici bir çözümdür, kaynağı bulmak gerekir.',
+          'Basınç sıfıra düştüğünde kombi kendiliğinden kapanır mı? Çoğu modern kombi güvenlik amacıyla kendini kilitler ve hata kodu gösterir; bu normal bir korumadır, zorla çalıştırmaya çalışmayın.',
+          'Su kaçağını evde kendim bulabilir miyim? Görünür bir ıslaklık varsa evet, ama görülmeyen sızıntılarda basınç testi ve görsel kontrol gerekir, bu kısım teknisyen işidir.',
+          'Bahçeşehir’e ne kadar sürede gelebilirsiniz? Hattımız günün her saati açık; arıza kaydınızı aldıktan sonra kısa sürede dönüp uygun randevu saatini birlikte belirliyoruz.',
+        ],
+      },
+      {
+        type: 'p',
+        text: 'Bahçeşehir’de kombi basıncı sık düşüyorsa önce dolum musluğundan basıncı yeşil banda getirip bir gün takip edebilirsiniz; düşüş tekrarlıyorsa bağımsız teknik servis ekibimiz tesisatı ve genleşme tankını yerinde kontrol edip kalıcı çözüm sunar. Bahçeşehir ve çevresinde arıza kaydınızı oluşturmak için 0542 403 36 22 numaralı hattımızdan günün her saati ulaşabilir, ayrıca /ariza-kayit sayfasından da kayıt bırakabilirsiniz. Kombi ses yapıyorsa /blog/avcilar-kombi-bakimi yazımıza da bakabilirsiniz.',
+      },
+    ],
+    seoTitle: 'Bahçeşehir Kombi Servisi: Basınç Düşmesi Sorunu | Servis Arıza Kayıt',
+    seoDescription:
+      'Bahçeşehir’de kombi basıncı düşüyorsa küçük bir sızıntı veya genleşme tankı sorunu olabilir. Nedenleri ve çözümü için 0542 403 36 22.',
+    keywords: [
+      'Bahçeşehir kombi servisi',
+      'Bahçeşehir kombi tamircisi',
+      'Bahçeşehir kombi bakımı',
+      'kombi basıncı düşüyor',
+      'kombi genleşme tankı',
+      'İstanbul kombi servisi',
+    ],
+  },
+  {
+    slug: 'esenyurt-buzdolabi-az-sogutuyor',
+    title: 'Esenyurt’ta Buzdolabı Az Soğutuyor mu? Nedenleri ve Çözümü',
+    excerpt:
+      'Esenyurt’ta buzdolabı çalışmaya devam ederken dondurucu bölüm iyi çalışıp ana bölüm ılık kalıyorsa sebep genelde hava akışı, conta ya da aşırı yüklenmedir; hangi durumda kendi başınıza çözülür, hangisinde servis gerekir anlatıyoruz.',
+    device: 'buzdolabi',
+    readMinutes: 6,
+    date: '2026-11-20',
+    body: [
+      {
+        type: 'p',
+        text: 'Esenyurt’taki Kıraç ve Akçaburgaz tarafından gelen buzdolabı çağrılarının bir kısmı “hiç çalışmıyor” değil, “yeterince soğutmuyor” şikayetiyle geliyor. Dondurucu gözü donuyor, dışarıdan her şey normal görünüyor ama ana bölümdeki süt, yoğurt gibi ürünler beklenenden hızlı bozuluyor. Bu durum genelde tek bir büyük arızadan değil, birkaç küçük etkenin üst üste binmesinden kaynaklanıyor.',
+      },
+      {
+        type: 'h2',
+        text: 'Dondurucu donuyor ama ana bölüm ılıksa bu ne anlama gelir?',
+      },
+      {
+        type: 'p',
+        text: 'Çoğu ev tipi buzdolabında ana bölüm, dondurucudan gelen soğuk havanın bir fanla dağıtılmasıyla soğur; dondurucunun kendisi soğutuyorsa kompresör çalışıyor demektir, sorun genelde bu havanın ana bölüme doğru taşınmasında yaşanır. Hava kanalının tıkanması, fanın zayıflaması ya da kapının tam kapanmaması bu taşınmayı bozan en sık nedenlerdir.',
+      },
+      {
+        type: 'h2',
+        text: 'En sık rastladığımız sebepler',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Raflardaki büyük tencere ya da paketlerin hava kanalının önünü kapatması, soğuk havanın ana bölüme ulaşmasını engellemesi',
+          'Kapı contasının eskimesi ya da üzerinde kalan yemek artığı nedeniyle tam sızdırmazlık sağlamaması',
+          'Dolabın aşırı doldurulması; hava dolaşacak boşluk kalmadığında soğutma eşit dağılmıyor',
+          'Arka taraftaki yoğuşturucu kanatlarının toz tutması, kompresörün verimini düşürmesi',
+        ],
+      },
+      {
+        type: 'h2',
+        text: 'Evde güvenle yapabileceğiniz kontroller',
+      },
+      {
+        type: 'p',
+        text: 'Teknisyen çağırmadan önce evde kontrol edebileceğiniz birkaç basit nokta var ve çoğu zaman sorun bunlardan biriyle çözülüyor.',
+      },
+      {
+        type: 'ol',
+        items: [
+          'Raflardaki ürünleri hava kanalının ağzından uzaklaştırın, dondurucudan gelen soğuk havanın önünü açın',
+          'Kapı contasını bir kâğıt parçasıyla test edin: kâğıdı kapıya sıkıştırıp çekin, kolayca çıkıyorsa conta sızdırıyor olabilir',
+          'Dolabı aşırı doldurmaktan kaçının, raflar arasında hava dolaşacak boşluk bırakın',
+          'Dolabı duvardan 5-10 santim çekip arkadaki yoğuşturucu kanatlarını fırça ya da süpürge ucuyla tozdan temizleyin',
+        ],
+      },
+      {
+        type: 'note',
+        text: 'Gaz devresi kapalı ve basınçlı bir sistemdir; soğutmama şikayeti kontrollerle çözülmüyorsa gaz seviyesini ya da kompresörü kendiniz kontrol etmeyin, bu kısım teknisyen işidir.',
+      },
+      {
+        type: 'h2',
+        text: 'Ne zaman kendi başına geçer, ne zaman servis gerekir?',
+      },
+      {
+        type: 'p',
+        text: 'Hava kanalı önünü açıp raflardaki yığılmayı düzenledikten sonra birkaç saat içinde soğutma genelde düzelir. Ancak conta testinde sızıntı tespit ettiyseniz, yoğuşturucu temizliğine rağmen soğutma hâlâ yetersizse ya da kompresör daha sık ve daha uzun süre çalışıp durmuyorsa bu noktada teknisyen gözleminin gerektiği bir arıza söz konusudur.',
+      },
+      {
+        type: 'h2',
+        text: 'Esenyurt’ta sahada en çok ne görüyoruz?',
+      },
+      {
+        type: 'p',
+        text: 'Esenyurt Kıraç tarafındaki yeni yapılan sitelerde en sık rastladığımız durum, geniş ailelerin dolabı aşırı doldurması ve hava kanalının önünün kapanması; bu basit bir düzenlemeyle çoğu zaman çözülüyor. Saadetdere ve Mehterçeşme tarafındaki daha eski dairelerde ise conta yaşı ilerlemiş oluyor, kapı tam kapanmadığı için sürekli hafif bir ısı kaybı yaşanıyor. Esenyurt buzdolabı servisi taleplerinin önemli bir kısmı bu iki nedenden geliyor; buzdolabı arızaları hakkında daha fazla bilgi için /servis/buzdolabi sayfamıza da göz atabilirsiniz.',
+      },
+      {
+        type: 'h2',
+        text: 'Sıkça Sorulan Sorular',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Dolabı az doldurunca soğutma hemen düzelir mi? Hava kanalı açıldıktan sonra genelde birkaç saat içinde fark edilir bir iyileşme olur, ama tam normale dönmesi bir güne kadar sürebilir.',
+          'Conta değişimi kendim yapılabilir mi? Doğru ölçüyü bulup takmak teknik bir iştir; yanlış ölçü ya da yanlış takılan conta yeniden sızıntıya yol açar, servis tarafından değiştirilmesi daha güvenlidir.',
+          'Soğutma azaldı diye içindekileri hemen atmalı mıyım? Hemen değil; dondurucu hâlâ donuyorsa ana bölüm genelde bozulma noktasına gelmemiştir, ama ürünlerin ısısını kontrol etmekte fayda var.',
+          'Esenyurt’a ne kadar sürede gelebilirsiniz? Hattımız günün her saati açık; arıza kaydınızı aldıktan sonra kısa sürede dönüp uygun randevu saatini birlikte belirliyoruz.',
+        ],
+      },
+      {
+        type: 'p',
+        text: 'Esenyurt’ta buzdolabınız az soğutuyorsa önce hava kanalını ve kapı contasını kontrol edebilirsiniz; sorun sürüyorsa bağımsız teknik servis ekibimiz fanı, contayı ve yoğuşturucuyu yerinde kontrol edip kalıcı çözüm sunar. Esenyurt ve çevresinde arıza kaydınızı oluşturmak için 0542 403 36 22 numaralı hattımızdan günün her saati ulaşabilir, ayrıca /ariza-kayit sayfasından da kayıt bırakabilirsiniz. Buzdolabınız ses ya da titreşim yapıyorsa /blog/bakirkoy-buzdolabi-ses-titresim yazımıza da bakabilirsiniz.',
+      },
+    ],
+    seoTitle: 'Esenyurt Buzdolabı Servisi: Az Soğutma Sorunu | Servis Arıza Kayıt',
+    seoDescription:
+      'Esenyurt’ta buzdolabı az soğutuyorsa hava kanalı, conta ya da aşırı yükleme sebep olabilir. Nedenleri ve çözümü için 0542 403 36 22.',
+    keywords: [
+      'Esenyurt buzdolabı servisi',
+      'Esenyurt buzdolabı tamircisi',
+      'buzdolabı az soğutuyor',
+      'buzdolabı soğutmuyor',
+      'buzdolabı hava kanalı',
+      'İstanbul buzdolabı servisi',
+    ],
+  },
 ];

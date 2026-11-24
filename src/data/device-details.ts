@@ -24,12 +24,12 @@ export const deviceDetails: DeviceDetail[] = [
     ],
     process: 'Telefonda belirtileri dinleyip ön değerlendirme yapıyor, yerinde teşhis sonrası işlem ücretini söylüyoruz. Değişen parçalarda garanti veriyoruz.',
     faq: [
-      { q: 'Çamaşır makinesi arızası için aynı gün gelebiliyor musunuz?', a: 'Ankara, İstanbul, Bursa ve Denizli illerindeki servis ekiplerimiz sayesinde aynı gün yönlendirme yapabiliyoruz. Kesin saat için 0542 403 36 22 numarasından teyit almanızı öneririz.' },
+      { q: 'Çamaşır makinesi arızası için aynı gün gelebiliyor musunuz?', a: 'Ankara, İstanbul, Bursa ve Denizli illerindeki servis ekiplerimiz sayesinde aynı gün yönlendirme yapabiliyoruz. Kesin saat için 0850 885 44 36 numarasından teyit almanızı öneririz.' },
       { q: 'Her markaya bakıyor musunuz?', a: 'Evet, marka bağımsız çalışıyoruz; herhangi bir markanın yetkili servisi değiliz, tüm markalara teknik destek veriyoruz.' },
       { q: 'Rulman değişimi ne kadar sürer?', a: 'Modele göre değişir; teknisyen yerinde inceleme yapıp süre ve işlemi size anlatır, onayınız olmadan işleme başlamaz.' },
     ],
     seoTitle: 'Çamaşır Makinesi Servisi | Ankara, İstanbul, Bursa, Denizli | Servis Arıza Kayıt',
-    seoDescription: 'Çamaşır makinesi su almıyor, sıkmıyor mu? Marka bağımsız servis, Ankara, İstanbul, Bursa, Denizli aynı gün destek. Hemen arayın: 0542 403 36 22',
+    seoDescription: 'Çamaşır makinesi su almıyor, sıkmıyor mu? Marka bağımsız servis, Ankara, İstanbul, Bursa, Denizli aynı gün destek. Hemen arayın: 0850 885 44 36',
     keywords: [
       'çamaşır makinesi servisi',
       'çamaşır makinesi tamiri',
@@ -68,7 +68,7 @@ export const deviceDetails: DeviceDetail[] = [
       { q: 'Su kaçağında hemen kapatmalı mıyım?', a: 'Evet, önce cihazın fişini çekin ve suyu kesin; sonra bizi arayın, yönlendirme yaparız.' },
     ],
     seoTitle: 'Bulaşık Makinesi Servisi | Ankara, İstanbul, Bursa, Denizli | Servis Arıza Kayıt',
-    seoDescription: 'Bulaşık makinesi yıkamıyor, su kaçırıyor mu? Marka bağımsız servis, Ankara, İstanbul, Bursa, Denizli aynı gün destek. Hemen arayın: 0542 403 36 22',
+    seoDescription: 'Bulaşık makinesi yıkamıyor, su kaçırıyor mu? Marka bağımsız servis, Ankara, İstanbul, Bursa, Denizli aynı gün destek. Hemen arayın: 0850 885 44 36',
     keywords: [
       'bulaşık makinesi servisi',
       'bulaşık makinesi tamiri',
@@ -107,7 +107,7 @@ export const deviceDetails: DeviceDetail[] = [
       { q: 'Aynı gün gelebiliyor musunuz?', a: 'Ankara, İstanbul, Bursa ve Denizli illerindeki servis ekiplerimiz sayesinde aynı gün yönlendirme yapabiliyoruz, kesin saat için bizi aramanızı öneririz.' },
     ],
     seoTitle: 'Buzdolabı Servisi | Ankara, İstanbul, Bursa, Denizli | Servis Arıza Kayıt',
-    seoDescription: 'Buzdolabı soğutmuyor, su biriktiriyor mu? Marka bağımsız servis, Ankara, İstanbul, Bursa, Denizli aynı gün destek. Hemen arayın: 0542 403 36 22',
+    seoDescription: 'Buzdolabı soğutmuyor, su biriktiriyor mu? Marka bağımsız servis, Ankara, İstanbul, Bursa, Denizli aynı gün destek. Hemen arayın: 0850 885 44 36',
     keywords: [
       'buzdolabı servisi',
       'buzdolabı tamiri',
@@ -146,7 +146,7 @@ export const deviceDetails: DeviceDetail[] = [
       { q: 'İçindeki ürünler bozulur mu?', a: 'Arıza fark edilir edilmez bizi aramanızı öneririz; hızlı yönlendirme ile ürün kaybı riskini azaltmaya çalışıyoruz.' },
     ],
     seoTitle: 'Derin Dondurucu Servisi | Ankara, İstanbul, Bursa, Denizli | Servis Arıza Kayıt',
-    seoDescription: 'Derin dondurucu dondurmuyor, buz mu tutuyor? Marka bağımsız servis, Ankara, İstanbul, Bursa, Denizli aynı gün destek. Hemen arayın: 0542 403 36 22',
+    seoDescription: 'Derin dondurucu dondurmuyor, buz mu tutuyor? Marka bağımsız servis, Ankara, İstanbul, Bursa, Denizli aynı gün destek. Hemen arayın: 0850 885 44 36',
     keywords: [
       'derin dondurucu servisi',
       'derin dondurucu tamiri',
@@ -185,7 +185,7 @@ export const deviceDetails: DeviceDetail[] = [
       { q: 'Klima bakımını ne sıklıkla yaptırmalıyım?', a: 'Yoğun kullanımda sezonda bir kez filtre ve gaz kontrolü yaptırmanızı öneririz.' },
     ],
     seoTitle: 'Klima Servisi | Ankara, İstanbul, Bursa, Denizli | Servis Arıza Kayıt',
-    seoDescription: 'Klima soğutmuyor, su mu damlatıyor? Marka bağımsız servis, gaz dolumu, Ankara, İstanbul, Bursa, Denizli aynı gün destek. Hemen arayın: 0542 403 36 22',
+    seoDescription: 'Klima soğutmuyor, su mu damlatıyor? Marka bağımsız servis, gaz dolumu, Ankara, İstanbul, Bursa, Denizli aynı gün destek. Hemen arayın: 0850 885 44 36',
     keywords: [
       'klima servisi',
       'klima tamiri',
@@ -225,7 +225,7 @@ export const deviceDetails: DeviceDetail[] = [
       { q: 'Her markaya mı bakıyorsunuz?', a: 'Evet, marka bağımsız çalışıyoruz; hiçbir markanın yetkili servisi değiliz, tüm markalara teknik destek veriyoruz.' },
     ],
     seoTitle: 'Kombi Servisi | Ankara, İstanbul, Bursa, Denizli | Servis Arıza Kayıt',
-    seoDescription: 'Kombi yanmıyor, basınç mı düşüyor? Marka bağımsız servis, Ankara, İstanbul, Bursa, Denizli aynı gün destek. Hemen arayın: 0542 403 36 22',
+    seoDescription: 'Kombi yanmıyor, basınç mı düşüyor? Marka bağımsız servis, Ankara, İstanbul, Bursa, Denizli aynı gün destek. Hemen arayın: 0850 885 44 36',
     keywords: [
       'kombi servisi',
       'kombi tamiri',
@@ -264,7 +264,7 @@ export const deviceDetails: DeviceDetail[] = [
       { q: 'Televizyonu servise götürmem mi gerekir?', a: 'Genelde yerinde müdahale ediyoruz; panel değişimi gibi büyük işlemlerde durumu size anlatıp yönlendiriyoruz.' },
     ],
     seoTitle: 'Televizyon Servisi | Ankara, İstanbul, Bursa, Denizli | Servis Arıza Kayıt',
-    seoDescription: 'Televizyon açılmıyor, ekranda çizgi mi var? Marka bağımsız servis, Ankara, İstanbul, Bursa, Denizli aynı gün destek. Hemen arayın: 0542 403 36 22',
+    seoDescription: 'Televizyon açılmıyor, ekranda çizgi mi var? Marka bağımsız servis, Ankara, İstanbul, Bursa, Denizli aynı gün destek. Hemen arayın: 0850 885 44 36',
     keywords: [
       'televizyon servisi',
       'televizyon tamiri',
@@ -303,7 +303,7 @@ export const deviceDetails: DeviceDetail[] = [
       { q: 'Kayış değişimi kendim yapılabilir mi?', a: 'Tavsiye etmeyiz; tambur sökümü gerektirir ve yanlış montaj başka arızalara yol açabilir. Bu işlemi bize bırakmanızı öneririz.' },
     ],
     seoTitle: 'Kurutma Makinesi Servisi | Ankara, İstanbul, Bursa, Denizli | Servis Arıza Kayıt',
-    seoDescription: 'Kurutma makinesi kurutmuyor, ısınmıyor mu? Marka bağımsız servis, Ankara, İstanbul, Bursa, Denizli aynı gün destek. Hemen arayın: 0542 403 36 22',
+    seoDescription: 'Kurutma makinesi kurutmuyor, ısınmıyor mu? Marka bağımsız servis, Ankara, İstanbul, Bursa, Denizli aynı gün destek. Hemen arayın: 0850 885 44 36',
     keywords: [
       'kurutma makinesi servisi',
       'kurutma makinesi tamiri',
@@ -342,7 +342,7 @@ export const deviceDetails: DeviceDetail[] = [
       { q: 'Fırın camı kendim değiştirilebilir mi?', a: 'Tavsiye etmeyiz; sökme sırasında yanlış montaj cam kırılmasına yol açabilir. Bu işlemi bize bırakmanızı öneririz.' },
     ],
     seoTitle: 'Ankastre Ocak & Fırın Servisi | Ankara, İstanbul, Bursa, Denizli | Servis Arıza Kayıt',
-    seoDescription: 'Ankastre ocak ateş almıyor, fırın mı ısınmıyor? Marka bağımsız servis, Ankara, İstanbul, Bursa, Denizli aynı gün destek. Hemen arayın: 0542 403 36 22',
+    seoDescription: 'Ankastre ocak ateş almıyor, fırın mı ısınmıyor? Marka bağımsız servis, Ankara, İstanbul, Bursa, Denizli aynı gün destek. Hemen arayın: 0850 885 44 36',
     keywords: [
       'ankastre ocak servisi',
       'ankastre fırın servisi',

@@ -10,12 +10,12 @@ export const site = {
   url: SITE_URL,
   tagline: 'Ankara, İstanbul, Bursa ve Denizli Beyaz Eşya ve İklimlendirme Teknik Servisi',
   description:
-    'Servis Arıza Kayıt: klima, kombi, buzdolabı, çamaşır ve bulaşık makinesi, televizyon, ankastre ocak arızalarında Ankara, İstanbul, Bursa ve Denizli illerinde servis. Arızanızı kaydedin, ekip sizi arasın. 0542 403 36 22.',
+    'Servis Arıza Kayıt: klima, kombi, buzdolabı, çamaşır ve bulaşık makinesi, televizyon, ankastre ocak arızalarında Ankara, İstanbul, Bursa ve Denizli illerinde servis. Arızanızı kaydedin, ekip sizi arasın. 0850 885 44 36.',
 
   phone: {
-    display: '0542 403 36 22',
-    href: 'tel:+905424033622',
-    e164: '+905424033622',
+    display: '0850 885 44 36',
+    href: 'tel:+908508854436',
+    e164: '+908508854436',
   },
   whatsapp: {
     number: '905424033622',

@@ -57,12 +57,12 @@ export const posts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'Basit kontrolleri denediniz ve sonuç alamadınız mı? Ankara, İstanbul, Bursa ve Denizli illerinde bağımsız teknik servis ekibimiz çamaşır makinenizi yerinde inceleyip kalıcı çözüm sunar. Arıza kaydınızı oluşturmak veya sorularınız için 0542 403 36 22 numaralı hattımızdan günün her saati bize ulaşabilirsiniz.',
+        text: 'Basit kontrolleri denediniz ve sonuç alamadınız mı? Ankara, İstanbul, Bursa ve Denizli illerinde bağımsız teknik servis ekibimiz çamaşır makinenizi yerinde inceleyip kalıcı çözüm sunar. Arıza kaydınızı oluşturmak veya sorularınız için 0850 885 44 36 numaralı hattımızdan günün her saati bize ulaşabilirsiniz.',
       },
     ],
     seoTitle: 'Çamaşır Makinesi Su Almıyor: Nedenleri ve Çözümü | Servis Arıza Kayıt',
     seoDescription:
-      'Çamaşır makinesi su almıyor mu? Olası nedenleri, evde yapılabilecek kontrolleri ve servis çağırma zamanını öğrenin. Arıza kaydı için 0542 403 36 22',
+      'Çamaşır makinesi su almıyor mu? Olası nedenleri, evde yapılabilecek kontrolleri ve servis çağırma zamanını öğrenin. Arıza kaydı için 0850 885 44 36',
     keywords: [
       'çamaşır makinesi su almıyor',
       'çamaşır makinesi su almama sorunu',
@@ -127,12 +127,12 @@ export const posts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'Buzdolabınızdaki soğutma sorunu devam ediyorsa vakit kaybetmeden arıza kaydı oluşturabilirsiniz. Ankara, İstanbul, Bursa ve Denizli illerinde bağımsız servis ekibimize 0542 403 36 22 numaralı hattan günün her saatinda ulaşabilirsiniz.',
+        text: 'Buzdolabınızdaki soğutma sorunu devam ediyorsa vakit kaybetmeden arıza kaydı oluşturabilirsiniz. Ankara, İstanbul, Bursa ve Denizli illerinde bağımsız servis ekibimize 0850 885 44 36 numaralı hattan günün her saatinda ulaşabilirsiniz.',
       },
     ],
     seoTitle: 'Buzdolabı Soğutmuyor mu? Nedenleri ve Kontrol Listesi | Servis Arıza Kayıt',
     seoDescription:
-      'Buzdolabı soğutmuyor mu? Olası nedenleri, evde yapılabilecek kontrolleri ve ne zaman servis gerektiğini öğrenin. Arıza kaydı için 0542 403 36 22',
+      'Buzdolabı soğutmuyor mu? Olası nedenleri, evde yapılabilecek kontrolleri ve ne zaman servis gerektiğini öğrenin. Arıza kaydı için 0850 885 44 36',
     keywords: [
       'buzdolabı soğutmuyor',
       'buzdolabı soğutma sorunu',
@@ -199,12 +199,12 @@ export const posts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'Bulaşık makinenizdeki yıkama sorunu devam ediyorsa arıza kaydınızı kolayca oluşturabilirsiniz. Ankara, İstanbul, Bursa ve Denizli illerinde bağımsız servis ekibimize 0542 403 36 22 numaralı hattan günün her saati ulaşabilirsiniz.',
+        text: 'Bulaşık makinenizdeki yıkama sorunu devam ediyorsa arıza kaydınızı kolayca oluşturabilirsiniz. Ankara, İstanbul, Bursa ve Denizli illerinde bağımsız servis ekibimize 0850 885 44 36 numaralı hattan günün her saati ulaşabilirsiniz.',
       },
     ],
     seoTitle: 'Bulaşık Makinesi İyi Yıkamıyor: 7 Yaygın Neden | Servis Arıza Kayıt',
     seoDescription:
-      'Bulaşık makinesi iyi yıkamıyor mu? Filtre, deterjan ve püskürtme kollarını kontrol edin, kalıcı çözüm için doğru zamanda servis çağırın. 0542 403 36 22',
+      'Bulaşık makinesi iyi yıkamıyor mu? Filtre, deterjan ve püskürtme kollarını kontrol edin, kalıcı çözüm için doğru zamanda servis çağırın. 0850 885 44 36',
     keywords: [
       'bulaşık makinesi iyi yıkamıyor',
       'bulaşık makinesi yıkama sorunu',
@@ -268,12 +268,12 @@ export const posts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'Klimanızda soğutma sorunu yaşıyorsanız ya da periyodik bakım zamanı geldiyse arıza kaydınızı hemen oluşturabilirsiniz. Ankara, İstanbul, Bursa ve Denizli illerinde bağımsız servis ekibimize 0542 403 36 22 numaralı hattan günün her saati ulaşabilirsiniz.',
+        text: 'Klimanızda soğutma sorunu yaşıyorsanız ya da periyodik bakım zamanı geldiyse arıza kaydınızı hemen oluşturabilirsiniz. Ankara, İstanbul, Bursa ve Denizli illerinde bağımsız servis ekibimize 0850 885 44 36 numaralı hattan günün her saati ulaşabilirsiniz.',
       },
     ],
     seoTitle: 'Klima Soğutmuyor: Gaz mı Bitti, Bakım mı Gerekiyor? | Servis Arıza Kayıt',
     seoDescription:
-      'Klima soğutmuyor mu? Filtre, dış ünite ve gaz kaçağı ihtimalini kontrol edin, doğru zamanda bakım veya servis çağırın. Arıza kaydı: 0542 403 36 22',
+      'Klima soğutmuyor mu? Filtre, dış ünite ve gaz kaçağı ihtimalini kontrol edin, doğru zamanda bakım veya servis çağırın. Arıza kaydı: 0850 885 44 36',
     keywords: [
       'klima soğutmuyor',
       'klima gaz kaçağı',
@@ -338,12 +338,12 @@ export const posts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'Kombinizde basınç düşüşü yaşıyorsanız arıza kaydınızı hemen oluşturabilirsiniz. Ankara, İstanbul, Bursa ve Denizli illerinde bağımsız servis ekibimize 0542 403 36 22 numaralı hattan günün her saati ulaşabilirsiniz.',
+        text: 'Kombinizde basınç düşüşü yaşıyorsanız arıza kaydınızı hemen oluşturabilirsiniz. Ankara, İstanbul, Bursa ve Denizli illerinde bağımsız servis ekibimize 0850 885 44 36 numaralı hattan günün her saati ulaşabilirsiniz.',
       },
     ],
     seoTitle: 'Kombi Basıncı Düşüyor: Nedeni ve Servis Zamanı | Servis Arıza Kayıt',
     seoDescription:
-      'Kombi basıncı sürekli düşüyor mu? Su kaçağı ve genleşme tankı ihtimalini kontrol edin, ne zaman servis gerektiğini öğrenin. Arıza kaydı: 0542 403 36 22',
+      'Kombi basıncı sürekli düşüyor mu? Su kaçağı ve genleşme tankı ihtimalini kontrol edin, ne zaman servis gerektiğini öğrenin. Arıza kaydı: 0850 885 44 36',
     keywords: [
       'kombi basıncı düşüyor',
       'kombi basınç sorunu',
@@ -399,12 +399,12 @@ export const posts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'Beyaz eşyalarınızda alışılmadık bir durum fark ettiyseniz ya da periyodik bakım zamanı geldiyse, sorunu büyümeden çözmek için bizimle iletişime geçebilirsiniz. Ankara, İstanbul, Bursa ve Denizli illerinde bağımsız servis ekibimize 0542 403 36 22 numaralı hattan günün her saati ulaşarak arıza kaydınızı oluşturabilirsiniz.',
+        text: 'Beyaz eşyalarınızda alışılmadık bir durum fark ettiyseniz ya da periyodik bakım zamanı geldiyse, sorunu büyümeden çözmek için bizimle iletişime geçebilirsiniz. Ankara, İstanbul, Bursa ve Denizli illerinde bağımsız servis ekibimize 0850 885 44 36 numaralı hattan günün her saati ulaşarak arıza kaydınızı oluşturabilirsiniz.',
       },
     ],
     seoTitle: 'Beyaz Eşyanızın Ömrünü Uzatan 10 Alışkanlık | Servis Arıza Kayıt',
     seoDescription:
-      'Çamaşır makinesi, buzdolabı, bulaşık makinesi ve kombide ömrü uzatan basit bakım alışkanlıklarını öğrenin. Destek için 0542 403 36 22',
+      'Çamaşır makinesi, buzdolabı, bulaşık makinesi ve kombide ömrü uzatan basit bakım alışkanlıklarını öğrenin. Destek için 0850 885 44 36',
     keywords: [
       'beyaz eşya bakımı',
       'beyaz eşya ömrü uzatma',
@@ -541,12 +541,12 @@ export const posts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'Servis Arıza Kayıt olarak Ankara, İstanbul, Bursa ve Denizli illerinde bağımsız teknik servis ekipleriyle çalışıyoruz. Arıza kaydınızı siteden oluşturabilir ya da doğrudan 0542 403 36 22 numaralı hattan günün her saatinda ulaşabilirsiniz. Cihaz, marka ve şikâyeti alır, bölgenizdeki teknisyenle randevunuzu planlarız; ücret tespit sonrası, işleme başlamadan önce söylenir.',
+        text: 'Servis Arıza Kayıt olarak Ankara, İstanbul, Bursa ve Denizli illerinde bağımsız teknik servis ekipleriyle çalışıyoruz. Arıza kaydınızı siteden oluşturabilir ya da doğrudan 0850 885 44 36 numaralı hattan günün her saatinda ulaşabilirsiniz. Cihaz, marka ve şikâyeti alır, bölgenizdeki teknisyenle randevunuzu planlarız; ücret tespit sonrası, işleme başlamadan önce söylenir.',
       },
     ],
     seoTitle: 'Ankara Beyaz Eşya Servisi: Doğru Servisi Seçme Rehberi | Servis Arıza Kayıt',
     seoDescription:
-      'Ankara’da beyaz eşya servisi çağırmadan önce sorulması gerekenler, ücretin nasıl oluştuğu, garanti ve fatura hakkınız. Arıza kaydı: 0542 403 36 22',
+      'Ankara’da beyaz eşya servisi çağırmadan önce sorulması gerekenler, ücretin nasıl oluştuğu, garanti ve fatura hakkınız. Arıza kaydı: 0850 885 44 36',
     keywords: [
       'ankara beyaz eşya servisi',
       'ankara kombi servisi',
@@ -671,7 +671,7 @@ export const posts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'Ankara’da kombiniz arıza kodu veriyorsa, basınç kontrolünü kendiniz yapabilir ama sonuç değişmiyorsa vakit kaybetmeden bize ulaşabilirsiniz. Bağımsız teknik servis ekibimize 0542 403 36 22 numaralı hattan günün her saati ulaşıp arıza kaydınızı oluşturabilirsiniz; teknisyenimiz kodu ve durumu dinledikten sonra size en yakın randevuyu planlar.',
+        text: 'Ankara’da kombiniz arıza kodu veriyorsa, basınç kontrolünü kendiniz yapabilir ama sonuç değişmiyorsa vakit kaybetmeden bize ulaşabilirsiniz. Bağımsız teknik servis ekibimize 0850 885 44 36 numaralı hattan günün her saati ulaşıp arıza kaydınızı oluşturabilirsiniz; teknisyenimiz kodu ve durumu dinledikten sonra size en yakın randevuyu planlar.',
       },
     ],
     seoTitle: 'Ankara Kombi Servisi: Arıza Kodları Ne Anlama Gelir? | Servis Arıza Kayıt',
@@ -742,12 +742,12 @@ export const posts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'Filtre ve haznenizi temizlediniz, kondenseri yıkadınız ama kurutma makineniz hâlâ ısıtmıyorsa, vakit kaybetmeden bağımsız teknik servis desteği almanızı öneririz. Ankara genelinde ekibimiz cihazı yerinde inceleyip termik sigorta, rezistans veya sensör arızasını tespit edip kalıcı çözüm sunar. Arıza kaydınızı oluşturmak için 0542 403 36 22 numaralı hattımızdan günün her saati bize ulaşabilirsiniz.',
+        text: 'Filtre ve haznenizi temizlediniz, kondenseri yıkadınız ama kurutma makineniz hâlâ ısıtmıyorsa, vakit kaybetmeden bağımsız teknik servis desteği almanızı öneririz. Ankara genelinde ekibimiz cihazı yerinde inceleyip termik sigorta, rezistans veya sensör arızasını tespit edip kalıcı çözüm sunar. Arıza kaydınızı oluşturmak için 0850 885 44 36 numaralı hattımızdan günün her saati bize ulaşabilirsiniz.',
       },
     ],
     seoTitle: 'Ankara Kurutma Makinesi Servisi: Isıtmıyor mu? | Servis Arıza Kayıt',
     seoDescription:
-      'Ankara’da kurutma makinesi ısıtmıyor mu? Filtre, kondenser ve termik sigorta kontrolünden ne zaman servis gerektiğine kadar sebepleri anlatıyoruz. 0542 403 36 22',
+      'Ankara’da kurutma makinesi ısıtmıyor mu? Filtre, kondenser ve termik sigorta kontrolünden ne zaman servis gerektiğine kadar sebepleri anlatıyoruz. 0850 885 44 36',
     keywords: [
       'kurutma makinesi ısıtmıyor',
       'ankara kurutma makinesi servisi',
@@ -812,12 +812,12 @@ export const posts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'Kapak contasını kontrol ettiniz, buzunu çözdürdünüz, yoğuşturucuyu temizlediniz ama derin dondurucunuz hâlâ yeterince dondurmuyorsa, vakit kaybetmeden bağımsız teknik servis desteği almanızı öneririz. Ankara genelinde ekibimiz cihazı yerinde inceleyip conta, gaz veya kompresör arızasını tespit edip kalıcı çözüm sunar. Arıza kaydınızı oluşturmak için 0542 403 36 22 numaralı hattımızdan günün her saati bize ulaşabilirsiniz.',
+        text: 'Kapak contasını kontrol ettiniz, buzunu çözdürdünüz, yoğuşturucuyu temizlediniz ama derin dondurucunuz hâlâ yeterince dondurmuyorsa, vakit kaybetmeden bağımsız teknik servis desteği almanızı öneririz. Ankara genelinde ekibimiz cihazı yerinde inceleyip conta, gaz veya kompresör arızasını tespit edip kalıcı çözüm sunar. Arıza kaydınızı oluşturmak için 0850 885 44 36 numaralı hattımızdan günün her saati bize ulaşabilirsiniz.',
       },
     ],
     seoTitle: 'Ankara Derin Dondurucu Servisi: Dondurmuyor mu? | Servis Arıza Kayıt',
     seoDescription:
-      'Ankara’da derin dondurucu yeterince dondurmuyor mu? Kapak contası, buzlanma ve yoğuşturucu kontrolünden ne zaman servis gerektiğine kadar sebepleri anlatıyoruz. 0542 403 36 22',
+      'Ankara’da derin dondurucu yeterince dondurmuyor mu? Kapak contası, buzlanma ve yoğuşturucu kontrolünden ne zaman servis gerektiğine kadar sebepleri anlatıyoruz. 0850 885 44 36',
     keywords: [
       'derin dondurucu dondurmuyor',
       'ankara derin dondurucu servisi',
@@ -902,12 +902,12 @@ export const posts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'Halkalı’da kombiniz ateşleme yapmıyorsa yukarıdaki basit kontrolleri yapabilirsiniz; sonuç değişmiyorsa bağımsız teknik servis ekibimiz cihazı yerinde inceleyip gaz valfi, elektrot ya da sensör tarafındaki sorunu tespit eder. Küçükçekmece ve çevresinde arıza kaydınızı oluşturmak için 0542 403 36 22 numaralı hattımızdan günün her saati ulaşabilir, ayrıca /ariza-kayit sayfasından da kayıt bırakabilirsiniz.',
+        text: 'Halkalı’da kombiniz ateşleme yapmıyorsa yukarıdaki basit kontrolleri yapabilirsiniz; sonuç değişmiyorsa bağımsız teknik servis ekibimiz cihazı yerinde inceleyip gaz valfi, elektrot ya da sensör tarafındaki sorunu tespit eder. Küçükçekmece ve çevresinde arıza kaydınızı oluşturmak için 0850 885 44 36 numaralı hattımızdan günün her saati ulaşabilir, ayrıca /ariza-kayit sayfasından da kayıt bırakabilirsiniz.',
       },
     ],
     seoTitle: 'Halkalı Kombi Servisi: Ateşleme Yapmıyor mu? | Servis Arıza Kayıt',
     seoDescription:
-      'Halkalı’da kombi ateşleme yapmıyorsa gaz valfi, elektrot ve iyonizasyon sensörü ilk bakılacak noktalardır. Küçükçekmece kombi servisi için 0542 403 36 22.',
+      'Halkalı’da kombi ateşleme yapmıyorsa gaz valfi, elektrot ve iyonizasyon sensörü ilk bakılacak noktalardır. Küçükçekmece kombi servisi için 0850 885 44 36.',
     keywords: [
       'Halkalı kombi servisi',
       'Halkalı kombi tamircisi',
@@ -990,12 +990,12 @@ export const posts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'Ambarlı’da buzdolabınızda buzlanma sorunu yaşıyorsanız önce contayı ve tahliye kanalını kontrol edebilirsiniz; buz çözme sonrası sorun tekrarlıyorsa bağımsız teknik servis ekibimiz contayı, defrost ısıtıcısını ve sensörü yerinde kontrol edip kalıcı çözüm sunar. Avcılar ve çevresinde arıza kaydınızı oluşturmak için 0542 403 36 22 numaralı hattımızdan günün her saati ulaşabilir, ayrıca /ariza-kayit sayfasından da kayıt bırakabilirsiniz.',
+        text: 'Ambarlı’da buzdolabınızda buzlanma sorunu yaşıyorsanız önce contayı ve tahliye kanalını kontrol edebilirsiniz; buz çözme sonrası sorun tekrarlıyorsa bağımsız teknik servis ekibimiz contayı, defrost ısıtıcısını ve sensörü yerinde kontrol edip kalıcı çözüm sunar. Avcılar ve çevresinde arıza kaydınızı oluşturmak için 0850 885 44 36 numaralı hattımızdan günün her saati ulaşabilir, ayrıca /ariza-kayit sayfasından da kayıt bırakabilirsiniz.',
       },
     ],
     seoTitle: 'Ambarlı Buzdolabı Servisi: Buz mu Tutuyor? | Servis Arıza Kayıt',
     seoDescription:
-      'Ambarlı’da buzdolabı buz tutuyorsa conta, defrost ısıtıcısı ve sensör ilk bakılacak noktalardır. Avcılar buzdolabı servisi için 0542 403 36 22.',
+      'Ambarlı’da buzdolabı buz tutuyorsa conta, defrost ısıtıcısı ve sensör ilk bakılacak noktalardır. Avcılar buzdolabı servisi için 0850 885 44 36.',
     keywords: [
       'Ambarlı buzdolabı servisi',
       'Avcılar buzdolabı servisi',
@@ -1098,12 +1098,12 @@ export const posts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'Beylikdüzü’nde kombiniz sıcak su konusunda sorun yapıyorsa yukarıdaki kontrolleri yapabilir, basıncı ve filtreyi gözden geçirebilirsiniz; sonuç değişmiyorsa bağımsız teknik servis ekibimiz üç yollu vana, debi sensörü ve eşanjörü yerinde kontrol edip kalıcı çözüm sunar. Beylikdüzü ve çevresinde arıza kaydınızı oluşturmak için 0542 403 36 22 numaralı hattımızdan günün her saati ulaşabilir, ayrıca /ariza-kayit sayfasından da kayıt bırakabilirsiniz.',
+        text: 'Beylikdüzü’nde kombiniz sıcak su konusunda sorun yapıyorsa yukarıdaki kontrolleri yapabilir, basıncı ve filtreyi gözden geçirebilirsiniz; sonuç değişmiyorsa bağımsız teknik servis ekibimiz üç yollu vana, debi sensörü ve eşanjörü yerinde kontrol edip kalıcı çözüm sunar. Beylikdüzü ve çevresinde arıza kaydınızı oluşturmak için 0850 885 44 36 numaralı hattımızdan günün her saati ulaşabilir, ayrıca /ariza-kayit sayfasından da kayıt bırakabilirsiniz.',
       },
     ],
     seoTitle: 'Beylikdüzü Kombi Servisi: Sıcak Su Vermiyor mu? | Servis Arıza Kayıt',
     seoDescription:
-      'Beylikdüzü’nde kombi sıcak su vermiyorsa üç yollu vana, debi sensörü ve eşanjör ilk bakılacak noktalardır. Beylikdüzü kombi servisi için 0542 403 36 22.',
+      'Beylikdüzü’nde kombi sıcak su vermiyorsa üç yollu vana, debi sensörü ve eşanjör ilk bakılacak noktalardır. Beylikdüzü kombi servisi için 0850 885 44 36.',
     keywords: [
       'Beylikdüzü kombi servisi',
       'Beylikdüzü kombi tamircisi',
@@ -1206,12 +1206,12 @@ export const posts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'Bahçeşehir’de buzdolabınızın altında su birikintisi görüyorsanız önce tahliye kanalını ve tavayı kontrol edebilirsiniz; sorun tekrarlıyorsa bağımsız teknik servis ekibimiz kanalı, contayı ve gerekirse defrost sistemini yerinde inceleyip kalıcı çözüm sunar. Bahçeşehir ve çevresinde arıza kaydınızı oluşturmak için 0542 403 36 22 numaralı hattımızdan günün her saati ulaşabilir, ayrıca /ariza-kayit sayfasından da kayıt bırakabilirsiniz.',
+        text: 'Bahçeşehir’de buzdolabınızın altında su birikintisi görüyorsanız önce tahliye kanalını ve tavayı kontrol edebilirsiniz; sorun tekrarlıyorsa bağımsız teknik servis ekibimiz kanalı, contayı ve gerekirse defrost sistemini yerinde inceleyip kalıcı çözüm sunar. Bahçeşehir ve çevresinde arıza kaydınızı oluşturmak için 0850 885 44 36 numaralı hattımızdan günün her saati ulaşabilir, ayrıca /ariza-kayit sayfasından da kayıt bırakabilirsiniz.',
       },
     ],
     seoTitle: 'Bahçeşehir Buzdolabı Servisi: Altında Su mu Birikiyor? | Servis Arıza Kayıt',
     seoDescription:
-      'Bahçeşehir’de buzdolabının altında su birikiyorsa tahliye kanalı, su toplama tavası ve kapı contası ilk bakılacak noktalardır. Bahçeşehir buzdolabı servisi için 0542 403 36 22.',
+      'Bahçeşehir’de buzdolabının altında su birikiyorsa tahliye kanalı, su toplama tavası ve kapı contası ilk bakılacak noktalardır. Bahçeşehir buzdolabı servisi için 0850 885 44 36.',
     keywords: [
       'Bahçeşehir buzdolabı servisi',
       'Bahçeşehir buzdolabı tamircisi',
@@ -1319,12 +1319,12 @@ export const posts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'Esenyurt’ta kombiniz ses yapıyorsa önce hangi tip sesle karşılaştığınızı ayırt edebilir, radyatörlerin havasını alabilirsiniz; ses sürmeye devam ediyorsa bağımsız teknik servis ekibimiz pompayı, eşanjörü ve tesisatı yerinde kontrol edip kalıcı çözüm sunar. Esenyurt ve çevresinde arıza kaydınızı oluşturmak için 0542 403 36 22 numaralı hattımızdan günün her saati ulaşabilir, ayrıca /ariza-kayit sayfasından da kayıt bırakabilirsiniz. Sıcak su tarafında sorun yaşıyorsanız /blog/beylikduzu-kombi-sicak-su-vermiyor yazımıza da bakabilirsiniz.',
+        text: 'Esenyurt’ta kombiniz ses yapıyorsa önce hangi tip sesle karşılaştığınızı ayırt edebilir, radyatörlerin havasını alabilirsiniz; ses sürmeye devam ediyorsa bağımsız teknik servis ekibimiz pompayı, eşanjörü ve tesisatı yerinde kontrol edip kalıcı çözüm sunar. Esenyurt ve çevresinde arıza kaydınızı oluşturmak için 0850 885 44 36 numaralı hattımızdan günün her saati ulaşabilir, ayrıca /ariza-kayit sayfasından da kayıt bırakabilirsiniz. Sıcak su tarafında sorun yaşıyorsanız /blog/beylikduzu-kombi-sicak-su-vermiyor yazımıza da bakabilirsiniz.',
       },
     ],
     seoTitle: 'Esenyurt Kombi Servisi: Ses mi Yapıyor? | Servis Arıza Kayıt',
     seoDescription:
-      'Esenyurt’ta kombi vınlama, takırtı ya da su kaynama sesi yapıyorsa pompa, eşanjör ve tesisat havası ilk bakılacak noktalardır. Esenyurt kombi servisi için 0542 403 36 22.',
+      'Esenyurt’ta kombi vınlama, takırtı ya da su kaynama sesi yapıyorsa pompa, eşanjör ve tesisat havası ilk bakılacak noktalardır. Esenyurt kombi servisi için 0850 885 44 36.',
     keywords: [
       'Esenyurt kombi servisi',
       'Esenyurt kombi tamircisi',
@@ -1424,12 +1424,12 @@ export const posts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'Büyükçekmece’de buzdolabınızın kompresörü hiç durmadan çalışıyorsa önce kapı contasını ve arka ızgarayı kontrol edebilirsiniz; sorun sürüyorsa bağımsız teknik servis ekibimiz contayı, yoğuşturucuyu ve gaz seviyesini yerinde kontrol edip kalıcı çözüm sunar. Büyükçekmece ve çevresinde arıza kaydınızı oluşturmak için 0542 403 36 22 numaralı hattımızdan günün her saati ulaşabilir, ayrıca /ariza-kayit sayfasından da kayıt bırakabilirsiniz. Buzlanma ile ilgili sorun yaşıyorsanız /blog/ambarli-buzdolabi-buzlanma-no-frost-arizasi yazımıza da bakabilirsiniz.',
+        text: 'Büyükçekmece’de buzdolabınızın kompresörü hiç durmadan çalışıyorsa önce kapı contasını ve arka ızgarayı kontrol edebilirsiniz; sorun sürüyorsa bağımsız teknik servis ekibimiz contayı, yoğuşturucuyu ve gaz seviyesini yerinde kontrol edip kalıcı çözüm sunar. Büyükçekmece ve çevresinde arıza kaydınızı oluşturmak için 0850 885 44 36 numaralı hattımızdan günün her saati ulaşabilir, ayrıca /ariza-kayit sayfasından da kayıt bırakabilirsiniz. Buzlanma ile ilgili sorun yaşıyorsanız /blog/ambarli-buzdolabi-buzlanma-no-frost-arizasi yazımıza da bakabilirsiniz.',
       },
     ],
     seoTitle: 'Büyükçekmece Buzdolabı Servisi: Sürekli mi Çalışıyor? | Servis Arıza Kayıt',
     seoDescription:
-      'Büyükçekmece’de buzdolabının kompresörü hiç durmuyorsa kapı contası, yoğuşturucu ve aşırı yükleme ilk bakılacak noktalardır. Büyükçekmece buzdolabı servisi için 0542 403 36 22.',
+      'Büyükçekmece’de buzdolabının kompresörü hiç durmuyorsa kapı contası, yoğuşturucu ve aşırı yükleme ilk bakılacak noktalardır. Büyükçekmece buzdolabı servisi için 0850 885 44 36.',
     keywords: [
       'Büyükçekmece buzdolabı servisi',
       'Büyükçekmece buzdolabı tamircisi',
@@ -1531,12 +1531,12 @@ export const posts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'Avcılar’da kombinizin bakımını kış ortasında değil, şimdi yaptırmanız hem ateşleme hem basınç tarafında sürpriz aramaların önüne geçer; bağımsız teknik servis ekibimiz elektrottan baca gazına kadar tüm noktaları yerinde kontrol eder. Avcılar ve çevresinde arıza kaydınızı oluşturmak için 0542 403 36 22 numaralı hattımızdan günün her saati ulaşabilir, ayrıca /ariza-kayit sayfasından da kayıt bırakabilirsiniz. Ateşleme sorunu yaşıyorsanız /blog/halkali-kombi-atesleme-yapmiyor yazımıza da bakabilirsiniz.',
+        text: 'Avcılar’da kombinizin bakımını kış ortasında değil, şimdi yaptırmanız hem ateşleme hem basınç tarafında sürpriz aramaların önüne geçer; bağımsız teknik servis ekibimiz elektrottan baca gazına kadar tüm noktaları yerinde kontrol eder. Avcılar ve çevresinde arıza kaydınızı oluşturmak için 0850 885 44 36 numaralı hattımızdan günün her saati ulaşabilir, ayrıca /ariza-kayit sayfasından da kayıt bırakabilirsiniz. Ateşleme sorunu yaşıyorsanız /blog/halkali-kombi-atesleme-yapmiyor yazımıza da bakabilirsiniz.',
       },
     ],
     seoTitle: 'Avcılar Kombi Servisi: Yıllık Bakım Rehberi | Servis Arıza Kayıt',
     seoDescription:
-      'Avcılar’da kombi bakımı kış öncesi yapılmazsa ateşleme ve basınç sorunları sık görülür. Bakımda neler kontrol edilir, evde ne yapabilirsiniz? Arıza kaydı: 0542 403 36 22.',
+      'Avcılar’da kombi bakımı kış öncesi yapılmazsa ateşleme ve basınç sorunları sık görülür. Bakımda neler kontrol edilir, evde ne yapabilirsiniz? Arıza kaydı: 0850 885 44 36.',
     keywords: [
       'Avcılar kombi servisi',
       'Avcılar kombi tamircisi',
@@ -1636,12 +1636,12 @@ export const posts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'Bakırköy’de buzdolabınız ses ya da titreşim yapıyorsa önce dengeleme ve boşluk kontrolünü deneyebilirsiniz; sorun sürüyorsa bağımsız teknik servis ekibimiz kompresörü, fanı ve takozları yerinde kontrol edip kalıcı çözüm sunar. Bakırköy ve çevresinde arıza kaydınızı oluşturmak için 0542 403 36 22 numaralı hattımızdan günün her saati ulaşabilir, ayrıca /ariza-kayit sayfasından da kayıt bırakabilirsiniz. Kompresörün sürekli çalışmasıyla ilgili bir sorun yaşıyorsanız /blog/buyukcekmece-buzdolabi-surekli-calisiyor yazımıza da bakabilirsiniz.',
+        text: 'Bakırköy’de buzdolabınız ses ya da titreşim yapıyorsa önce dengeleme ve boşluk kontrolünü deneyebilirsiniz; sorun sürüyorsa bağımsız teknik servis ekibimiz kompresörü, fanı ve takozları yerinde kontrol edip kalıcı çözüm sunar. Bakırköy ve çevresinde arıza kaydınızı oluşturmak için 0850 885 44 36 numaralı hattımızdan günün her saati ulaşabilir, ayrıca /ariza-kayit sayfasından da kayıt bırakabilirsiniz. Kompresörün sürekli çalışmasıyla ilgili bir sorun yaşıyorsanız /blog/buyukcekmece-buzdolabi-surekli-calisiyor yazımıza da bakabilirsiniz.',
       },
     ],
     seoTitle: 'Bakırköy Buzdolabı Servisi: Ses ve Titreşim Sorunu | Servis Arıza Kayıt',
     seoDescription:
-      'Bakırköy’de buzdolabı ses ya da titreşim yapıyorsa kompresör, fan ve zemin dengesi ilk bakılacak noktalardır. Arıza kaydı için 0542 403 36 22.',
+      'Bakırköy’de buzdolabı ses ya da titreşim yapıyorsa kompresör, fan ve zemin dengesi ilk bakılacak noktalardır. Arıza kaydı için 0850 885 44 36.',
     keywords: [
       'Bakırköy buzdolabı servisi',
       'Bakırköy buzdolabı tamircisi',
@@ -1737,12 +1737,12 @@ export const posts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'Bahçeşehir’de kombi basıncı sık düşüyorsa önce dolum musluğundan basıncı yeşil banda getirip bir gün takip edebilirsiniz; düşüş tekrarlıyorsa bağımsız teknik servis ekibimiz tesisatı ve genleşme tankını yerinde kontrol edip kalıcı çözüm sunar. Bahçeşehir ve çevresinde arıza kaydınızı oluşturmak için 0542 403 36 22 numaralı hattımızdan günün her saati ulaşabilir, ayrıca /ariza-kayit sayfasından da kayıt bırakabilirsiniz. Kombi ses yapıyorsa /blog/avcilar-kombi-bakimi yazımıza da bakabilirsiniz.',
+        text: 'Bahçeşehir’de kombi basıncı sık düşüyorsa önce dolum musluğundan basıncı yeşil banda getirip bir gün takip edebilirsiniz; düşüş tekrarlıyorsa bağımsız teknik servis ekibimiz tesisatı ve genleşme tankını yerinde kontrol edip kalıcı çözüm sunar. Bahçeşehir ve çevresinde arıza kaydınızı oluşturmak için 0850 885 44 36 numaralı hattımızdan günün her saati ulaşabilir, ayrıca /ariza-kayit sayfasından da kayıt bırakabilirsiniz. Kombi ses yapıyorsa /blog/avcilar-kombi-bakimi yazımıza da bakabilirsiniz.',
       },
     ],
     seoTitle: 'Bahçeşehir Kombi Servisi: Basınç Düşmesi Sorunu | Servis Arıza Kayıt',
     seoDescription:
-      'Bahçeşehir’de kombi basıncı düşüyorsa küçük bir sızıntı veya genleşme tankı sorunu olabilir. Nedenleri ve çözümü için 0542 403 36 22.',
+      'Bahçeşehir’de kombi basıncı düşüyorsa küçük bir sızıntı veya genleşme tankı sorunu olabilir. Nedenleri ve çözümü için 0850 885 44 36.',
     keywords: [
       'Bahçeşehir kombi servisi',
       'Bahçeşehir kombi tamircisi',
@@ -1838,12 +1838,12 @@ export const posts: BlogPost[] = [
       },
       {
         type: 'p',
-        text: 'Esenyurt’ta buzdolabınız az soğutuyorsa önce hava kanalını ve kapı contasını kontrol edebilirsiniz; sorun sürüyorsa bağımsız teknik servis ekibimiz fanı, contayı ve yoğuşturucuyu yerinde kontrol edip kalıcı çözüm sunar. Esenyurt ve çevresinde arıza kaydınızı oluşturmak için 0542 403 36 22 numaralı hattımızdan günün her saati ulaşabilir, ayrıca /ariza-kayit sayfasından da kayıt bırakabilirsiniz. Buzdolabınız ses ya da titreşim yapıyorsa /blog/bakirkoy-buzdolabi-ses-titresim yazımıza da bakabilirsiniz.',
+        text: 'Esenyurt’ta buzdolabınız az soğutuyorsa önce hava kanalını ve kapı contasını kontrol edebilirsiniz; sorun sürüyorsa bağımsız teknik servis ekibimiz fanı, contayı ve yoğuşturucuyu yerinde kontrol edip kalıcı çözüm sunar. Esenyurt ve çevresinde arıza kaydınızı oluşturmak için 0850 885 44 36 numaralı hattımızdan günün her saati ulaşabilir, ayrıca /ariza-kayit sayfasından da kayıt bırakabilirsiniz. Buzdolabınız ses ya da titreşim yapıyorsa /blog/bakirkoy-buzdolabi-ses-titresim yazımıza da bakabilirsiniz.',
       },
     ],
     seoTitle: 'Esenyurt Buzdolabı Servisi: Az Soğutma Sorunu | Servis Arıza Kayıt',
     seoDescription:
-      'Esenyurt’ta buzdolabı az soğutuyorsa hava kanalı, conta ya da aşırı yükleme sebep olabilir. Nedenleri ve çözümü için 0542 403 36 22.',
+      'Esenyurt’ta buzdolabı az soğutuyorsa hava kanalı, conta ya da aşırı yükleme sebep olabilir. Nedenleri ve çözümü için 0850 885 44 36.',
     keywords: [
       'Esenyurt buzdolabı servisi',
       'Esenyurt buzdolabı tamircisi',

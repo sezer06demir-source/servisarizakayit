@@ -18,7 +18,7 @@ export const site = {
     e164: '+908508854436',
   },
   whatsapp: {
-    number: '905424033622',
+    number: '908508854436',
     message: 'Merhaba, bir beyaz eşya arızası için servis kaydı oluşturmak istiyorum.',
     get href() {
       return `https://wa.me/${this.number}?text=${encodeURIComponent(this.message)}`;

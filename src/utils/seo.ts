@@ -1,6 +1,7 @@
 import { site } from '@data/site';
 
-const hizmetIlleri = ['Ankara', 'İstanbul', 'Bursa', 'Denizli'];
+/** Türkiye geneli: 81 il (plaka sırası). */
+const hizmetIlleri = ['Adana', 'Adıyaman', 'Afyonkarahisar', 'Ağrı', 'Amasya', 'Ankara', 'Antalya', 'Artvin', 'Aydın', 'Balıkesir', 'Bilecik', 'Bingöl', 'Bitlis', 'Bolu', 'Burdur', 'Bursa', 'Çanakkale', 'Çankırı', 'Çorum', 'Denizli', 'Diyarbakır', 'Edirne', 'Elazığ', 'Erzincan', 'Erzurum', 'Eskişehir', 'Gaziantep', 'Giresun', 'Gümüşhane', 'Hakkari', 'Hatay', 'Isparta', 'Mersin', 'İstanbul', 'İzmir', 'Kars', 'Kastamonu', 'Kayseri', 'Kırklareli', 'Kırşehir', 'Kocaeli', 'Konya', 'Kütahya', 'Malatya', 'Manisa', 'Kahramanmaraş', 'Mardin', 'Muğla', 'Muş', 'Nevşehir', 'Niğde', 'Ordu', 'Rize', 'Sakarya', 'Samsun', 'Siirt', 'Sinop', 'Sivas', 'Tekirdağ', 'Tokat', 'Trabzon', 'Tunceli', 'Şanlıurfa', 'Uşak', 'Van', 'Yozgat', 'Zonguldak', 'Aksaray', 'Bayburt', 'Karaman', 'Kırıkkale', 'Batman', 'Şırnak', 'Bartın', 'Ardahan', 'Iğdır', 'Yalova', 'Karabük', 'Kilis', 'Osmaniye', 'Düzce'];
 
 export interface BreadcrumbItem {
   name: string;
@@ -38,7 +39,7 @@ export function localBusinessSchema() {
     logo: absoluteUrl('/logo-servis-ariza-kayit.png'),
     description: site.description,
     priceRange: '₺₺',
-    areaServed: hizmetIlleri.map((name) => ({ '@type': 'City', name })),
+    areaServed: [{ '@type': 'Country', name: 'Türkiye' }, ...hizmetIlleri.map((name) => ({ '@type': 'AdministrativeArea', name }))],
     knowsLanguage: 'tr',
     openingHoursSpecification: [
       {
@@ -105,7 +106,7 @@ export function serviceSchema(opts: { name: string; description: string; path: s
     url: absoluteUrl(opts.path),
     serviceType: opts.name,
     provider: { '@id': `${absoluteUrl('/')}#business` },
-    areaServed: hizmetIlleri.map((name) => ({ '@type': 'City', name })),
+    areaServed: [{ '@type': 'Country', name: 'Türkiye' }, ...hizmetIlleri.map((name) => ({ '@type': 'AdministrativeArea', name }))],
     availableChannel: {
       '@type': 'ServiceChannel',
       servicePhone: { '@type': 'ContactPoint', telephone: site.phone.e164 },

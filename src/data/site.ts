@@ -1,16 +1,16 @@
 import { SITE_URL } from './site-url.mjs';
 
 /**
- * İşletme bilgileri — tek kaynak. Ankara, İstanbul, Bursa ve Denizli illerinde bağımsız beyaz eşya ve
+ * İşletme bilgileri — tek kaynak. Türkiye genelinde 81 ilde bağımsız beyaz eşya ve
  * iklimlendirme teknik servisi. Hiçbir markanın yetkili servisi / bayisi değildir.
  */
 export const site = {
   name: 'Servis Arıza Kayıt',
   legalName: 'Servis Arıza Kayıt',
   url: SITE_URL,
-  tagline: 'Ankara, İstanbul, Bursa ve Denizli Beyaz Eşya ve İklimlendirme Teknik Servisi',
+  tagline: 'Türkiye Geneli Beyaz Eşya ve İklimlendirme Teknik Servisi',
   description:
-    'Servis Arıza Kayıt: klima, kombi, buzdolabı, çamaşır ve bulaşık makinesi, televizyon, ankastre ocak arızalarında Ankara, İstanbul, Bursa ve Denizli illerinde servis. Arızanızı kaydedin, ekip sizi arasın. 0850 885 44 36.',
+    'Servis Arıza Kayıt: klima, kombi, buzdolabı, çamaşır ve bulaşık makinesi, televizyon, ankastre ocak arızalarında Türkiye genelinde 81 ilde servis. Arızanızı kaydedin, ekip sizi arasın. 0850 885 44 36.',
 
   phone: {
     display: '0850 885 44 36',
@@ -33,7 +33,7 @@ export const site = {
   },
 
   hours: { display: '24 saat', opens: '00:00', closes: '23:59', daysText: 'Haftanın 7 günü' },
-  area: 'Ankara, İstanbul, Bursa ve Denizli',
+  area: 'Türkiye geneli 81 il',
   /** Yasal ibare — sitenin her yerinde görünür kılınmalı. */
   disclaimer:
     'Servis Arıza Kayıt bağımsız bir özel teknik servistir. Hiçbir markanın yetkili servisi, resmi temsilcisi ya da bayisi değildir. Marka adları yalnızca hangi cihazlara hizmet verdiğimizi belirtmek için kullanılır.',
@@ -88,6 +88,6 @@ export const faq = [
   { q: 'Ne kadar sürede gelirsiniz?', a: 'Arıza kaydınızı aldıktan sonra en yakın bölge teknisyenimiz kısa sürede sizi arar. Hizmet verdiğimiz illerde aynı gün ya da ertesi gün randevu veriyoruz.' },
   { q: 'Ücreti önceden öğrenebilir miyim?', a: 'Teknisyen arızayı yerinde tespit eder ve işleme başlamadan önce ücreti net söyler. Onayınız olmadan işlem yapılmaz.' },
   { q: 'Yapılan işe garanti veriyor musunuz?', a: 'Evet. Değişen parçaya ve işçiliğe garanti belgesi veriyoruz. Aynı arıza garanti süresi içinde tekrarlarsa ücretsiz bakıyoruz.' },
-  { q: 'Servis hangi bölgeleri kapsıyor?', a: 'Ankara, İstanbul, Bursa ve Denizli illerinde servis veriyoruz. Bulunduğunuz ilçeyi arıza kaydında belirtin, hizmet bölgemizdeyse en yakın teknisyeni yönlendirelim.' },
+  { q: 'Servis hangi bölgeleri kapsıyor?', a: 'Türkiye genelinde 81 ilde servis veriyoruz. Bulunduğunuz ilçeyi arıza kaydında belirtin, hizmet bölgemizdeyse en yakın teknisyeni yönlendirelim.' },
   { q: 'Nasıl arıza kaydı oluştururum?', a: 'Sayfadaki formu doldurun ya da WhatsApp\'tan yazın. Cihazınızı, markayı ve şikâyeti iletin; sizi biz arayalım.' },
 ];

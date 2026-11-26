@@ -77,7 +77,7 @@ export const steps = [
 ];
 
 export const stats = [
-  { value: '4', label: 'ilde servis' },
+  { value: '81', label: 'ilde servis' },
   { value: '9', label: 'cihaz türü' },
   { value: '7/24', label: 'her gün açık' },
 ] as const;

@@ -1853,4 +1853,184 @@ export const posts: BlogPost[] = [
       'İstanbul buzdolabı servisi',
     ],
   },
+  {
+    slug: 'buyukcekmece-kombi-ariza-kodu',
+    title: 'Büyükçekmece’de Kombi Arıza Kodu Verdi: Ekranda Ne Görürseniz Ne Yapmalı?',
+    excerpt:
+      'Büyükçekmece’de kombi aniden durup ekranda bir kod ya da sembol gösteriyorsa panik yapmadan önce kodu okumak gerekir; bazı kodlar evde çözülür, bazıları teknisyen bekler. Hangisi hangisi anlatıyoruz.',
+    device: 'kombi',
+    readMinutes: 7,
+    date: '2026-11-27',
+    body: [
+      {
+        type: 'p',
+        text: 'Büyükçekmece Mimarsinan ve Kumburgaz taraflarından aldığımız çağrıların bir kısmı, kombi tamamen bozulduğu için değil, ekranda birden bir kod ya da yanıp sönen bir sembol belirdiği için geliyor. Ev sahibi kodu görünce genelde iki uçtan birine gidiyor: ya hemen fişi çekip bekliyor ya da üstüne gidip reset tuşuna arka arkaya basıyor. İkisi de doğru cevap değil; kodun ne anlattığını önce okumak gerekiyor.',
+      },
+      {
+        type: 'h2',
+        text: 'Kombi ekranındaki kod ne işe yarar?',
+      },
+      {
+        type: 'p',
+        text: 'Arıza kodu, cihazın kendi güvenlik sistemi devreye girip hangi sensörün ya da parçanın beklenen değeri vermediğini size bildirmesidir. Yani kod bir ceza değil, bir rapor; kombi "burada bir şey beklediğim gibi değil, güvenlik için duruyorum" diyor. Kodu görmeden önce kombi gürültülü mü çalışıyordu, su sıcaklığı mı düşüktü yoksa hiç ateşlemiyor muydu, bunu da not etmeniz teşhisi hızlandırır.',
+      },
+      {
+        type: 'h2',
+        text: 'Evde kendi başınıza bakabileceğiniz kodlar hangileri?',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Basınç düşüklüğüne işaret eden kodlar: gösterge gerçekten yeşil bandın altındaysa dolum musluğundan basıncı yükseltmek çoğu zaman yeterli olur',
+          'Baca veya hava sensörü kodu: pencere açıkken rüzgâr baca çekişini etkilemiş olabilir, pencereyi kapatıp kombiyi yeniden başlatmak bazen çözer',
+          'Elektrik kesintisi sonrası donma koruması kodu: kısa süreli elektrik kesintisinden sonra kombi kendini korumaya almış olabilir, reset tuşu bu durumda genelde işe yarar',
+        ],
+      },
+      {
+        type: 'h2',
+        text: 'Hangi kodlarda reset tuşuna basmak işi kötüleştirir?',
+      },
+      {
+        type: 'p',
+        text: 'Alev sensörü, ateşleme arızası ya da aşırı ısınma gibi yanmayla ilgili kodlarda arka arkaya reset yapmak, kombinin tekrar tekrar ateşleme denemesi anlamına gelir; bu hem güvensiz hem de elektrod ve devre kartına zarar verebilir. Aynı kod iki kez üst üste çıkıyorsa, üçüncü denemeyi yapmadan durmanızı öneriyoruz.',
+      },
+      {
+        type: 'ol',
+        items: [
+          'Ekrandaki kodu ve varsa kombinin marka/modelini not alın',
+          'Kodun ortaya çıkmasından önce ne fark ettiğinizi hatırlayın (ses, koku, soğuk su, titreme)',
+          'Basınç ve baca ile ilgili basit kodlarda bir kez yukarıdaki adımları deneyin',
+          'Aynı kod ikinci kez çıkarsa ya da alev/ateşleme ile ilgiliyse cihazı çalıştırmayı bırakıp teknisyen çağırın',
+        ],
+      },
+      {
+        type: 'note',
+        text: 'Kombi markaları aynı arızaya farklı kod numaraları veya semboller kullanır; kullanım kılavuzunuz yoksa kodu not edip bize söylemeniz, telefonda ön bilgi vermemize yardımcı olur.',
+      },
+      {
+        type: 'h2',
+        text: 'Büyükçekmece’de sahada en çok ne görüyoruz?',
+      },
+      {
+        type: 'p',
+        text: 'Mimarsinan ve Tepecik taraflarındaki apartman dairelerinde en çok basınç ve baca kodlarıyla karşılaşıyoruz; bu hatlarda kombi genelde dış cepheye yakın monte edilmiş oluyor ve rüzgârlı havalarda baca sensörü hassaslaşıyor. Alkent ve Kamiloba’daki villa tipi evlerde ise elektrik kesintisi sonrası donma koruması kodu daha sık geliyor, çünkü bu bölgede kısa süreli kesintiler diğer taraflara göre biraz daha sık yaşanıyor. Kombi arızaları hakkında daha fazla bilgi için /servis/kombi sayfamıza da göz atabilirsiniz.',
+      },
+      {
+        type: 'h2',
+        text: 'Sıkça Sorulan Sorular',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Kombi kodu çıktı ama ısınma durmadı, önemli mi? Bazı kodlar cihaz çalışmaya devam ederken de görünebilir; görmezden gelmek yerine not alıp takip etmeniz, kod kalıcı bir arızaya dönüşmeden fark etmenizi sağlar.',
+          'Reset tuşuna kaç kez basmak güvenli? Basınç veya baca ile ilgili basit kodlarda bir kez denemek yeterli; aynı kod tekrar çıkarsa cihazı zorlamadan durmak gerekir.',
+          'Kod kayboldu, kombi normal çalışıyor, servise ihtiyaç var mı? Kodun tek seferlik bir dalgalanmadan (örneğin kısa elektrik kesintisi) çıktığını düşünüyorsanız takip edebilirsiniz; tekrarlarsa kaynağını bulmak gerekir.',
+          'Büyükçekmece’ye ne kadar sürede gelebilirsiniz? Hattımız günün her saati açık; arıza kaydınızı aldıktan sonra kısa sürede dönüp uygun randevu saatini birlikte belirliyoruz.',
+        ],
+      },
+      {
+        type: 'p',
+        text: 'Büyükçekmece’de kombi ekranında bir kod gördüğünüzde önce kodu ve öncesinde fark ettiklerinizi not edip yukarıdaki basit adımları deneyebilirsiniz; kod tekrarlıyorsa veya alev/ateşleme ile ilgiliyse bağımsız teknik servis ekibimiz cihazı yerinde kontrol edip kalıcı çözüm sunar. Büyükçekmece ve çevresinde arıza kaydınızı oluşturmak için 0850 885 44 36 numaralı hattımızdan günün her saati ulaşabilir, ayrıca /ariza-kayit sayfasından da kayıt bırakabilirsiniz. Kombi basıncı düşüyorsa /blog/bahcesehir-kombi-basinc-dusuyor yazımıza da bakabilirsiniz.',
+      },
+    ],
+    seoTitle: 'Büyükçekmece Kombi Servisi: Arıza Kodu Çözümü | Servis Arıza Kayıt',
+    seoDescription:
+      'Büyükçekmece’de kombi ekranında arıza kodu mu gördünüz? Hangi kodlar evde çözülür, hangisi teknisyen gerektirir. 0850 885 44 36.',
+    keywords: [
+      'Büyükçekmece kombi servisi',
+      'Büyükçekmece kombi tamircisi',
+      'Büyükçekmece kombi bakımı',
+      'kombi arıza kodu',
+      'kombi arıza kodları',
+      'İstanbul kombi servisi',
+    ],
+  },
+  {
+    slug: 'kucukcekmece-buzdolabi-sogutmuyor',
+    title: 'Küçükçekmece’de Buzdolabı Hiç Soğutmuyor mu? Kompresör Çalışıyor mu, Çalışmıyor mu?',
+    excerpt:
+      'Küçükçekmece’de buzdolabı tamamen soğumayı kesmişse önce kompresörün çalışıp çalışmadığını ayırt etmek gerekir; biri elektrik ve termostat sorunudur, diğeri gaz kaçağı gibi daha ciddi bir arızaya işaret eder.',
+    device: 'buzdolabi',
+    readMinutes: 6,
+    date: '2026-11-27',
+    body: [
+      {
+        type: 'p',
+        text: 'Sefaköy ve Atakent’ten gelen çağrıların bir kısmında buzdolabı az soğumuyor, tamamen soğumayı kesmiş oluyor; içindeki yiyecekler oda havasına yakın bir sıcaklıkta kalıyor. Bu durumda ilk sorduğumuz şey hep aynı: arkadaki kompresörün sesi geliyor mu, yoksa cihaz tamamen sessiz mi? Bu tek soru, arızanın elektrik tarafında mı yoksa soğutma devresinde mi olduğunu büyük ölçüde ayırıyor.',
+      },
+      {
+        type: 'h2',
+        text: 'Kompresör çalışıyor ama buzdolabı hâlâ soğutmuyorsa sebep ne?',
+      },
+      {
+        type: 'p',
+        text: 'Kompresör sesi geliyor ama içerisi ılıksa, soğutucu gaz devresinde bir sorun olduğuna işaret eder; gaz zamanla sızmış ya da kompresör basıncı düşürecek kadar yorulmuş olabilir. Bu arıza evde kendi başına çözülmez, gaz kaçağı ölçümü ve dolumu gerektiren bir iştir.',
+      },
+      {
+        type: 'h2',
+        text: 'Kompresör hiç çalışmıyorsa nereye bakılır?',
+      },
+      {
+        type: 'p',
+        text: 'Kompresörden hiç ses gelmiyorsa önce elektrik tarafına bakılır: priz ve fiş bağlantısı, termostatın ayarı ve gövde içindeki başlatma rölesi ilk kontrol edilecek yerlerdir. Termostat düğmesi yanlışlıkla kapalı konuma gelmiş olabilir; bu, sahada karşımıza çıkan en basit ama en çok ihmal edilen sebeplerden biridir.',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Priz ve kablo bağlantısında gevşeklik ya da hasar',
+          'Termostatın yanlışlıkla en düşük ya da kapalı konuma gelmesi',
+          'Kompresörü ateşleyen başlatma rölesinin arızalanması',
+          'Kondansere (arkadaki ızgaraya) biriken toz nedeniyle cihazın aşırı ısınıp güvenlik için durması',
+        ],
+      },
+      {
+        type: 'h2',
+        text: 'Evde güvenle yapabileceğiniz kontrol nedir?',
+      },
+      {
+        type: 'p',
+        text: 'Önce prizi başka bir cihazla test edip prizde sorun olmadığından emin olun, sonra termostat düğmesinin orta bir konumda olduğunu kontrol edin. Buzdolabının arkasını çekip kondanser ızgarasındaki toz birikintisini yumuşak bir fırçayla temizlemek de, cihaz aşırı ısınıp kendini kapatıyorsa işe yarayabilir.',
+      },
+      {
+        type: 'note',
+        text: 'Gaz kaçağı şüphesi varsa cihazı prizde bırakıp beklemek yerine fişini çekip teknisyen çağırmanızı öneririz; boşa çalışan kompresör zamanla kendine de zarar verebilir.',
+      },
+      {
+        type: 'h2',
+        text: 'Küçükçekmece’de sahada en çok ne görüyoruz?',
+      },
+      {
+        type: 'p',
+        text: 'Sefaköy’deki eski apartman dairelerinde en çok kondanser tozlanması ve gevşek priz bağlantısıyla karşılaşıyoruz; mutfaklar genelde küçük olduğu için buzdolabı duvara çok yakın yerleştiriliyor ve arka ızgara hiç temizlenmiyor. Atakent ve Cennet Mahallesi’ndeki daha yeni sitelerde ise gaz kaçağına bağlı soğutmama vakaları öne çıkıyor; bu evlerde cihazlar genelde daha yeni ama bazı modellerde kaynak noktalarında erken yaşta sızıntı görebiliyoruz. Buzdolabı arızaları hakkında daha fazla bilgi için /servis/buzdolabi sayfamıza da göz atabilirsiniz.',
+      },
+      {
+        type: 'h2',
+        text: 'Sıkça Sorulan Sorular',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Kompresör çalışıyor ama içeri soğumuyor, acil mi? Gaz kaçağına işaret ediyor olabilir; yiyeceklerin bozulmaması için kısa sürede teknisyene baktırmanızı öneririz.',
+          'Termostatı değiştirince sorun biter mi? Sorun gerçekten termostatsa evet; ama kompresör veya gaz devresindeyse termostat değişimi sonucu etkilemez, önce doğru teşhis gerekir.',
+          'Kondanser tozunu kendim temizleyebilir miyim? Evet, fişi çekip arka ızgarayı yumuşak bir fırçayla temizlemek güvenlidir ve bazı durumlarda sorunu tek başına çözer.',
+          'Küçükçekmece’ye ne kadar sürede gelebilirsiniz? Hattımız günün her saati açık; arıza kaydınızı aldıktan sonra kısa sürede dönüp uygun randevu saatini birlikte belirliyoruz.',
+        ],
+      },
+      {
+        type: 'p',
+        text: 'Küçükçekmece’de buzdolabınız soğutmayı kestiyse önce kompresörden ses gelip gelmediğine bakıp yukarıdaki basit kontrolleri deneyebilirsiniz; sorun sürüyorsa bağımsız teknik servis ekibimiz gaz devresini ve elektrik aksamını yerinde kontrol edip kalıcı çözüm sunar. Küçükçekmece ve çevresinde arıza kaydınızı oluşturmak için 0850 885 44 36 numaralı hattımızdan günün her saati ulaşabilir, ayrıca /ariza-kayit sayfasından da kayıt bırakabilirsiniz. Buzdolabınız az soğutuyorsa /blog/esenyurt-buzdolabi-az-sogutuyor yazımıza da bakabilirsiniz.',
+      },
+    ],
+    seoTitle: 'Küçükçekmece Buzdolabı Servisi: Soğutmuyor mu? | Servis Arıza Kayıt',
+    seoDescription:
+      'Küçükçekmece’de buzdolabı hiç soğutmuyorsa kompresör ve gaz devresi kontrol edilmeli. Nedenleri ve çözümü için 0850 885 44 36.',
+    keywords: [
+      'Küçükçekmece buzdolabı servisi',
+      'Küçükçekmece buzdolabı tamircisi',
+      'Küçükçekmece buzdolabı bakımı',
+      'buzdolabı soğutmuyor',
+      'buzdolabı kompresör çalışmıyor',
+      'İstanbul buzdolabı servisi',
+    ],
+  },
 ];

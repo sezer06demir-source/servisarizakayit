@@ -378,6 +378,9 @@ setTimeout(function(){
 export default async function middleware(req: Request, ctx?: { waitUntil?: (p: Promise<unknown>) => void }): Promise<Response | undefined> {
   if (!SECURITY_ON) return undefined;
 
+  // IndexNow anahtar dosyası (Bing/Yandex doğrulaması): filtresiz sunulur.
+  if (/^\/[a-f0-9]{32}\.txt$/.test(new URL(req.url).pathname)) return undefined;
+
   const url = new URL(req.url);
   const path = url.pathname.toLowerCase();
   const ua = (req.headers.get('user-agent') ?? '').toLowerCase();
